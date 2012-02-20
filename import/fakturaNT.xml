@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+  <eksport exportingapp="Faktura-NT" name="Towary" fileversion="4" exportdate="2010-02-02">
+    <struct>
+      <table tablename="TOWARY" export="1" uniquekey="SYMBOL_TOWARU NAZWA CENA CENA_ZAKUPU SWW ISBN EAN">
+        <details>
+          <Detail tablename="STAWKI" translationtablename="STAWKI" masterkey="VAT" detailkey="KOD" dictionary="1"/>
+          <Detail tablename="JEDNOSTKI" translationtablename="JEDNOSTKI" masterkey="J_M" detailkey="KOD" dictionary="1"/>
+          <Detail tablename="WALUTY" translationtablename="WALUTY" masterkey="WALUTA" detailkey="KOD" dictionary="1"/>
+          <Detail tablename="MAGAZYNY" translationtablename="MAGAZYNY" masterkey="MAGAZYN" detailkey="KOD" dictionary="1"/>
+          <Detail tablename="AUTORZY" translationtablename="AUTORZY" masterkey="AUTOR" detailkey="IDAUTORA" dictionary="1"/>
+          <Detail tablename="WYDAWNICTWA" translationtablename="WYDAWNICTWA" masterkey="WYDAWNICTWO" detailkey="IDWYDAWNICTWA" dictionary="1"/>
+        </details>
+        <fields>
+          <field name="KOD" type="INTEGER" pk="1"/>
+          <field name="SYMBOL_TOWARU" type="STRING"/>
+          <field name="NAZWA" type="STRING"/>
+          <field name="VAT" type="INTEGER"/>
+          <field name="CENA" type="CURRENCY"/>
+          <field name="CENA_BRUTTO" type="CURRENCY"/>
+          <field name="CENA_ZAKUPU" type="CURRENCY"/>
+          <field name="CENA_ZAKUPU_BRUTTO" type="CURRENCY"/>
+          <field name="CENA_HURT1" type="CURRENCY"/>
+          <field name="CENA_HURT1_BRUTTO" type="CURRENCY"/>
+          <field name="CENA_HURT2" type="CURRENCY"/>
+          <field name="CENA_HURT2_BRUTTO" type="CURRENCY"/>
+          <field name="CENA_HURT3" type="CURRENCY"/>
+          <field name="CENA_HURT3_BRUTTO" type="CURRENCY"/>
+          <field name="J_M" type="INTEGER"/>
+          <field name="SWW" type="STRING"/>
+          <field name="KOMENTARZ" type="STRING"/>
+          <field name="WALUTA" type="INTEGER"/>
+          <field name="STAN" type="CURRENCY"/>
+          <field name="STAN_ALARMOWY" type="CURRENCY"/>
+          <field name="UZYWAJ_STANU" type="INTEGER"/>
+          <field name="LOKALIZACJA" type="STRING"/>
+          <field name="USUNIETY" type="INTEGER"/>
+          <field name="MAGAZYN" type="INTEGER"/>
+          <field name="ZDJECIE" type="BLOB"/>
+          <field name="ILOSCWOPAKOWANIU" type="CURRENCY"/>
+          <field name="J_M_OPAKOWANIA" type="INTEGER"/>
+          <field name="KOD_CN" type="STRING"/>
+          <field name="UZYJ_W_INTRASTAT" type="INTEGER"/>
+          <field name="KATEGORIA" type="INTEGER"/>
+          <field name="OPIS" type="STRING"/>
+          <field name="DATA_DODANIA" type="DATE"/>
+          <field name="PROMOCJA_OD" type="DATE"/>
+          <field name="PROMOCJA_DO" type="DATE"/>
+          <field name="CENA_PROMOCYJNA" type="CURRENCY"/>
+          <field name="CENA_PROMOCYJNA_BRUTTO" type="CURRENCY"/>
+          <field name="JAKOSC" type="STRING"/>
+          <field name="ISBN" type="STRING"/>
+          <field name="EAN" type="STRING"/>
+          <field name="ROK_WYDANIA" type="INTEGER"/>
+          <field name="AUTOR" type="INTEGER"/>
+          <field name="WYDAWNICTWO" type="INTEGER"/>
+        </fields>
+      </table>
+      <table tablename="STAWKI" export="0" uniquekey="NAZWA">
+        <fields>
+          <field name="KOD" type="INTEGER" pk="1"/>
+          <field name="NAZWA" type="STRING"/>
+          <field name="WARTOSC" type="CURRENCY"/>
+        </fields>
+      </table>
+      <table tablename="JEDNOSTKI" export="0" uniquekey="NAZWA">
+        <fields>
+          <field name="KOD" type="INTEGER" pk="1"/>
+          <field name="NAZWA" type="STRING"/>
+        </fields>
+      </table>
+      <table tablename="MAGAZYNY" export="0" uniquekey="NAZWA">
+        <fields>
+          <field name="KOD" type="INTEGER" pk="1"/>
+          <field name="NAZWA" type="STRING"/>
+          <field name="USUNIETY" type="INTEGER"/>
+        </fields>
+      </table>
+      <table tablename="WALUTY" export="0" uniquekey="NAZWAWALUTY">
+        <details>
+          <Detail tablename="WALUTY_DETAIL" translationtablename="WALUTY_DETAIL" masterkey="KOD" detailkey="KOD" dictionary="0"/>
+        </details>
+        <fields>
+          <field name="KOD" type="INTEGER" pk="1"/>
+          <field name="KRAJ" type="STRING"/>
+          <field name="NAZWAWALUTY" type="STRING"/>
+        </fields>
+      </table>
+      <table tablename="WALUTY_DETAIL" export="0" uniquekey="KOD DATAZMIANY">
+        <fields>
+          <field name="KOD" type="INTEGER"/>
+          <field name="DATAZMIANY" type="DATE"/>
+          <field name="KURS" type="FLOAT"/>
+          <field name="PRZELICZNIK" type="INTEGER"/>
+        </fields>
+      </table>
+      <table tablename="AUTORZY" export="0" uniquekey="IDAUTORA">
+        <fields>
+          <field name="IDAUTORA" type="INTEGER" pk="1"/>
+          <field name="AUTOR" type="STRING"/>
+        </fields>
+      </table>
+      <table tablename="WYDAWNICTWA" export="0" uniquekey="IDWYDAWNICTWA">
+        <fields>
+          <field name="IDWYDAWNICTWA" type="INTEGER" pk="1"/>
+          <field name="WYDAWNICTWO" type="STRING"/>
+        </fields>
+      </table>
+    </struct>
+    <data>
+      <TOWARY>
+                <record KOD="1013" SYMBOL_TOWARU="108R00647ORG" NAZWA="Bęben cyan Xerox 108R00647 oryginalny" VAT="13" CENA="650" CENA_BRUTTO="799.5" CENA_ZAKUPU="517.99" CENA_ZAKUPU_BRUTTO="637.13" CENA_HURT1="600" CENA_HURT1_BRUTTO="738" CENA_HURT2="575" CENA_HURT2_BRUTTO="707.25" CENA_HURT3="550" CENA_HURT3_BRUTTO="676.5" J_M="1" WALUTA="1" STAN="0" STAN_ALARMOWY="0" UZYWAJ_STANU="1" USUNIETY="0" MAGAZYN="2" ILOSCWOPAKOWANIU="1" J_M_OPAKOWANIA="4" UZYJ_W_INTRASTAT="0" CENA_PROMOCYJNA="0" CENA_PROMOCYJNA_BRUTTO="0" ROK_WYDANIA="2009"/>
+        <record KOD="1015" SYMBOL_TOWARU="108R00648ORG" NAZWA="Bęben magenta Xerox 108R00648 oryginalny" VAT="13" CENA="650" CENA_BRUTTO="799.5" CENA_ZAKUPU="517.99" CENA_ZAKUPU_BRUTTO="637.13" CENA_HURT1="600" CENA_HURT1_BRUTTO="738" CENA_HURT2="575" CENA_HURT2_BRUTTO="707.25" CENA_HURT3="550" CENA_HURT3_BRUTTO="676.5" J_M="1" WALUTA="1" STAN="0" STAN_ALARMOWY="0" UZYWAJ_STANU="1" USUNIETY="0" MAGAZYN="2" ILOSCWOPAKOWANIU="1" J_M_OPAKOWANIA="4" UZYJ_W_INTRASTAT="0" CENA_PROMOCYJNA="0" CENA_PROMOCYJNA_BRUTTO="0" ROK_WYDANIA="2009"/>
+        <record KOD="1614" SYMBOL_TOWARU="42126608ORG" NAZWA="Bęben czarny OKI 42126608 oryginalny" VAT="13" CENA="273" CENA_BRUTTO="335.79" CENA_ZAKUPU="300" CENA_ZAKUPU_BRUTTO="369" CENA_HURT1="252" CENA_HURT1_BRUTTO="309.96" CENA_HURT2="241.5" CENA_HURT2_BRUTTO="297.05" CENA_HURT3="231" CENA_HURT3_BRUTTO="284.13" J_M="1" WALUTA="1" STAN="0" STAN_ALARMOWY="0" UZYWAJ_STANU="1" USUNIETY="0" MAGAZYN="2" ILOSCWOPAKOWANIU="1" J_M_OPAKOWANIA="4" UZYJ_W_INTRASTAT="0" CENA_PROMOCYJNA="0" CENA_PROMOCYJNA_BRUTTO="0" ROK_WYDANIA="2010"/>
+        <record KOD="453" SYMBOL_TOWARU="Q6511XZAM" NAZWA="Toner na 12 000 kopii HP Q6511X zamienny" VAT="13" CENA="247" CENA_BRUTTO="303.81" CENA_ZAKUPU="107.67" CENA_ZAKUPU_BRUTTO="132.43" CENA_HURT1="228" CENA_HURT1_BRUTTO="280.44" CENA_HURT2="218.5" CENA_HURT2_BRUTTO="268.76" CENA_HURT3="209" CENA_HURT3_BRUTTO="257.07" J_M="1" WALUTA="1" STAN="1" STAN_ALARMOWY="0" UZYWAJ_STANU="1" USUNIETY="0" MAGAZYN="2" ILOSCWOPAKOWANIU="1" J_M_OPAKOWANIA="4" UZYJ_W_INTRASTAT="0" CENA_PROMOCYJNA="0" CENA_PROMOCYJNA_BRUTTO="0" ROK_WYDANIA="2008"/>
+        <record KOD="489" SYMBOL_TOWARU="NPG1ORG" NAZWA="Toner Canon NPG-1 (4 szt. w opakowaniu) oryginalny" VAT="13" CENA="1.3" CENA_BRUTTO="1.6" CENA_ZAKUPU="102.9" CENA_ZAKUPU_BRUTTO="126.57" CENA_HURT1="1.2" CENA_HURT1_BRUTTO="1.48" CENA_HURT2="1.15" CENA_HURT2_BRUTTO="1.41" CENA_HURT3="1.1" CENA_HURT3_BRUTTO="1.35" J_M="2" WALUTA="1" STAN="0" STAN_ALARMOWY="0" UZYWAJ_STANU="1" USUNIETY="0" MAGAZYN="2" ILOSCWOPAKOWANIU="1" J_M_OPAKOWANIA="4" UZYJ_W_INTRASTAT="0" CENA_PROMOCYJNA="0" CENA_PROMOCYJNA_BRUTTO="0" ROK_WYDANIA="2008"/>
+        <record KOD="49" SYMBOL_TOWARU="BCI24CZAM" NAZWA="Tusz kolorowy Canon BCI24C zamiennik" VAT="13" CENA="3.9" CENA_BRUTTO="4.8" CENA_ZAKUPU="3.24" CENA_ZAKUPU_BRUTTO="3.99" CENA_HURT1="3.6" CENA_HURT1_BRUTTO="4.43" CENA_HURT2="3.45" CENA_HURT2_BRUTTO="4.24" CENA_HURT3="3.3" CENA_HURT3_BRUTTO="4.06" J_M="1" WALUTA="1" STAN="0" STAN_ALARMOWY="0" UZYWAJ_STANU="1" USUNIETY="0" MAGAZYN="2" ILOSCWOPAKOWANIU="1" J_M_OPAKOWANIA="4" UZYJ_W_INTRASTAT="0" CENA_PROMOCYJNA="0" CENA_PROMOCYJNA_BRUTTO="0" ROK_WYDANIA="2007"/>
+        <record KOD="5" SYMBOL_TOWARU="KXFA83ORG" NAZWA="Toner Panasonic KX-FA 83 oryginalny" VAT="13" CENA="130" CENA_BRUTTO="159.9" CENA_ZAKUPU="85" CENA_ZAKUPU_BRUTTO="103.7" CENA_HURT1="120" CENA_HURT1_BRUTTO="147.6" CENA_HURT2="115" CENA_HURT2_BRUTTO="141.45" CENA_HURT3="110" CENA_HURT3_BRUTTO="135.3" J_M="1" WALUTA="1" STAN="1" STAN_ALARMOWY="0" UZYWAJ_STANU="1" USUNIETY="0" MAGAZYN="2" ILOSCWOPAKOWANIU="1" J_M_OPAKOWANIA="4" UZYJ_W_INTRASTAT="0" CENA_PROMOCYJNA="0" CENA_PROMOCYJNA_BRUTTO="0" ROK_WYDANIA="2007"/>
+        <record KOD="500" SYMBOL_TOWARU="KE131EA#AKD" NAZWA="Notebook HP 6510b (KE131EA#AKD)" VAT="13" CENA="3092.7" CENA_BRUTTO="3804.02" CENA_ZAKUPU="2379" CENA_ZAKUPU_BRUTTO="2926.17" CENA_HURT1="2854.8" CENA_HURT1_BRUTTO="3511.4" CENA_HURT2="2735.85" CENA_HURT2_BRUTTO="3365.1" CENA_HURT3="2616.9" CENA_HURT3_BRUTTO="3218.79" J_M="1" WALUTA="1" STAN="0" STAN_ALARMOWY="0" UZYWAJ_STANU="1" USUNIETY="0" MAGAZYN="2" ILOSCWOPAKOWANIU="1" J_M_OPAKOWANIA="4" UZYJ_W_INTRASTAT="0" CENA_PROMOCYJNA="0" CENA_PROMOCYJNA_BRUTTO="0" ROK_WYDANIA="2008"/>
+        <record KOD="816" SYMBOL_TOWARU="99A1196MainKit" NAZWA="Zestaw konserwacyjny (MaintenanceKit) Lexmark 99A1196" VAT="13" CENA="1807" CENA_BRUTTO="2222.61" CENA_ZAKUPU="1390" CENA_ZAKUPU_BRUTTO="1709.7" CENA_HURT1="1668" CENA_HURT1_BRUTTO="2051.64" CENA_HURT2="1598.5" CENA_HURT2_BRUTTO="1966.16" CENA_HURT3="1529" CENA_HURT3_BRUTTO="1880.67" J_M="1" WALUTA="1" STAN="0" STAN_ALARMOWY="0" UZYWAJ_STANU="1" USUNIETY="0" MAGAZYN="2" ILOSCWOPAKOWANIU="1" J_M_OPAKOWANIA="4" UZYJ_W_INTRASTAT="0" CENA_PROMOCYJNA="0" CENA_PROMOCYJNA_BRUTTO="0" ROK_WYDANIA="2009"/>
+        <record KOD="993" SYMBOL_TOWARU="00C5220KSORG" NAZWA="Toner czarny na 4 000 kopii Lexmark 00C5220KS oryginalny" VAT="13" CENA="408.2" CENA_BRUTTO="502.09" CENA_ZAKUPU="288.93" CENA_ZAKUPU_BRUTTO="355.38" CENA_HURT1="376.8" CENA_HURT1_BRUTTO="463.46" CENA_HURT2="361.1" CENA_HURT2_BRUTTO="444.15" CENA_HURT3="345.4" CENA_HURT3_BRUTTO="424.84" J_M="1" WALUTA="1" STAN="0" STAN_ALARMOWY="0" UZYWAJ_STANU="1" USUNIETY="0" MAGAZYN="2" ILOSCWOPAKOWANIU="1" J_M_OPAKOWANIA="4" UZYJ_W_INTRASTAT="0" CENA_PROMOCYJNA="0" CENA_PROMOCYJNA_BRUTTO="0" ROK_WYDANIA="2009"/>
+        <record KOD="999" SYMBOL_TOWARU="CD888AORG" NAZWA="Tusz kolorowy HP CD888A (HP 703) oryginalny" VAT="13" CENA="26.923" CENA_BRUTTO="33.12" CENA_ZAKUPU="19" CENA_ZAKUPU_BRUTTO="23.37" CENA_HURT1="24.852" CENA_HURT1_BRUTTO="30.57" CENA_HURT2="23.8165" CENA_HURT2_BRUTTO="29.29" CENA_HURT3="22.781" CENA_HURT3_BRUTTO="28.02" J_M="1" WALUTA="1" STAN="1" STAN_ALARMOWY="0" UZYWAJ_STANU="1" USUNIETY="0" MAGAZYN="2" ILOSCWOPAKOWANIU="1" J_M_OPAKOWANIA="4" UZYJ_W_INTRASTAT="0" CENA_PROMOCYJNA="0" CENA_PROMOCYJNA_BRUTTO="0" ROK_WYDANIA="2009"/>
+      </TOWARY>
+      <STAWKI>
+        <record KOD="13" NAZWA="23 %" WARTOSC="23"/>
+      </STAWKI>
+      <JEDNOSTKI>
+        <record KOD="1" NAZWA="szt."/>
+        <record KOD="11" NAZWA="ryza"/>
+        <record KOD="2" NAZWA="opak."/>
+      </JEDNOSTKI>
+      <MAGAZYNY>
+        <record KOD="2" NAZWA="" USUNIETY="0"/>
+      </MAGAZYNY>
+      <WALUTY>
+        <record KOD="1" KRAJ="Polska" NAZWAWALUTY="PLN"/>
+      </WALUTY>
+      <WALUTY_DETAIL/>
+      <AUTORZY/>
+      <WYDAWNICTWA/>
+    </data>
+  </eksport>
