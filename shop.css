@@ -1,4 +1,5 @@
 mdshop1={
+## naglówek strony
 /*topbar=
    <div class=mshmenu>
 <table>
@@ -49,11 +50,13 @@ mdshop1={
 
 
 */
-
+##panel prawy
 
 /*rightbar=
 
 */
+
+## panel lewy
 
 /*leftbar=
    <div class=mshkompkoszyk>
