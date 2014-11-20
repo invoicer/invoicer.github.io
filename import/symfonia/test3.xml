@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="windows-1250"?>
+<FormatXML
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:noNamespaceSchemaLocation="eFaktura.xsd">
+<e-Faktura>
+	<Wersja>1.03</Wersja>
+</e-Faktura>
+<DokumentHandlowy>
+	<GUID></GUID>
+	<Status>Faktura</Status>
+	<NumerDokumentu>0006/10/2014/FVS</NumerDokumentu>
+	<Nazwa>Faktura VAT</Nazwa>
+	<Charakter>40</Charakter>
+	<Typ>FVS</Typ>
+	<Seria>sFVS</Seria>
+	<Wystawca>
+		<GUID></GUID>
+		<Kod>Firma</Kod>
+		<Nazwa>Madar Ireneusz Mazur</Nazwa>
+		<Ulica>1 Maja</Ulica>
+		<NumerDomu>27</NumerDomu>
+		<NumerLokalu></NumerLokalu>
+		<KodPocztowy>41-250</KodPocztowy>
+		<Miejscowosc>Zabrz</Miejscowosc>
+		<Wojewodztwo>œl¹skie</Wojewodztwo>
+		<Kraj></Kraj>
+		<NIP>625-000-00-73</NIP>
+		<REGON></REGON>
+		<PESEL></PESEL>
+		<VIES>Nie</VIES>
+		<VATUE></VATUE>
+		<NumerRachunkuBankowego>48 1910 1136 0015 0343 5121 0001</NumerRachunkuBankowego>
+		<Telefon1></Telefon1>
+		<Telefon2></Telefon2>
+		<Fax></Fax>
+		<Email></Email>
+	</Wystawca>
+	<Odbiorca>
+		<GUID></GUID>
+		<Kod>MUZEUM </Kod>
+		<Nazwa>MUZEUM </Nazwa>
+		<Ulica>ŒWIERCZEWSKIEGO</Ulica>
+		<NumerDomu>15</NumerDomu>
+		<NumerLokalu></NumerLokalu>
+		<KodPocztowy>41-500</KodPocztowy>
+		<Miejscowosc>Zabrze</Miejscowosc>
+		<Wojewodztwo>œl¹skie</Wojewodztwo>
+		<Kraj>PL</Kraj>
+		<NIP>625-000-00-53</NIP>
+		<REGON></REGON>
+		<PESEL></PESEL>
+		<VIES>Nie</VIES>
+		<VATUE></VATUE>
+		<NumerRachunkuBankowego></NumerRachunkuBankowego>
+		<Telefon1></Telefon1>
+		<Telefon2></Telefon2>
+		<Fax></Fax>
+		<Email></Email>
+	</Odbiorca>
+	<Rejestr>Sprzeda¿ VAT</Rejestr>
+	<RodzajCeny>Brutto</RodzajCeny>
+	<NaliczanieVAT>Iloczynowe</NaliczanieVAT>
+	<MetodaRozliczaniaVAT>Memoria³owa</MetodaRozliczaniaVAT>
+	<DataWystawienia>2014-10-31</DataWystawienia>
+	<DataSprzedazy>2014-10-31</DataSprzedazy>
+	<RejestrPlatnosci>BANK</RejestrPlatnosci>
+	<FormaPlatnosci>przelew</FormaPlatnosci>
+	<TerminPlatnosci>14 dni</TerminPlatnosci>
+	<DataPlatnosci>2014-11-14</DataPlatnosci>
+	<KursVAT>1.0000</KursVAT>
+	<KursCITPIT>1.0000</KursCITPIT>
+	<OdebranyPrzez></OdebranyPrzez>
+	<StawkaVAT>
+		<Kod>23%</Kod>
+		<Nazwa>Stawka 23%</Nazwa>
+		<Wartosc>0.2300</Wartosc>
+		<ObowiazujeOd>2011-01-01</ObowiazujeOd>
+		<ObowiazujeDo></ObowiazujeDo>
+		<StawkaRR>Nie</StawkaRR>
+		<Typ>8</Typ>
+	</StawkaVAT>
+	<Stopka>
+		<KwotaVAT>
+			<StawkaVAT>23%</StawkaVAT>
+			<Netto>243.90</Netto>
+			<VAT>56.10</VAT>
+		</KwotaVAT>
+	</Stopka>
+	<PozycjaDokumentu>
+		<Lp>1</Lp>
+		<Towar>
+			<Kod>US£UGA INFORMATYCZNA</Kod>
+			<Nazwa>
+				<Opis>US£UGA INFORMATYCZNA</Opis>
+			</Nazwa>
+			<KodPaskowy></KodPaskowy>
+			<PKWiU></PKWiU>
+			<CN></CN>
+			<JednostkaMiary>
+				<Ewidencyjna>szt</Ewidencyjna>
+				<Dodatkowa1></Dodatkowa1>
+				<Przelicznik1>0.0000</Przelicznik1>
+				<Dodatkowa2></Dodatkowa2>
+				<Przelicznik2>0.0000</Przelicznik2>
+			</JednostkaMiary>
+			<StawkaVAT>23%</StawkaVAT>
+			<Rodzaj>Us³uga</Rodzaj>
+		</Towar>
+		<JednostkaMiary>szt</JednostkaMiary>
+		<Ilosc>1.0000</Ilosc>
+		<Cena>300.000000</Cena>
+		<StawkaVAT>23%</StawkaVAT>
+		<Wartosc>300.00</Wartosc>
+		<WartoscVAT>56.10</WartoscVAT>
+	</PozycjaDokumentu>
+</DokumentHandlowy>
+</FormatXML>
