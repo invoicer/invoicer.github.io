@@ -1,0 +1,75 @@
+<JPK xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://jpk.mf.gov.pl/wzor/2016/03/09/03096/" xmlns:etd="http://crd.gov.pl/xml/schematy/dziedzinowe/mf/2016/01/25/eD/DefinicjeTypy/"  >
+    <Naglowek>
+        <KodFormularza  kodSystemowy="JPK_PKPIR (1)" wersjaSchemy="1-0" >JPK_PKPIR</KodFormularza>
+        <WariantFormularza>1</WariantFormularza>
+        <CelZlozenia>1</CelZlozenia>
+        <DataWytworzeniaJPK>2016-08-01T11:13:19Z</DataWytworzeniaJPK>
+        <DataOd>2016-07-01</DataOd>
+        <DataDo>2016-07-31</DataDo>
+        <DomyslnyKodWaluty>PLN</DomyslnyKodWaluty>
+        <KodUrzedu>2433</KodUrzedu>
+    </Naglowek>
+    <Podmiot1>
+        <IdentyfikatorPodmiotu>
+            <etd:NIP>6481007070</etd:NIP>
+            <etd:PelnaNazwa>MADAR Sp. z o.o.</etd:PelnaNazwa>
+            <etd:REGON>272572754</etd:REGON>
+        </IdentyfikatorPodmiotu>
+        <AdresPodmiotu>
+            <etd:KodKraju>PL</etd:KodKraju>
+            <etd:Wojewodztwo>śląskie</etd:Wojewodztwo>
+            <etd:Powiat>Zabrze</etd:Powiat>
+            <etd:Gmina>Zabrze</etd:Gmina>
+            <etd:Ulica>Skłodowskiej </etd:Ulica>
+            <etd:NrDomu>12d</etd:NrDomu>
+            <etd:NrLokalu>3</etd:NrLokalu>
+            <etd:Miejscowosc>Zabrze</etd:Miejscowosc>
+            <etd:KodPocztowy>41-819</etd:KodPocztowy>
+            <etd:Poczta>Zabrze</etd:Poczta>
+        </AdresPodmiotu>
+    </Podmiot1>
+    <PKPIRInfo>
+        <P_1>0.00</P_1>
+        <P_2>0.00</P_2>
+        <P_3>0.00</P_3>
+        <P_4>0.00</P_4>
+    </PKPIRInfo>
+    <PKPIRWiersz typ="G">
+        <K_1>1</K_1>
+        <K_2>2016-07-27</K_2>
+        <K_3>12/16</K_3>
+        <K_4>Kowalski </K_4>
+        <K_5>40-064 Katowice Kopernika 12</K_5>
+        <K_6>sprzedaż</K_6>
+        <K_7>7800.00</K_7>
+        <K_8>0.00</K_8>
+        <K_9>7800.00</K_9>
+        <K_10>0.00</K_10>
+        <K_11>0.00</K_11>
+        <K_12>0.00</K_12>
+        <K_13>0.00</K_13>
+        <K_14>0.00</K_14>
+        <K_15>0.00</K_15>
+    </PKPIRWiersz>
+    <PKPIRWiersz typ="G">
+        <K_1>2</K_1>
+        <K_2>2016-07-30</K_2>
+        <K_3>25423/sd</K_3>
+        <K_4>Kowalski </K_4>
+        <K_5>40-064 Katowice Kopernika 12</K_5>
+        <K_6>zakup towaru</K_6>
+        <K_7>0.00</K_7>
+        <K_8>0.00</K_8>
+        <K_9>0.00</K_9>
+        <K_10>4500.00</K_10>
+        <K_11>0.00</K_11>
+        <K_12>0.00</K_12>
+        <K_13>0.00</K_13>
+        <K_14>0.00</K_14>
+        <K_15>0.00</K_15>
+    </PKPIRWiersz>
+    <PKPIRCtrl>
+        <LiczbaWierszy>2</LiczbaWierszy>
+        <SumaPrzychodow>7800.00</SumaPrzychodow>
+    </PKPIRCtrl>
+</JPK>
