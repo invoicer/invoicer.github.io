@@ -1,0 +1,73 @@
+<JPK xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://jpk.mf.gov.pl/wzor/2016/03/09/03092/" xmlns:etd="http://crd.gov.pl/xml/schematy/dziedzinowe/mf/2016/01/25/eD/DefinicjeTypy/"   >
+    <Naglowek>
+        <KodFormularza  kodSystemowy="JPK_WB (1)" wersjaSchemy="1-0" >JPK_WB</KodFormularza>
+        <WariantFormularza>1</WariantFormularza>
+        <CelZlozenia>1</CelZlozenia>
+        <DataWytworzeniaJPK>2016-08-01T08:57:20Z</DataWytworzeniaJPK>
+        <DataOd>2016-05-01</DataOd>
+        <DataDo>2016-05-20</DataDo>
+        <DomyslnyKodWaluty>PLN</DomyslnyKodWaluty>
+        <KodUrzedu>2433</KodUrzedu>
+    </Naglowek>
+    <Podmiot1>
+        <IdentyfikatorPodmiotu>
+            <etd:NIP>6481007070</etd:NIP>
+            <etd:PelnaNazwa>MADAR Sp. z o.o. &lt;bb&gt;</etd:PelnaNazwa>
+            <etd:REGON>272572754</etd:REGON>
+        </IdentyfikatorPodmiotu>
+        <AdresPodmiotu>
+            <etd:KodKraju>PL</etd:KodKraju>
+            <etd:Wojewodztwo>śląskie</etd:Wojewodztwo>
+            <etd:Powiat>Zabrze</etd:Powiat>
+            <etd:Gmina>Zabrze</etd:Gmina>
+            <etd:Ulica>Skłodowskiej </etd:Ulica>
+            <etd:NrDomu>12d</etd:NrDomu>
+            <etd:NrLokalu>3</etd:NrLokalu>
+            <etd:Miejscowosc>Zabrze</etd:Miejscowosc>
+            <etd:KodPocztowy>41-819</etd:KodPocztowy>
+            <etd:Poczta>Zabrze</etd:Poczta>
+        </AdresPodmiotu>
+    </Podmiot1>
+    <NumerRachunku>PL95845700082007005311710001</NumerRachunku>
+    <Salda>
+        <SaldoPoczatkowe>1400.00</SaldoPoczatkowe>
+        <SaldoKoncowe>1738.47</SaldoKoncowe>
+    </Salda>
+    <WyciagWiersz  typ="G" >
+        <NumerWiersza>1</NumerWiersza>
+        <DataOperacji>2016-05-15</DataOperacji>
+        <NazwaPodmiotu>Trzeci kontrahent  jgjhg jhgjh</NazwaPodmiotu>
+        <OpisOperacji>Wpłata Zc 8273</OpisOperacji>
+        <KwotaOperacji>500.00</KwotaOperacji>
+        <SaldoOperacji>1900.00</SaldoOperacji>
+    </WyciagWiersz>
+    <WyciagWiersz  typ="G" >
+        <NumerWiersza>2</NumerWiersza>
+        <DataOperacji>2016-05-15</DataOperacji>
+        <NazwaPodmiotu>Inny  afhadh adhadgh</NazwaPodmiotu>
+        <OpisOperacji>zakpłata za zakup</OpisOperacji>
+        <KwotaOperacji>-55.00</KwotaOperacji>
+        <SaldoOperacji>1845.00</SaldoOperacji>
+    </WyciagWiersz>
+    <WyciagWiersz  typ="G" >
+        <NumerWiersza>3</NumerWiersza>
+        <DataOperacji>2016-05-15</DataOperacji>
+        <NazwaPodmiotu>Dostawca PZ  wete qeyqe</NazwaPodmiotu>
+        <OpisOperacji>Z.zob.444457&#x2F;16-FZ 0001&#x2F;16</OpisOperacji>
+        <KwotaOperacji>-136.53</KwotaOperacji>
+        <SaldoOperacji>1708.47</SaldoOperacji>
+    </WyciagWiersz>
+    <WyciagWiersz  typ="G" >
+        <NumerWiersza>4</NumerWiersza>
+        <DataOperacji>2016-05-15</DataOperacji>
+        <NazwaPodmiotu>Kowalsli  346q34 earytae</NazwaPodmiotu>
+        <OpisOperacji>wpłata do kasy</OpisOperacji>
+        <KwotaOperacji>30.00</KwotaOperacji>
+        <SaldoOperacji>1738.47</SaldoOperacji>
+    </WyciagWiersz>
+    <WyciagCtrl>
+        <LiczbaWierszy>4</LiczbaWierszy>
+        <SumaObciazen>191.53</SumaObciazen>
+        <SumaUznan>530.00</SumaUznan>
+    </WyciagCtrl>
+</JPK>
