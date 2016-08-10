@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<JPK xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://jpk.mf.gov.pl/wzor/2016/03/09/03094/" xmlns:etd="http://crd.gov.pl/xml/schematy/dziedzinowe/mf/2016/01/25/eD/DefinicjeTypy/"  >
+    <Naglowek>
+        <KodFormularza  kodSystemowy="JPK_VAT (1)"  wersjaSchemy="1-0" >JPK_VAT</KodFormularza>
+        <WariantFormularza>1</WariantFormularza>
+        <CelZlozenia>1</CelZlozenia>
+        <DataWytworzeniaJPK>2016-07-20T23:40:46Z</DataWytworzeniaJPK>
+        <DataOd>2016-07-01</DataOd>
+        <DataDo>2016-07-31</DataDo>
+        <DomyslnyKodWaluty>PLN</DomyslnyKodWaluty>
+        <KodUrzedu>2433</KodUrzedu>
+    </Naglowek>
+    <Podmiot1>
+        <IdentyfikatorPodmiotu>
+            <etd:NIP>6491001784</etd:NIP>
+            <etd:PelnaNazwa>podmiot</etd:PelnaNazwa>
+            <etd:REGON>272572754</etd:REGON>
+        </IdentyfikatorPodmiotu>
+        <AdresPodmiotu>
+            <etd:KodKraju>PL</etd:KodKraju>
+            <etd:Wojewodztwo>sląskie</etd:Wojewodztwo>
+            <etd:Powiat>zabze</etd:Powiat>
+            <etd:Gmina>zabrze</etd:Gmina>
+            <etd:Ulica>pośpiecha</etd:Ulica>
+            <etd:NrDomu>22</etd:NrDomu>
+            <etd:NrLokalu>23</etd:NrLokalu>
+            <etd:Miejscowosc>zabrze</etd:Miejscowosc>
+            <etd:KodPocztowy>41-800</etd:KodPocztowy>
+            <etd:Poczta>zabrze</etd:Poczta>
+        </AdresPodmiotu>
+    </Podmiot1>
+    <SprzedazWiersz  typ="G" >
+        <LpSprzedazy>1</LpSprzedazy>
+        <DataSprzedazy>2016-07-08</DataSprzedazy>
+        <DataWystawienia>2016-07-08</DataWystawienia>
+        <NrDokumentu>FA 0001&#x2F;16</NrDokumentu>
+        <NazwaNabywcy>MADAR</NazwaNabywcy>
+        <AdresNabywcy>41-819 Zabrze   Skłodowskiej 12d&#x2F;3  </AdresNabywcy>
+        <K_10>0.00</K_10>
+        <K_11>0.00</K_11>
+        <K_12>0.00</K_12>
+        <K_13>0.00</K_13>
+        <K_14>0.00</K_14>
+        <K_15>0.00</K_15>
+        <K_16>0.00</K_16>
+        <K_17>0.00</K_17>
+        <K_18>0.00</K_18>
+        <K_19>300.00</K_19>
+        <K_20>69.00</K_20>
+        <K_21>0.00</K_21>
+        <K_22>0.00</K_22>
+        <K_23>0.00</K_23>
+        <K_24>0.00</K_24>
+        <K_25>0.00</K_25>
+        <K_26>0.00</K_26>
+        <K_27>0.00</K_27>
+        <K_28>0.00</K_28>
+        <K_29>0.00</K_29>
+        <K_30>0.00</K_30>
+        <K_31>0.00</K_31>
+        <K_32>0.00</K_32>
+        <K_33>0.00</K_33>
+        <K_34>0.00</K_34>
+        <K_35>0.00</K_35>
+        <K_36>0.00</K_36>
+        <K_37>0.00</K_37>
+        <K_38>0.00</K_38>
+    </SprzedazWiersz>
+    <SprzedazCtrl>
+        <LiczbaWierszySprzedazy>1</LiczbaWierszySprzedazy>
+        <PodatekNalezny>69.00</PodatekNalezny>
+    </SprzedazCtrl>
+    <ZakupWiersz  typ="G" >
+        <LpZakupu>1</LpZakupu>
+        <NazwaWystawcy>MADAR</NazwaWystawcy>
+        <AdresWystawcy>41-819 Zabrze   Skłodowskiej 12d&#x2F;3  </AdresWystawcy>
+        <NrIdWystawcy>6481007070</NrIdWystawcy>
+        <NrFaktury>7215&#x2F;33</NrFaktury>
+        <K_42>0.00</K_42>
+        <K_43>0.00</K_43>
+        <K_44>150.00</K_44>
+        <K_45>34.50</K_45>
+        <K_46>0.00</K_46>
+        <K_47>0.00</K_47>
+        <K_48>0.00</K_48>
+    </ZakupWiersz>
+    <ZakupCtrl>
+        <LiczbaWierszyZakupow>1</LiczbaWierszyZakupow>
+        <PodatekNaliczony>34.50</PodatekNaliczony>
+    </ZakupCtrl>
+</JPK>
