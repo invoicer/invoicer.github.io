@@ -1,0 +1,139 @@
+<JPK xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://jpk.mf.gov.pl/wzor/2016/03/09/03093/"  xmlns:etd="http://crd.gov.pl/xml/schematy/dziedzinowe/mf/2016/01/25/eD/DefinicjeTypy/" >
+	<Naglowek>
+		<KodFormularza  kodSystemowy="JPK_MAG (1)" wersjaSchemy="1-0" >JPK_MAG</KodFormularza>
+		<WariantFormularza>1</WariantFormularza>
+		<CelZlozenia>1</CelZlozenia>
+		<DataWytworzeniaJPK>2016-08-16T09:10:49Z</DataWytworzeniaJPK>
+		<DataOd>2016-01-01</DataOd>
+		<DataDo>2016-12-31</DataDo>
+		<DomyslnyKodWaluty>PLN</DomyslnyKodWaluty>
+		<KodUrzedu>2433</KodUrzedu>
+	</Naglowek>
+	<Podmiot1>
+		<IdentyfikatorPodmiotu>
+			<etd:NIP>6481007070</etd:NIP>
+			<etd:PelnaNazwa>MADAR Sp. z o.o. &lt;bb&gt;</etd:PelnaNazwa>
+			<etd:REGON>272572754</etd:REGON>
+		</IdentyfikatorPodmiotu>
+		<AdresPodmiotu>
+			<etd:KodKraju>PL</etd:KodKraju>
+			<etd:Wojewodztwo>śląskie</etd:Wojewodztwo>
+			<etd:Powiat>Zabrze</etd:Powiat>
+			<etd:Gmina>Zabrze</etd:Gmina>
+			<etd:Ulica>Skłodowskiej </etd:Ulica>
+			<etd:NrDomu>12d</etd:NrDomu>
+			<etd:NrLokalu>3</etd:NrLokalu>
+			<etd:Miejscowosc>Zabrze</etd:Miejscowosc>
+			<etd:KodPocztowy>41-819</etd:KodPocztowy>
+			<etd:Poczta>Zabrze</etd:Poczta>
+		</AdresPodmiotu>
+	</Podmiot1>
+	<Magazyn> nr 5 : </Magazyn>
+	<PZ>
+		<PZWartosc>
+			<NumerPZ>PZ   45/D/16</NumerPZ>
+			<DataPZ>2016-06-10</DataPZ>
+			<WartoscPZ>4795.00</WartoscPZ>
+			<DataOtrzymaniaPZ>2016-06-10</DataOtrzymaniaPZ>
+			<Dostawca>MaDAR 123456789012345678901234  druga 123456789012345678901234</Dostawca>
+			<NumerFaPZ>6667/16</NumerFaPZ>
+			<DataFaPZ>2016-06-05</DataFaPZ>
+		</PZWartosc>
+		<PZWiersz>
+			<Numer2PZ>PZ   45/D/16</Numer2PZ>
+			<KodTowaruPZ>45666</KodTowaruPZ>
+			<NazwaTowaruPZ>Towar 3</NazwaTowaruPZ>
+			<IloscPrzyjetaPZ>10.000000</IloscPrzyjetaPZ>
+			<JednostkaMiaryPZ>szt</JednostkaMiaryPZ>
+			<CenaJednPZ>205.00</CenaJednPZ>
+			<WartoscPozycjiPZ>2050.00</WartoscPozycjiPZ>
+		</PZWiersz>
+		<PZWiersz>
+			<Numer2PZ>PZ   45/D/16</Numer2PZ>
+			<KodTowaruPZ>32145</KodTowaruPZ>
+			<NazwaTowaruPZ>Towar 2</NazwaTowaruPZ>
+			<IloscPrzyjetaPZ>9.000000</IloscPrzyjetaPZ>
+			<JednostkaMiaryPZ>mb</JednostkaMiaryPZ>
+			<CenaJednPZ>305.00</CenaJednPZ>
+			<WartoscPozycjiPZ>2745.00</WartoscPozycjiPZ>
+		</PZWiersz>
+		<PZCtrl>
+			<LiczbaPZ>1</LiczbaPZ>
+			<SumaPZ>4795.00</SumaPZ>
+		</PZCtrl>
+	</PZ>
+	<WZ>
+		<WZWartosc>
+			<NumerWZ>FA    1/D/16</NumerWZ>
+			<DataWZ>2016-06-16</DataWZ>
+			<WartoscWZ>1945.00</WartoscWZ>
+			<DataWydaniaWZ>2016-06-16</DataWydaniaWZ>
+			<OdbiorcaWZ>MaDAR 123456789012345678901234  druga 123456789012345678901234</OdbiorcaWZ>
+		</WZWartosc>
+		<WZWiersz>
+			<Numer2WZ>FA    1/D/16</Numer2WZ>
+			<KodTowaruWZ>45666</KodTowaruWZ>
+			<NazwaTowaruWZ>Towar 3</NazwaTowaruWZ>
+			<IloscWydanaWZ>8.000000</IloscWydanaWZ>
+			<JednostkaMiaryWZ>szt</JednostkaMiaryWZ>
+			<CenaJednWZ>205.00</CenaJednWZ>
+			<WartoscPozycjiWZ>1640.00</WartoscPozycjiWZ>
+		</WZWiersz>
+		<WZWiersz>
+			<Numer2WZ>FA    1/D/16</Numer2WZ>
+			<KodTowaruWZ>32145</KodTowaruWZ>
+			<NazwaTowaruWZ>Towar 2</NazwaTowaruWZ>
+			<IloscWydanaWZ>1.000000</IloscWydanaWZ>
+			<JednostkaMiaryWZ>mb</JednostkaMiaryWZ>
+			<CenaJednWZ>305.00</CenaJednWZ>
+			<WartoscPozycjiWZ>305.00</WartoscPozycjiWZ>
+		</WZWiersz>
+		<WZCtrl>
+			<LiczbaWZ>1</LiczbaWZ>
+			<SumaWZ>1945.00</SumaWZ>
+		</WZCtrl>
+	</WZ>
+	<RW>
+		<RWWartosc>
+			<NumerRW>RW    1/D/16</NumerRW>
+			<DataRW>2016-06-20</DataRW>
+			<WartoscRW>410.00</WartoscRW>
+			<DataWydaniaRW>2016-06-20</DataWydaniaRW>
+			<DokadRW>MAG  hgfhgf ghfhgf</DokadRW>
+		</RWWartosc>
+		<RWWiersz>
+			<Numer2RW>RW    1/D/16</Numer2RW>
+			<KodTowaruRW>45666</KodTowaruRW>
+			<NazwaTowaruRW>Towar 3</NazwaTowaruRW>
+			<IloscWydanaRW>2.000000</IloscWydanaRW>
+			<JednostkaMiaryRW>szt</JednostkaMiaryRW>
+			<CenaJednRW>205.00</CenaJednRW>
+			<WartoscPozycjiRW>410.00</WartoscPozycjiRW>
+		</RWWiersz>
+		<RWCtrl>
+			<LiczbaRW>1</LiczbaRW>
+			<SumaRW>410.00</SumaRW>
+		</RWCtrl>
+	</RW>
+	<MM>
+		<MMWartosc>
+			<NumerMM>MM    1/D/16</NumerMM>
+			<DataMM>2016-08-10</DataMM>
+			<WartoscMM>305.00</WartoscMM>
+			<DataWydaniaMM>2016-08-10</DataWydaniaMM>
+		</MMWartosc>
+		<MMWiersz>
+			<Numer2MM>MM    1/D/16</Numer2MM>
+			<KodTowaruMM>32145</KodTowaruMM>
+			<NazwaTowaruMM>Towar 2</NazwaTowaruMM>
+			<IloscWydanaMM>1.000000</IloscWydanaMM>
+			<JednostkaMiaryMM>mb</JednostkaMiaryMM>
+			<CenaJednMM>305.00</CenaJednMM>
+			<WartoscPozycjiMM>305.00</WartoscPozycjiMM>
+		</MMWiersz>
+		<MMCtrl>
+			<LiczbaMM>1</LiczbaMM>
+			<SumaMM>305.00</SumaMM>
+		</MMCtrl>
+	</MM>
+</JPK>
