@@ -1,0 +1,5 @@
+faktura_nr	tresc	klient_nazwa	ulica	kod_pocztowy	miejscowosc	nip	K_19	K_20	K_44	K_45	DATA_FAKTURY	DATA_OTRZYMANIA	termin_platnosci	typ	opis
+123/2016		MADAR Spółka	Kopernika	44-110	Gliwice	6481007070		0	1000	230	30.07.2016	30.07.2016	15.08.2016	KSZ	mat.biurowe
+18408	tresc4	F.H.U. DACH Andrzej	ul. Pierwiosnków 5	44-100	Gliwice	547-102-75-96	1690	388,7			19.07.2016	20.07.2016	9.08.2016	FV	sprzedaż towarów
+18409	tresc5	RAK-WSKI	ul. Szczecińska 1	75-122	Koszalin	6691286107	243,1	55,91			19.07.2016	20.07.2016	9.08.2016	FV	sprzedaż towarów
+456/23	tresc6	"Przedsiębiorstwo Wielobranżowe ""TADGEN"" T.E. Bielińscy S.C."	ul. Karnowska 34	89-100	Nakło nad Notecią	 558-000-08-63 			1630	374,9	20.07.2016	21.07.2016	21.08.2016	PZ	zakup towaru
