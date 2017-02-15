@@ -1,0 +1,7 @@
+"faktura_nr"	"tresc"	"klient_nazwa"	"ulica"	"kod_pocztowy"	"miejscowosc"	"nip"		"K_19"	"K_20"	"K_27"	"K_28"	"K_29"	"K_30"	"K_45"	"K_46"	"DATA_FAKTURY"	"DATA_OTRZYMANIA"	"termin_platnosci"	"typ"	"opis"
+"123/2016"		"MADAR Spółka"	"Kopernika"	"44-110"	"Gliwice"	6481007070			0							"30.01.2017"	"30.01.2017"	"15.02.2017"	"KSZ"	"mat.biurowe"
+18408	"tresc4"	"F.H.U. DACH Andrzej"	"ul. Pierwiosnków 5"	"44-100"	"Gliwice"	"547-102-75-96"		1690	388,7							"19.01.2017"	"20.01.2017"	"9.02.2017"	"FV"	"sprzedaż towarów"
+18409	"tresc5"	"RAK-WSKI"	"ul. Szczecińska 1"	"75-122"	"Koszalin"	6691286107				56	12,88					"19.01.2017"	"20.01.2017"	"9.02.2017"	"FV"	"sprzedaż towarów"
+"456/23"	"tresc6"	"Przedsiębiorstwo Wielobranżowe ""TADGEN"" T.E. Bielińscy S.C."	"ul. Karnowska 34"	"89-100"	"Nakło nad Notecią"	" 558-000-08-63 "						44	10,12			"20.01.2017"	"21.01.2017"	"21.02.2017"	"PZ"	"zakup towaru"
+18409	"tresc5"	"RAK-WSKI"	"ul. Szczecińska 1"	"75-122"	"Koszalin"	6691286107								56	12,88	"19.01.2017"	"20.01.2017"	"9.02.2017"	"FV"	"zakup towaru"
+"456/23"	"tresc6"	"Przedsiębiorstwo Wielobranżowe ""TADGEN"" T.E. Bielińscy S.C."	"ul. Karnowska 34"	"89-100"	"Nakło nad Notecią"	" 558-000-08-63 "								44	10,12	"20.01.2017"	"21.01.2017"	"21.02.2017"	"PZ"	"zakup towaru"
