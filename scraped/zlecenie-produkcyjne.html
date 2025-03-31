@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>zlecenie-produkcyjne</title>
+  <style>
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+  <link rel="stylesheet" href="tufte.css" />
+</head>
+<body>
+<nav id="TOC" role="doc-toc">
+<ul>
+<li><a href="#zlecenie-produkcyjne"
+id="toc-zlecenie-produkcyjne">zlecenie produkcyjne</a>
+<ul>
+<li><a href="#definition" id="toc-definition">Definition</a></li>
+<li><a href="#sources" id="toc-sources">Sources</a></li>
+</ul></li>
+</ul>
+</nav>
+<h1 id="zlecenie-produkcyjne">zlecenie produkcyjne</h1>
+<h2 id="definition">Definition</h2>
+<p>Oto definicja tagu ‘zlecenie produkcyjne’ w kontekście systemu Madar
+ERP, bazująca na dostarczonych artykułach:</p>
+<p><strong>1. Definicja:</strong></p>
+<p>‘Zlecenie produkcyjne’ w systemie Madar to tag oznaczający dokument
+lub funkcjonalność związaną z planowaniem, realizacją i rozliczaniem
+procesów produkcyjnych, w szczególności w kontekście zużycia materiałów
+i wytwarzania wyrobów. Reprezentuje konkretne zamówienie na wytworzenie
+określonego produktu, z uwzględnieniem potrzebnych materiałów i
+zasobów.</p>
+<p><strong>2. Główne zastosowania i konteksty:</strong></p>
+<ul>
+<li><strong>Planowanie produkcji:</strong> Tworzenie i zarządzanie
+zleceniami produkcyjnymi w oparciu o receptury i plany produkcji.</li>
+<li><strong>Ewidencja zużycia materiałów:</strong> Rejestrowanie
+pobrania materiałów z magazynu na potrzeby konkretnego zlecenia
+produkcyjnego.</li>
+<li><strong>Przyjęcie wyrobów gotowych:</strong> Ewidencjonowanie
+wytworzonych produktów w magazynie wyrobów gotowych po zakończeniu
+zlecenia produkcyjnego.</li>
+<li><strong>Rozliczanie produkcji:</strong> Analiza kosztów związanych z
+realizacją zlecenia produkcyjnego, w tym zużytych materiałów i czasu
+pracy.</li>
+<li><strong>Blokada dokumentów:</strong> Możliwość zablokowania zlecenia
+produkcyjnego do czasu jego akceptacji przez uprawnionego użytkownika,
+co zapewnia kontrolę nad procesem produkcyjnym.</li>
+<li><strong>Produkcja jednostkowa i niestandardowa:</strong> Szczególnie
+przydatne w przypadkach, gdy produkcja nie jest masowa i wymaga
+indywidualnego podejścia.</li>
+</ul>
+<p><strong>3. Powiązane funkcje i moduły:</strong></p>
+<ul>
+<li><strong>Produkcja:</strong> Główny moduł, w którym tworzone i
+zarządzane są zlecenia produkcyjne.</li>
+<li><strong>Magazyn:</strong> Zarządzanie stanami magazynowymi
+materiałów i wyrobów gotowych, powiązane z pobieraniem materiałów i
+przyjmowaniem wyrobów w ramach zleceń produkcyjnych.</li>
+<li><strong>Handel:</strong> Moduł, w którym mogą być generowane
+zamówienia na produkcję, które następnie przekształcane są w zlecenia
+produkcyjne.</li>
+<li><strong>Administracja:</strong> Konfiguracja blokady zleceń
+produkcyjnych.</li>
+<li><strong>Receptury:</strong> Definiowanie składu materiałowego
+wyrobów, wykorzystywane przy tworzeniu zleceń produkcyjnych.</li>
+<li><strong>Plan produkcji:</strong> Tworzenie harmonogramów produkcji,
+które mogą być powiązane ze zleceniami produkcyjnymi.</li>
+<li><strong>Ewidencja czasu pracy:</strong> Rejestrowanie czasu pracy
+pracowników zaangażowanych w realizację zleceń produkcyjnych.</li>
+<li><strong>Narzędziownia:</strong> Ewidencja i rezerwacja narzędzi
+wykorzystywanych w procesie produkcyjnym.</li>
+<li><strong>Rozliczenia materiałowe (PROZ):</strong> Opcjonalne
+rozliczenie faktycznego zużycia materiałów w zleceniu produkcyjnym.</li>
+<li><strong>Karty pracy:</strong> Rejestracja kosztów i czasu pracy,
+realizacja zleceń z podziałem na gniazda, pracowników, zmiany oraz
+rejestracja pomiarów.</li>
+</ul>
+<p><strong>4. Dodatkowe informacje:</strong></p>
+<ul>
+<li>‘Zlecenie produkcyjne’ jest powiązane z ‘zleceniem materiałowym’
+(PROD), które jest używane do pobierania materiałów na produkcję.</li>
+<li>System Madar umożliwia blokowanie zleceń produkcyjnych, co wymaga
+akceptacji uprawnionego użytkownika przed rozpoczęciem realizacji
+zlecenia. Blokadę konfiguruje się poprzez komendę
+<code>blokadaProdukcja=1</code> w opcji Administracja - operacje - dane
+systemu.</li>
+<li>Status zlecenia produkcyjnego można zmieniać w opcji Produkcja -
+zlecenie materiałowe - status - zwykłe.</li>
+<li>Tag ‘zlecenie produkcyjne’ jest używany w kontekście rozliczania
+zużycia materiałów i przyjęcia wyrobów gotowych.</li>
+<li>System Madar oferuje zestawienia i raporty dotyczące zleceń
+produkcyjnych, takie jak zapotrzebowania materiałowe i harmonogramowanie
+produkcji.</li>
+</ul>
+<h2 id="sources">Sources</h2>
+<ul>
+<li>Blokada dokumentów - MM, PZ, zlecenie materiałowe ∴:
+[2015-07-01-blokada-dokumentów-mm-pz-zlecenie-materiałowe.md]</li>
+<li>Produkcja •: [2017-03-01-produkcja.md]</li>
+</ul>
+</body>
+</html>

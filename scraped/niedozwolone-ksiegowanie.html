@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>niedozwolone-ksiegowanie</title>
+  <style>
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+  <link rel="stylesheet" href="tufte.css" />
+</head>
+<body>
+<nav id="TOC" role="doc-toc">
+<ul>
+<li><a href="#niedozwolone-księgowanie"
+id="toc-niedozwolone-księgowanie">niedozwolone księgowanie</a>
+<ul>
+<li><a href="#definition" id="toc-definition">Definition</a></li>
+<li><a href="#sources" id="toc-sources">Sources</a></li>
+</ul></li>
+</ul>
+</nav>
+<h1 id="niedozwolone-księgowanie">niedozwolone księgowanie</h1>
+<h2 id="definition">Definition</h2>
+<p>Oto definicja tagu ‘niedozwolone księgowanie’ w kontekście systemu
+Madar ERP, bazująca na dostarczonym fragmencie:</p>
+<p><strong>1. Definicja:</strong> ‘Niedozwolone księgowanie’ w Madar ERP
+oznacza sytuację, w której system wykrywa próbę zapisu dokumentu
+księgowego (często generowanego automatycznie), która nie może być
+zrealizowana z powodu braku lub nieprawidłowej konfiguracji kont
+księgowych. Sygnalizuje to błąd konfiguracji, który uniemożliwia
+poprawne zaksięgowanie operacji.</p>
+<p><strong>2. Główne przypadki użycia/konteksty:</strong></p>
+<ul>
+<li><strong>Dokumenty MM (Gospodarka Magazynowa):</strong> Najczęściej
+tag ten pojawia się w kontekście dokumentów związanych z przesunięciami
+magazynowymi (MM). Próba zapisu takiego dokumentu, gdy nie są
+zdefiniowane konta księgowe dla magazynu źródłowego lub docelowego,
+skutkuje komunikatem o ‘niedozwolonym księgowaniu’.</li>
+<li><strong>Automatyczne księgowania:</strong> Tag odnosi się do
+sytuacji, w których system Madar próbuje automatycznie wygenerować
+zapisy księgowe na podstawie operacji w innych modułach (np.
+przesunięcia magazynowe).</li>
+</ul>
+<p><strong>3. Powiązane funkcje/moduły:</strong></p>
+<ul>
+<li><strong>Księgowość (FK):</strong> Tag jest ściśle powiązany z
+modułem księgowym (Finanse i Księgowość). Rozwiązanie problemu
+‘niedozwolonego księgowania’ wymaga interwencji w ustawieniach
+księgowych.</li>
+<li><strong>Gospodarka Magazynowa (MM):</strong> Dokumenty MM są częstym
+źródłem problemów z ‘niedozwolonym księgowaniem’, ponieważ wymagają
+powiązania magazynów z odpowiednimi kontami księgowymi.</li>
+<li><strong>Dane dla FK:</strong> Konfiguracja kont księgowych dla
+magazynów znajduje się w opcjach związanych z danymi dla FK (Finanse i
+Księgowość).</li>
+</ul>
+<p><strong>4. Dodatkowe informacje:</strong></p>
+<ul>
+<li><strong>Komunikat o błędzie:</strong> ‘Niedozwolone księgowanie’
+zazwyczaj objawia się komunikatem o błędzie informującym o niemożności
+zapisu dokumentu i wskazującym na brakujące lub nieprawidłowe konta
+księgowe.</li>
+<li><strong>Konfiguracja kont:</strong> Rozwiązanie problemu polega na
+wejściu do ustawień danych dla FK, przejście do zakładki “Magazyny” i
+przypisanie odpowiednich kont księgowych do każdego magazynu.</li>
+<li><strong>Automatyzacja:</strong> Tag wskazuje na problem z
+automatycznym księgowaniem, które jest kluczową funkcją systemów ERP,
+mającą na celu usprawnienie procesów biznesowych. Poprawne
+skonfigurowanie kont księgowych jest niezbędne do prawidłowego działania
+tej automatyzacji.</li>
+</ul>
+<h2 id="sources">Sources</h2>
+<ul>
+<li>Komunikat: niedozwolone księgowanie z konta … na …:
+[2015-04-01-komunikat-niedozwolone-księgowanie-z-konta-na.md]</li>
+</ul>
+</body>
+</html>

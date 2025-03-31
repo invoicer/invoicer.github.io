@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>dane-dla-fk</title>
+  <style>
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+  <link rel="stylesheet" href="tufte.css" />
+</head>
+<body>
+<nav id="TOC" role="doc-toc">
+<ul>
+<li><a href="#dane-dla-fk" id="toc-dane-dla-fk">dane dla FK</a>
+<ul>
+<li><a href="#definition" id="toc-definition">Definition</a></li>
+<li><a href="#sources" id="toc-sources">Sources</a></li>
+</ul></li>
+</ul>
+</nav>
+<h1 id="dane-dla-fk">dane dla FK</h1>
+<h2 id="definition">Definition</h2>
+<p>Oto definicja tagu “dane dla FK” w kontekście systemu Madar ERP,
+bazująca na dostarczonym fragmencie:</p>
+<p><strong>1. Definicja:</strong></p>
+<p>“Dane dla FK” w systemie Madar ERP odnosi się do konfiguracji i
+ustawień niezbędnych do prawidłowego automatycznego księgowania operacji
+gospodarczych. Tag ten wskazuje na informacje, które łączą moduły
+operacyjne (np. magazynowy) z modułem księgowym (FK - Finanse i
+Księgowość).</p>
+<p><strong>2. Główne przypadki użycia:</strong></p>
+<ul>
+<li><strong>Konfiguracja kont księgowych dla różnych elementów
+systemu:</strong> Najczęściej dotyczy to przypisywania odpowiednich kont
+księgowych do magazynów, aby transakcje magazynowe (MM - Materiały i
+Magazyn) mogły być automatycznie księgowane.</li>
+<li><strong>Rozwiązywanie problemów z księgowaniem:</strong> Komunikat o
+“niedozwolonym księgowaniu” często wskazuje na brakujące lub
+nieprawidłowe dane w konfiguracji “dane dla FK”.</li>
+<li><strong>Ustawienia wpływające na automatyczne księgowanie
+dokumentów:</strong> Wszelkie parametry i konfiguracje, które
+determinują, jak i na jakie konta księgowe będą księgowane różne typy
+dokumentów.</li>
+</ul>
+<p><strong>3. Powiązane moduły i funkcje:</strong></p>
+<ul>
+<li><strong>Księgowość (FK - Finanse i Księgowość):</strong> Moduł, w
+którym znajdują się opcje konfiguracji “dane dla FK”.</li>
+<li><strong>Magazyn (MM - Materiały i Magazyn):</strong> Moduł, którego
+operacje (np. przyjęcia, wydania) wymagają prawidłowej konfiguracji
+“dane dla FK” w celu automatycznego księgowania.</li>
+<li><strong>Inne moduły operacyjne:</strong> W zależności od
+konfiguracji systemu, “dane dla FK” mogą być powiązane z innymi
+modułami, które generują dokumenty wymagające księgowania (np.
+produkcja, sprzedaż).</li>
+</ul>
+<p><strong>4. Dodatkowe informacje:</strong></p>
+<ul>
+<li>“Dane dla FK” to kluczowy element zapewniający spójność i
+automatyzację procesów księgowych w systemie Madar ERP.</li>
+<li>Prawidłowa konfiguracja “danych dla FK” jest niezbędna do uniknięcia
+błędów księgowych i zapewnienia zgodności z przepisami.</li>
+<li>Dostęp do konfiguracji “dane dla FK” powinien być ograniczony do
+osób odpowiedzialnych za księgowość i konfigurację systemu.</li>
+</ul>
+<h2 id="sources">Sources</h2>
+<ul>
+<li>Komunikat: niedozwolone księgowanie z konta … na …:
+[2015-04-01-komunikat-niedozwolone-księgowanie-z-konta-na.md]</li>
+</ul>
+</body>
+</html>
