@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>blokada</title>
+  <style>
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+  <link rel="stylesheet" href="tufte.css" />
+</head>
+<body>
+<nav id="TOC" role="doc-toc">
+<ul>
+<li><a href="#blokada" id="toc-blokada">blokada</a>
+<ul>
+<li><a href="#definition" id="toc-definition">Definition</a></li>
+<li><a href="#sources" id="toc-sources">Sources</a></li>
+</ul></li>
+</ul>
+</nav>
+<h1 id="blokada">blokada</h1>
+<h2 id="definition">Definition</h2>
+<p>Oto definicja tagu ‘blokada’ w kontekście systemu Madar ERP, bazująca
+na dostarczonych materiałach:</p>
+<p><strong>1. Definicja:</strong></p>
+<p>Tag ‘blokada’ w systemie Madar odnosi się do mechanizmu blokowania
+dokumentów (takich jak MM, PZ, zlecenia materiałowe) po ich
+wprowadzeniu, wymagającego zatwierdzenia przez uprawnionego użytkownika
+przed dalszym przetwarzaniem. Jest to funkcja kontrolna, która zapobiega
+nieautoryzowanym zmianom stanów magazynowych lub realizacji zleceń
+produkcyjnych.</p>
+<p><strong>2. Główne przypadki użycia:</strong></p>
+<ul>
+<li><strong>Kontrola przepływu towarów między magazynami (MM):</strong>
+Zapewnienie, że przesunięcie międzymagazynowe zostanie zatwierdzone po
+fizycznym dotarciu towaru do magazynu docelowego. Zapobiega to
+rozbieżnościom między stanem faktycznym a stanem w systemie.</li>
+<li><strong>Kontrola przyjęć zewnętrznych (PZ):</strong> Wymaganie
+zatwierdzenia dokumentu przyjęcia z zewnątrz, zanim towary zostaną
+oficjalnie dodane do stanu magazynowego. Może być używane do weryfikacji
+zgodności dostawy z zamówieniem.</li>
+<li><strong>Kontrola zleceń materiałowych (produkcyjnych):</strong>
+Wymaganie zatwierdzenia zlecenia produkcyjnego przed rozpoczęciem jego
+realizacji. Może być używane do weryfikacji dostępności materiałów lub
+zatwierdzenia planu produkcyjnego.</li>
+<li><strong>Podział obowiązków:</strong> Umożliwia rozdzielenie
+odpowiedzialności za wprowadzenie dokumentu i jego zatwierdzenie, co
+zwiększa bezpieczeństwo i kontrolę.</li>
+</ul>
+<p><strong>3. Powiązane funkcje i moduły:</strong></p>
+<ul>
+<li><strong>Handel:</strong> Moduł odpowiedzialny za dokumenty MM
+(przesunięcia międzymagazynowe) i PZ (przyjęcia zewnętrzne). Funkcje
+zmiany statusu dokumentów MM i PZ są używane do odblokowywania
+dokumentów.</li>
+<li><strong>Magazyn:</strong> Moduł, którego stany są modyfikowane po
+odblokowaniu dokumentów MM i PZ.</li>
+<li><strong>Produkcja:</strong> Moduł odpowiedzialny za zlecenia
+materiałowe (produkcyjne). Funkcja zmiany statusu zlecenia materiałowego
+jest używana do odblokowywania zleceń.</li>
+<li><strong>Administracja:</strong> Moduł, w którym konfiguruje się
+blokady dla poszczególnych typów dokumentów (MM, PZ, zlecenia
+materiałowe) poprzez dodanie odpowiednich komend (
+<code>blokadaMM=1</code>, <code>blokadaPZ=1</code>,
+<code>blokadaProdukcja=1</code>) w danych systemu.</li>
+</ul>
+<p><strong>4. Dodatkowe informacje:</strong></p>
+<ul>
+<li>Blokada jest domyślnie włączona po wprowadzeniu dokumentu.</li>
+<li>Odblokowanie dokumentu wymaga uprawnień.</li>
+<li>Odblokowanie dokumentu powoduje faktyczne zmiany w systemie (np.
+zmiana stanów magazynowych, rozpoczęcie realizacji zlecenia).</li>
+<li>Konfiguracja blokad odbywa się poprzez dodanie odpowiednich komend w
+module Administracja.</li>
+<li>Tag ‘blokada’ jest powiązany z innymi tagami, takimi jak ‘Handel’,
+‘magazyn’, ‘MM’, ‘Produkcja’, ‘PZ’, ‘zlecenie materiałowe’, ‘zlecenie
+produkcyjne’, co wskazuje na jego związek z tymi obszarami
+funkcjonalnymi systemu Madar.</li>
+</ul>
+<h2 id="sources">Sources</h2>
+<ul>
+<li>Blokada dokumentów - MM, PZ, zlecenie materiałowe ∴:
+[2015-07-01-blokada-dokumentów-mm-pz-zlecenie-materiałowe.md]</li>
+</ul>
+</body>
+</html>

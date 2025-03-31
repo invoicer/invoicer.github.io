@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>dekretacja</title>
+  <style>
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+  <link rel="stylesheet" href="tufte.css" />
+</head>
+<body>
+<nav id="TOC" role="doc-toc">
+<ul>
+<li><a href="#dekretacja" id="toc-dekretacja">dekretacja</a>
+<ul>
+<li><a href="#definition" id="toc-definition">Definition</a></li>
+<li><a href="#sources" id="toc-sources">Sources</a></li>
+</ul></li>
+</ul>
+</nav>
+<h1 id="dekretacja">dekretacja</h1>
+<h2 id="definition">Definition</h2>
+<p>Oto kompleksowa definicja tagu ‘dekretacja’ w kontekście systemu
+Madar ERP, uwzględniająca dostarczone artykuły:</p>
+<p><strong>1. Definicja:</strong></p>
+<p>‘Dekretacja’ w systemie Madar ERP odnosi się do procesu przypisywania
+dokumentów (np. faktur sprzedaży, raportów kasowych, zleceń
+materiałowych) do odpowiednich kont księgowych w celu ich zaksięgowania.
+Jest to etap pośredni między wprowadzeniem danych do systemu a ich
+ostatecznym ujęciem w księgach rachunkowych.</p>
+<p><strong>2. Główne zastosowania/konteksty:</strong></p>
+<ul>
+<li><strong>Księgowość (FK):</strong> Dekretacja raportów
+kasowych/bankowych, gdzie przypisuje się operacje do kont
+bankowych/kasowych. Dotyczy to również korekt błędów w
+księgowaniach.</li>
+<li><strong>Handel/Magazyn:</strong> Dekretacja dokumentów sprzedaży
+(faktur VAT i ich korekt), umożliwiająca zmianę ich statusu i
+przypisanie do odpowiednich kont księgowych.</li>
+<li><strong>Produkcja:</strong> Dekretacja zleceń materiałowych,
+pozwalająca na zarządzanie statusem zlecenia (np. “przygotowano”,
+“zablokowane”), kontrolę pakowania surowców i powiązanie z procesem
+produkcyjnym.</li>
+</ul>
+<p><strong>3. Powiązane funkcje/moduły:</strong></p>
+<ul>
+<li><strong>Księga Główna (FK):</strong> Dekretacja jest procesem
+przygotowawczym do zaksięgowania danych w Księdze Głównej.</li>
+<li><strong>Moduł Handlowy/Magazynowy:</strong> Generowanie i dekretacja
+faktur sprzedaży.</li>
+<li><strong>Moduł Produkcyjny:</strong> Dekretacja zleceń materiałowych
+i zarządzanie statusem produkcji.</li>
+<li><strong>Księgowość Danych dla FK:</strong> Ustawienia kont
+księgowych, które są wykorzystywane podczas dekretacji dokumentów z
+modułu handlowego/magazynowego.</li>
+<li><strong>Raporty kasowe/bankowe:</strong> Źródło danych do dekretacji
+w module FK.</li>
+<li><strong>Plan kont:</strong> Wykorzystywany do generowania planu kont
+i przypisywania kont do dekretowanych dokumentów.</li>
+</ul>
+<p><strong>4. Dodatkowe informacje:</strong></p>
+<ul>
+<li><strong>Status dokumentów:</strong> Dekretacja często wiąże się ze
+zmianą statusu dokumentu (np. “zadekretowany”, “przygotowano”,
+“zablokowane”). Statusy te mogą być wykorzystywane do filtrowania i
+zarządzania dokumentami w systemie.</li>
+<li><strong>Edycja kont:</strong> Podczas dekretacji istnieje możliwość
+edycji pól dotyczących wybranych kont księgowych.</li>
+<li><strong>Integracja modułów:</strong> Dekretacja łączy różne moduły
+systemu Madar (np. handel, produkcja, księgowość), zapewniając spójność
+danych i automatyzację procesów księgowych.</li>
+<li><strong>Blokowanie zleceń:</strong> W module produkcyjnym dekretacja
+może służyć do blokowania zleceń materiałowych, co uniemożliwia dalsze
+przetwarzanie wyrobu na stanie magazynowym.</li>
+<li><strong>Filtrowanie:</strong> W listach dekretacyjnych dostępne są
+opcje filtrowania dokumentów według różnych kryteriów (np. kontrahent,
+magazyn, status), co ułatwia wyszukiwanie i zarządzanie danymi.</li>
+<li><strong>Konfiguracja:</strong> Konta używane do dekretacji sprzedaży
+są konfigurowane w “Księgowości Danych dla FK” w zakładce
+“magazyny”.</li>
+</ul>
+<p>Podsumowując, tag ‘dekretacja’ w Madar ERP oznacza proces
+przypisywania dokumentów do kont księgowych, zarządzania ich statusem i
+przygotowywania ich do zaksięgowania w Księdze Głównej. Jest to kluczowy
+element integracji różnych modułów systemu i automatyzacji procesów
+księgowych.</p>
+<h2 id="sources">Sources</h2>
+<ul>
+<li>Typowe błędy “pierwszego księgowania”:
+[2015-06-01-typowe-błędy-pierwszego-księgowania.md]</li>
+<li>Dekretacja sprzedaży [?]: [2016-05-01-dekretacja-sprzedaży.md]</li>
+<li>Dekretacja zleceń materiałowych [?]:
+[2017-03-01-dekretacja-zleceń-materiałowych.md]</li>
+</ul>
+</body>
+</html>
