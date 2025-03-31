@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>handel</title>
+  <style>
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+  <link rel="stylesheet" href="tufte.css" />
+</head>
+<body>
+<nav id="TOC" role="doc-toc">
+<ul>
+<li><a href="#handel" id="toc-handel">Handel</a>
+<ul>
+<li><a href="#definition" id="toc-definition">Definition</a></li>
+<li><a href="#sources" id="toc-sources">Sources</a></li>
+</ul></li>
+</ul>
+</nav>
+<h1 id="handel">Handel</h1>
+<h2 id="definition">Definition</h2>
+<p>Oto definicja tagu ‘Handel’ w kontekście systemu Madar ERP, bazująca
+na dostarczonych artykułach:</p>
+<p><strong>1. Definicja:</strong></p>
+<p>Tag ‘Handel’ w systemie Madar ERP odnosi się do funkcjonalności
+związanych z procesami sprzedaży i zakupu towarów oraz usług, w tym
+wystawiania dokumentów handlowych i zarządzania relacjami z
+kontrahentami. Obejmuje operacje związane z obrotem towarowym, od
+przyjęcia na magazyn po sprzedaż i fakturowanie.</p>
+<p><strong>2. Główne zastosowania i konteksty:</strong></p>
+<ul>
+<li><strong>Dodawanie i zarządzanie kontrahentami:</strong> Rejestracja
+danych kontrahentów (nazwa, adres, NIP), wybór rodzaju dokumentu
+sprzedażowego (faktura VAT, paragon, RWS, dowód dostawy), wyszukiwanie
+danych kontrahenta w bazie REGON.</li>
+<li><strong>Wystawianie dokumentów sprzedaży:</strong> Generowanie
+faktur VAT, paragonów, RWS (rachunków), dowodów dostawy. Obsługa faktur
+zaliczkowych, faktur korygujących, mechanizmu podzielonej płatności
+(Split Payment).</li>
+<li><strong>Zarządzanie magazynem:</strong> Przyjmowanie towarów na stan
+magazynowy (dokument PZ), sprzedaż towarów z magazynu.</li>
+<li><strong>Poprawa i anulowanie dokumentów:</strong> Edycja, anulowanie
+i usuwanie wystawionych faktur.</li>
+<li><strong>Ewidencja sprzedaży:</strong> Sumowanie ilości sprzedawanego
+asortymentu.</li>
+</ul>
+<p><strong>3. Powiązane funkcje i moduły:</strong></p>
+<ul>
+<li><strong>Moduł Kontrahenci:</strong> Zarządzanie danymi
+kontrahentów.</li>
+<li><strong>Moduł Fakturowanie:</strong> Wystawianie i zarządzanie
+fakturami.</li>
+<li><strong>Moduł Magazyn:</strong> Zarządzanie stanem magazynowym,
+przyjmowanie i wydawanie towarów.</li>
+<li><strong>Księgowość:</strong> Księgowanie dokumentów handlowych
+(faktur, PZ).</li>
+<li><strong>Płatności:</strong> Obsługa płatności, w tym mechanizm
+podzielonej płatności.</li>
+</ul>
+<p><strong>4. Dodatkowe informacje:</strong></p>
+<ul>
+<li>Tag ‘Handel’ grupuje funkcje związane z podstawowymi operacjami
+handlowymi przedsiębiorstwa.</li>
+<li>Umożliwia nawigację po module handlowym w systemie Madar ERP.</li>
+<li>Artykuły oznaczone tym tagiem często zawierają instrukcje “krok po
+kroku” dotyczące wykonywania konkretnych operacji handlowych w
+systemie.</li>
+<li>Tag jest używany w kontekście małych i średnich polskich firm.</li>
+</ul>
+<h2 id="sources">Sources</h2>
+<ul>
+<li>Dodawanie kontrahenta [?]:
+[2012-12-01-dodawanie-kontrahenta.md]</li>
+<li>Handel - sprzedaż FA VAT [?]:
+[2012-12-01-handel-sprzedaż-fa-vat.md]</li>
+<li>Przyjęcie towaru na stan [?]:
+[2012-12-01-przyjęcie-towaru-na-stan.md]</li>
+<li>Faktura VAT korekta - korygowanie sprzedaży z różnych tytułów:
+[2013-04-01-faktura-vat-korekta-korygowanie-sprzedaży-z-różnyc.md]</li>
+<li>Nawigacja po module Handel •:
+[2013-05-01-nawigacja-po-module-handel.md]</li>
+<li>Rejestry VAT - wczytywanie z magazynu:
+[2013-08-01-rejestry-vat-wczytywanie-z-magazynu.md]</li>
+<li>Sprzedaż z magazynu - generowanie faktury wg dowodu WZ ∴:
+[2013-08-01-sprzedaż-z-magazynu-generowanie-faktury-wg-dowodu-.md]</li>
+<li>Wprowadzanie zamówień na Samsung Galaxy Note N7000:
+[2013-08-01-wprowadzanie-zamówień-na-samsung-galaxy-note-n7000.md]</li>
+<li>Sumowanie ilości sprzedawanego asortymentu podczas wprowadzania
+faktury:
+[2013-09-01-sumowanie-ilości-sprzedawanego-asortymentu-podczas.md]</li>
+<li>Remanent - korekta stanu magazynowego ∴:
+[2013-10-01-remanent-korekta-stanu-magazynowego.md]</li>
+<li>Remanent - wydruk różnic SORT ∴:
+[2013-10-01-remanent-wydruk-różnic-sort.md]</li>
+<li>Remanent [?]: [2013-10-01-remanent.md]</li>
+<li>Sporządzanie spisu z natury - remanent •:
+[2013-10-01-sporządzanie-spisu-z-natury-remanent.md]</li>
+<li>Sprzedaż z magazynu - odwrotne obciążenie ∴:
+[2013-10-01-sprzedaż-z-magazynu-odwrotne-obciążenie.md]</li>
+<li>Zakupy na magazyn - dla faktur “odwrotne obciążenie” ∴:
+[2013-10-01-zakupy-na-magazyn-dla-faktur-odwrotne-obciążenie.md]</li>
+<li>Faktury elektroniczne - lista [?]:
+[2014-04-01-faktury-elektroniczne-lista.md]</li>
+<li>Faktury elektroniczne - okienko [?]:
+[2014-04-01-faktury-elektroniczne-okienko.md]</li>
+<li>Analiza sprzedaży [?]: [2014-05-01-analiza-sprzedaży.md]</li>
+<li>Faktury zaliczkowe - wystawianie, rozliczanie, księgowanie:
+[2014-07-01-faktury-zaliczkowe-wystawianie-rozliczanie-księgow.md]</li>
+<li>Podłączanie drukarki fiskalnej ∴:
+[2015-04-01-podłączanie-drukarki-fiskalnej.md]</li>
+<li>Blokada dokumentów - MM, PZ, zlecenie materiałowe ∴:
+[2015-07-01-blokada-dokumentów-mm-pz-zlecenie-materiałowe.md]</li>
+<li>SAD - Import - WNT - okienko [?]:
+[2015-07-01-sad-import-wnt-okienko.md]</li>
+<li>SAD - Import - WNT [?]: [2015-07-01-sad-import-wnt.md]</li>
+<li>Stan magazynu zagregowany do pozycji asortymentowych [?]:
+[2015-10-01-stan-magazynu-zagregowany-do-pozycji-asortymentowy.md]</li>
+<li>Remanent - czyli temat na czasie końca roku ••:
+[2015-12-01-remanent-czyli-temat-na-czasie-końca-roku.md]</li>
+<li>Magazyn - jak rozpocząć •:
+[2016-03-01-magazyn-jak-rozpocząć.md]</li>
+<li>Ustalanie wielkości zapotrzebowania na bazie zapasu ∴:
+[2016-03-01-ustalanie-wielkości-zapotrzebowania-na-bazie-zapas.md]</li>
+<li>Zapas [?]: [2016-04-01-zapas.md]</li>
+<li>Dekretacja sprzedaży [?]: [2016-05-01-dekretacja-sprzedaży.md]</li>
+<li>Dekretacja zamówień [?]: [2016-05-01-dekretacja-zamówień.md]</li>
+<li>Integracja systemu Madar7 ze sklepem internetowym PrestaShop:
+[2017-01-01-integracja-systemu-madar7-ze-sklepem-internetowym-.md]</li>
+<li>Jak wstawić odbiorcę do faktury:
+[2017-01-01-jak-wstawić-odbiorcę-do-faktury.md]</li>
+<li>Zamówienie od odbiorcy [?]:
+[2017-02-01-zamówienie-od-odbiorcy.md]</li>
+<li>Zamówienie importowe: [2018-01-01-zamówienie-importowe.md]</li>
+</ul>
+</body>
+</html>

@@ -31,13 +31,71 @@
 nadliczbowe</a>
 <ul>
 <li><a href="#definition" id="toc-definition">Definition</a></li>
+<li><a href="#definicja-tagu-godziny-nadliczbowe-w-systemie-madar-erp"
+id="toc-definicja-tagu-godziny-nadliczbowe-w-systemie-madar-erp">Definicja
+tagu ‘godziny nadliczbowe’ w systemie Madar ERP</a></li>
 <li><a href="#sources" id="toc-sources">Sources</a></li>
 </ul></li>
 </ul>
 </nav>
 <h1 id="godziny-nadliczbowe">godziny nadliczbowe</h1>
 <h2 id="definition">Definition</h2>
-<p>Definition generation failed: Event loop is closed</p>
+<h2
+id="definicja-tagu-godziny-nadliczbowe-w-systemie-madar-erp">Definicja
+tagu ‘godziny nadliczbowe’ w systemie Madar ERP</h2>
+<ol type="1">
+<li><p><strong>Krótka definicja:</strong> Tag ‘godziny nadliczbowe’ w
+systemie Madar ERP odnosi się do funkcjonalności związanych z ewidencją
+i obliczaniem wynagrodzenia za pracę w godzinach nadliczbowych,
+uwzględnianych na liście płac. Reprezentuje on mechanizmy obliczania
+dodatkowego wynagrodzenia za pracę ponad standardowy czas
+pracy.</p></li>
+<li><p><strong>Główne zastosowania/konteksty:</strong></p>
+<ul>
+<li><strong>Lista płac:</strong> Tag jest używany w kontekście
+generowania list płac, gdzie prezentowane i obliczane jest wynagrodzenie
+za godziny nadliczbowe.</li>
+<li><strong>Ewidencja czasu pracy:</strong> Umożliwia rejestrację
+przepracowanych godzin, w tym godzin nadliczbowych (50% i 100%), które
+są następnie wykorzystywane do obliczeń płacowych.</li>
+<li><strong>Konfiguracja wynagrodzeń:</strong> Tag wiąże się z
+konfiguracją składników wynagrodzenia, w tym stawek za godziny
+nadliczbowe (bazujących na stawce godzinowej pracownika).</li>
+<li><strong>Umowy o pracę:</strong> Stawka godzinowa z umowy o pracę
+jest automatycznie pobierana do obliczeń wynagrodzenia za godziny
+nadliczbowe.</li>
+</ul></li>
+<li><p><strong>Powiązane funkcje/moduły w systemie:</strong></p>
+<ul>
+<li><strong>Kadry i Płace:</strong> Moduł ten jest kluczowy, ponieważ
+zawiera dane o pracownikach, ich umowach o pracę, stawkach godzinowych i
+innych informacjach niezbędnych do obliczania wynagrodzenia.</li>
+<li><strong>Lista Płac:</strong> Moduł odpowiedzialny za generowanie
+list płac, na których prezentowane są informacje o wynagrodzeniu za
+godziny nadliczbowe. Pola 60-70 służą do wprowadzania ilości
+przepracowanych godzin, nadgodzin i godzin specjalnych. Pola 64 i 66
+służą do wprowadzania odpowiednio godzin nadliczbowych płatnych 100% i
+50%. Pole 49 oblicza wynagrodzenie za godziny nadliczbowe.</li>
+<li><strong>Konfiguracja Systemu:</strong> Opcja “operacje - dane
+systemu” pozwala na włączenie opcji <code>nadgodziny=1</code>, która
+umożliwia wyliczanie kwoty za nadgodziny wraz z wynagrodzeniem
+(nadgodziny <em>150% i nadgodziny</em>200%).</li>
+</ul></li>
+<li><p><strong>Dodatkowe informacje:</strong></p>
+<ul>
+<li>System Madar ERP rozróżnia godziny nadliczbowe płatne 50% i
+100%.</li>
+<li>Stawka godzinowa pracownika, zdefiniowana w umowie o pracę w module
+Kadry i Płace, jest automatycznie wykorzystywana do obliczania
+wynagrodzenia za godziny nadliczbowe.</li>
+<li>System umożliwia konfigurację sposobu obliczania wynagrodzenia za
+godziny nadliczbowe (np. uwzględnianie dodatkowych stawek 150% lub
+200%).</li>
+<li>Tag ‘godziny nadliczbowe’ jest powiązany z polami na liście płac,
+które służą do wprowadzania liczby przepracowanych godzin i obliczania
+wynagrodzenia.</li>
+</ul></li>
+</ol>
 <h2 id="sources">Sources</h2>
 <ul>
 <li>Nadgodziny na liście płac ∴:

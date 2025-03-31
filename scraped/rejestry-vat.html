@@ -36,7 +36,76 @@
 </nav>
 <h1 id="rejestry-vat">rejestry VAT</h1>
 <h2 id="definition">Definition</h2>
-<p>Definition generation failed: Event loop is closed</p>
+<p>Oto definicja tagu ‘rejestry VAT’ w kontekście systemu Madar ERP,
+uwzględniająca dostarczone materiały:</p>
+<p><strong>1. Definicja:</strong></p>
+<p>‘Rejestry VAT’ w systemie Madar to moduł/funkcjonalność służąca do
+ewidencjonowania i rozliczania podatku od towarów i usług (VAT) zgodnie
+z polskimi przepisami. Umożliwia gromadzenie, grupowanie i numerowanie
+dokumentów (faktur sprzedaży, faktur zakupu, raportów kasowych itp.) w
+dedykowanych rejestrach, co jest niezbędne do prawidłowego sporządzania
+deklaracji VAT i plików JPK.</p>
+<p><strong>2. Główne zastosowania/konteksty:</strong></p>
+<ul>
+<li><strong>Ewidencja dokumentów VAT:</strong> Rejestrowanie faktur
+sprzedaży i zakupu, faktur korygujących, raportów kasowych, dokumentów
+importu usług, faktur marża i innych dokumentów mających wpływ na
+rozliczenie VAT.</li>
+<li><strong>Księgowanie VAT:</strong> Przypisywanie dokumentów do
+odpowiednich rejestrów VAT (np. towary handlowe, materiały, sprzedaż
+utargi DET), co determinuje sposób księgowania (zakup/sprzedaż).</li>
+<li><strong>Rozliczanie VAT:</strong> Generowanie zestawień i raportów
+na potrzeby deklaracji VAT-7, VAT-27, VAT-UE oraz Jednolitego Pliku
+Kontrolnego (JPK).</li>
+<li><strong>Anulowanie dokumentów VAT:</strong> Umożliwia anulowanie
+błędnie wprowadzonych dokumentów z rejestru VAT.</li>
+<li><strong>Ewidencja specyficznych transakcji:</strong> Obsługa
+transakcji takich jak import usług, korekty VAT, faktury marża, zakupy z
+odwrotnym obciążeniem, zakup środków trwałych z WNT, rozliczanie VAT
+struktury.</li>
+</ul>
+<p><strong>3. Powiązane funkcje/moduły:</strong></p>
+<ul>
+<li><strong>Księgowość:</strong> Rejestry VAT są integralną częścią
+modułu księgowego, umożliwiając powiązanie dokumentów VAT z kontami
+księgowymi.</li>
+<li><strong>Faktury:</strong> Bezpośrednie powiązanie z modułem
+fakturowania, umożliwiające automatyczne przenoszenie danych z faktur do
+rejestrów VAT.</li>
+<li><strong>Magazyn:</strong> Możliwość wczytywania danych z dokumentów
+magazynowych do rejestrów VAT (np. zakup materiałów).</li>
+<li><strong>Kasa/Bank:</strong> Integracja z modułem kasowym/bankowym,
+umożliwiająca ewidencjonowanie raportów kasowych i wyciągów bankowych w
+rejestrach VAT.</li>
+<li><strong>JPK:</strong> Generowanie plików JPK na podstawie danych
+zgromadzonych w rejestrach VAT.</li>
+<li><strong>Deklaracje VAT:</strong> Tworzenie deklaracji VAT (VAT-7,
+VAT-27, VAT-UE) na podstawie danych z rejestrów VAT.</li>
+<li><strong>Konrahenci:</strong> Wybór kontrahenta podczas dopisywania
+dokumentu do rejestru VAT.</li>
+</ul>
+<p><strong>4. Dodatkowe informacje:</strong></p>
+<ul>
+<li><strong>Rodzaj rejestru:</strong> Wybór odpowiedniego rejestru VAT
+jest kluczowy, ponieważ wpływa na sposób księgowania i wykazania
+transakcji w deklaracjach VAT i JPK.</li>
+<li><strong>Daty:</strong> Daty (księgowania, faktury, VAT, płatności)
+mają istotny wpływ na rozliczenie VAT i termin płatności.</li>
+<li><strong>Numeracja:</strong> Prowadzona jest osobna numeracja
+dokumentów w ramach każdego rejestru VAT.</li>
+<li><strong>Szablony księgowań:</strong> Możliwość tworzenia szablonów
+księgowań dla typowych operacji w rejestrach VAT.</li>
+<li><strong>Powiązanie z PKPiR:</strong> Pole “rodzaj” w rejestrze VAT
+odpowiada za sposób ujmowania dokumentu w Księdze Przychodów i
+Rozchodów.</li>
+<li><strong>GTU, daty wpływu i symbole:</strong> System umożliwia
+ewidencjonowanie GTU (Grupy Towarów i Usług), daty wpływu zapłaty oraz
+symboli w rejestrach VAT.</li>
+<li><strong>Anulacja dokumentów:</strong> Anulacja dokumentu z rejestru
+VAT jest możliwa, ale w przypadku dokumentów zarejestrowanych w
+kasie/banku jako “nowy dokument VAT” wymagane jest wcześniejsze
+wyzerowanie kwot w module kasjera.</li>
+</ul>
 <h2 id="sources">Sources</h2>
 <ul>
 <li>Rejestry VAT - okienko [?]:

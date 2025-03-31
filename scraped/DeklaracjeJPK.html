@@ -4,7 +4,7 @@
   <meta charset="utf-8" />
   <meta name="generator" content="pandoc" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
-  <title>DeklaracjeJPK</title>
+  <title>deklaracjejpk</title>
   <style>
     code{white-space: pre-wrap;}
     span.smallcaps{font-variant: small-caps;}
@@ -36,7 +36,72 @@
 </nav>
 <h1 id="deklaracjejpk">DeklaracjeJPK</h1>
 <h2 id="definition">Definition</h2>
-<p>Definition generation failed: Event loop is closed</p>
+<p>Oto definicja tagu ‘DeklaracjeJPK’ w kontekście systemu Madar ERP,
+uwzględniająca dostarczone materiały:</p>
+<p><strong>1. Definicja:</strong></p>
+<p>Tag ‘DeklaracjeJPK’ w systemie Madar ERP odnosi się do
+funkcjonalności związanych z generowaniem, importowaniem, walidacją,
+wysyłką i archiwizacją Jednolitego Pliku Kontrolnego (JPK) –
+elektronicznego formatu raportowania danych księgowych i podatkowych
+wymaganego przez polskie prawo. Umożliwia on użytkownikom systemu Madar
+tworzenie i zarządzanie plikami JPK bezpośrednio z danych zgromadzonych
+w różnych modułach systemu.</p>
+<p><strong>2. Główne zastosowania/konteksty:</strong></p>
+<ul>
+<li><strong>Generowanie plików JPK:</strong> Tworzenie plików JPK (np.
+JPK_VAT) na podstawie danych z modułów księgowych, magazynowych i
+innych. Dotyczy to zarówno standardowego generowania, jak i generowania
+korekt.</li>
+<li><strong>Import plików JPK:</strong> Dodawanie gotowych plików JPK
+(np. z innych systemów lub w formatach CSV, FPP, EPP) do listy w
+systemie Madar.</li>
+<li><strong>Walidacja plików JPK:</strong> Sprawdzanie poprawności
+struktury i zawartości pliku JPK zgodnie z wymogami Ministerstwa
+Finansów.</li>
+<li><strong>Wysyłka plików JPK:</strong> Wysyłanie plików JPK do
+Ministerstwa Finansów, zarówno poprzez podpis kwalifikowany bezpośrednio
+z programu (jeśli dostępny), jak i za pomocą zewnętrznych narzędzi (np.
+Klient JPK 2.0, e-bramka JPK_VAT). Obejmuje to również odbiór Urzędowego
+Potwierdzenia Odbioru (UPO) i monitorowanie statusu wysyłki.</li>
+<li><strong>Archiwizacja i zarządzanie listą JPK:</strong>
+Przechowywanie wygenerowanych i zaimportowanych plików JPK w systemie,
+umożliwiając ich podgląd, pobieranie i ponowną wysyłkę.</li>
+</ul>
+<p><strong>3. Powiązane funkcje/moduły w systemie:</strong></p>
+<ul>
+<li><strong>Księgowość:</strong> Moduł księgowy jest głównym źródłem
+danych dla generowania plików JPK, szczególnie JPK_VAT.</li>
+<li><strong>Ewidencje VAT:</strong> Rejestry VAT są powiązane z
+generowaniem JPK_VAT.</li>
+<li><strong>Magazyn:</strong> Dane magazynowe mogą być wykorzystywane do
+generowania niektórych struktur JPK.</li>
+<li><strong>Narzędzia:</strong> W module narzędzi znajdują się opcje
+konfiguracji danych podatnika (NIP, dane adresowe), generowania plików
+JPK, walidacji i wysyłki.</li>
+<li><strong>Konfiguracja:</strong> Umożliwia ustawienie ścieżki do
+katalogu, w którym przechowywane są pliki JPK.</li>
+</ul>
+<p><strong>4. Dodatkowe informacje:</strong></p>
+<ul>
+<li><strong>Konfiguracja danych podatnika:</strong> Przed generowaniem
+pliku JPK konieczne jest uzupełnienie danych podatnika (NIP, dane
+adresowe) w konfiguracji programu.</li>
+<li><strong>Obsługa korekt:</strong> System umożliwia generowanie plików
+JPK z oznaczeniem celu “korekta” w przypadku konieczności ponownego
+złożenia pliku.</li>
+<li><strong>Obsługa podpisu kwalifikowanego:</strong> System umożliwia
+wysyłkę plików JPK bezpośrednio z programu przy użyciu podpisu
+kwalifikowanego.</li>
+<li><strong>Status wysyłki i UPO:</strong> System umożliwia sprawdzenie
+statusu wysyłki pliku JPK i wydrukowanie Urzędowego Potwierdzenia
+Odbioru (UPO).</li>
+<li><strong>Błędy:</strong> System informuje o błędach podczas
+generowania pliku JPK, wskazując na konieczność poprawy danych.</li>
+<li><strong>Dokumenty ze stawką ZW:</strong> Dokumenty ze stawką ZW nie
+są ujmowane w pliku JPK.</li>
+<li><strong>Integracja z innymi systemami:</strong> System umożliwia
+import plików JPK z innych systemów.</li>
+</ul>
 <h2 id="sources">Sources</h2>
 <ul>
 <li>JPK - lista [?]: [2016-06-01-jpk-lista.md]</li>

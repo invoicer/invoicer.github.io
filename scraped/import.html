@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>import</title>
+  <style>
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+  <link rel="stylesheet" href="tufte.css" />
+</head>
+<body>
+<nav id="TOC" role="doc-toc">
+<ul>
+<li><a href="#import" id="toc-import">import</a>
+<ul>
+<li><a href="#definition" id="toc-definition">Definition</a></li>
+<li><a href="#sources" id="toc-sources">Sources</a></li>
+</ul></li>
+</ul>
+</nav>
+<h1 id="import">import</h1>
+<h2 id="definition">Definition</h2>
+<p>Oto definicja tagu ‘import’ w kontekście systemu Madar ERP, bazująca
+na dostarczonych artykułach:</p>
+<p><strong>1. Definicja:</strong></p>
+<p>Tag ‘import’ w systemie Madar ERP odnosi się do funkcjonalności
+związanych z wprowadzaniem danych do systemu z zewnętrznych źródeł,
+zarówno danych dotyczących zakupów z zagranicy (towarów), jak i danych
+finansowych (wyciągów bankowych). Obejmuje proces importowania,
+rozliczania i księgowania danych pochodzących spoza systemu Madar.</p>
+<p><strong>2. Główne przypadki użycia:</strong></p>
+<ul>
+<li><strong>Import towarów (moduł SAD):</strong> Dotyczy importu towarów
+z zagranicy (w tym WNT - Wewnątrzwspólnotowe Nabycie Towarów). Używany
+przy prowadzeniu magazynu i księgowaniu zakupów zagranicznych.</li>
+<li><strong>Import wyciągów bankowych (format MT940):</strong> Umożliwia
+automatyczne wprowadzanie danych z wyciągów bankowych do systemu, co
+usprawnia proces księgowania i rozliczania transakcji.</li>
+</ul>
+<p><strong>3. Powiązane moduły i funkcje:</strong></p>
+<ul>
+<li><strong>SAD (Single Administrative Document):</strong> Moduł do
+obsługi importu i eksportu towarów, w tym rozliczania zakupów z
+zagranicy i WNT. Powiązany z modułem magazynu.</li>
+<li><strong>Magazyn:</strong> Importowane towary muszą zostać przyjęte
+na magazyn (funkcja “PZI - Przyjęcie na magazyn”).</li>
+<li><strong>Księgowość:</strong> Importowane dane (zarówno towary, jak i
+wyciągi bankowe) wymagają zaksięgowania. W przypadku importu towarów,
+konieczne jest wprowadzenie odpowiednich kont księgowych w opcji “dane
+dla FK” w zakładce “import”. Moduł “Kasjer” jest powiązany z importem
+wyciągów bankowych.</li>
+<li><strong>Kontrahenci:</strong> Przy imporcie wyciągów bankowych,
+system rozpoznaje kontrahentów po numerze konta bankowego, który musi
+być wprowadzony w danych kontrahenta (zakładka “fakturowanie”, pole
+“konto”).</li>
+</ul>
+<p><strong>4. Dodatkowe informacje:</strong></p>
+<ul>
+<li><strong>Format MT940:</strong> Import wyciągów bankowych obsługuje
+format MT940.</li>
+<li><strong>Edycja i przypisywanie:</strong> Po zaimportowaniu wyciągu
+bankowego, możliwe jest edytowanie zapisów (kwoty, daty, strona konta)
+oraz przypisywanie wpłat/wypłat do kontrahentów i kont księgowych.</li>
+<li><strong>Instrukcja obsługi:</strong> Szczegółowe informacje na temat
+importu (towarów) znajdują się w instrukcji do programu Madar 7, w
+rozdziale “8.4 Import, eksport, nabycie i dostawa wewnątrzunijna”.</li>
+</ul>
+<h2 id="sources">Sources</h2>
+<ul>
+<li>SAD - Import - WNT - okienko [?]:
+[2015-07-01-sad-import-wnt-okienko.md]</li>
+<li>SAD - Import - WNT [?]: [2015-07-01-sad-import-wnt.md]</li>
+<li>Import wyciągów bankowych [?]:
+[2016-04-01-import-wyciągów-bankowych.md]</li>
+<li>Import do rejestrów VAT:
+[2017-11-01-import-do-rejestrów-vat.md]</li>
+<li>Zamówienie importowe: [2018-01-01-zamówienie-importowe.md]</li>
+</ul>
+</body>
+</html>

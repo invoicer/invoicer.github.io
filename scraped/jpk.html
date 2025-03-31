@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>jpk</title>
+  <style>
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+  <link rel="stylesheet" href="tufte.css" />
+</head>
+<body>
+<nav id="TOC" role="doc-toc">
+<ul>
+<li><a href="#jpk" id="toc-jpk">JPK</a>
+<ul>
+<li><a href="#definition" id="toc-definition">Definition</a></li>
+<li><a href="#sources" id="toc-sources">Sources</a></li>
+</ul></li>
+</ul>
+</nav>
+<h1 id="jpk">JPK</h1>
+<h2 id="definition">Definition</h2>
+<p>OK, proszę bardzo:</p>
+<p><strong>Definicja JPK w systemie Madar:</strong></p>
+<p>JPK (Jednolity Plik Kontrolny) w systemie Madar to ustandaryzowany
+format elektroniczny, w którym przekazywane są dane księgowe i podatkowe
+do organów skarbowych w Polsce. Tag ‘JPK’ w Madar odnosi się do
+funkcjonalności związanych z generowaniem, walidacją, podpisywaniem i
+wysyłką plików JPK, wymaganych przez polskie prawo.</p>
+<p><strong>Główne zastosowania i konteksty:</strong></p>
+<ul>
+<li><strong>Generowanie plików JPK:</strong> Tworzenie plików JPK na
+podstawie danych wprowadzonych do systemu Madar (np. rejestry VAT,
+Księga Przychodów i Rozchodów, dane z kasy i banku).</li>
+<li><strong>Import plików JPK:</strong> Wczytywanie gotowych plików JPK
+(np. z plików CSV, FPP, EPP) do systemu Madar.</li>
+<li><strong>Walidacja plików JPK:</strong> Sprawdzanie poprawności
+struktury i zawartości pliku JPK zgodnie z wymogami Ministerstwa
+Finansów.</li>
+<li><strong>Podpisywanie i wysyłka plików JPK:</strong> Elektroniczne
+podpisywanie plików JPK kwalifikowanym certyfikatem i wysyłanie ich do
+systemu e-Deklaracje.</li>
+<li><strong>Ewidencja plików JPK:</strong> Przechowywanie i zarządzanie
+listą wygenerowanych i zaimportowanych plików JPK w systemie.</li>
+<li><strong>Korekty JPK:</strong> Generowanie i wysyłka skorygowanych
+plików JPK.</li>
+</ul>
+<p><strong>Powiązane funkcje i moduły w systemie Madar:</strong></p>
+<ul>
+<li><strong>Deklaracje JPK:</strong> Moduł dedykowany do obsługi plików
+JPK.</li>
+<li><strong>Księgowość:</strong> Moduł, z którego pobierane są dane do
+generowania plików JPK (rejestry VAT, KPiR, etc.).</li>
+<li><strong>Ewidencje:</strong> Moduł, w którym można znaleźć ikonę JPK
+w niektórych wersjach Madar.</li>
+<li><strong>Integrator:</strong> Narzędzie do importu danych z różnych
+formatów (CSV, FPP, EPP) i generowania plików JPK_VAT.</li>
+<li><strong>Rejestry VAT:</strong> Źródło danych dla JPK_VAT.</li>
+<li><strong>Konfiguracja:</strong> Ustawienia programu, w tym dane
+adresowe podatnika (NIP), niezbędne do poprawnego generowania JPK.</li>
+<li><strong>Wysyłka elektroniczna:</strong> Funkcja do wysyłania plików
+JPK i odbierania UPO (Urzędowe Poświadczenie Odbioru).</li>
+</ul>
+<p><strong>Dodatkowe informacje:</strong></p>
+<ul>
+<li>Pliki JPK generowane są w formacie XML.</li>
+<li>System Madar umożliwia podgląd i edycję plików JPK (za pomocą
+domyślnego edytora XML).</li>
+<li>Istnieje możliwość ustawienia ścieżki do katalogu, w którym
+przechowywane są pliki JPK.</li>
+<li>Dokumenty ze stawką ZW (zwolnione z VAT) nie są uwzględniane w pliku
+JPK.</li>
+<li>W przypadku braku numeru NIP kontrahenta należy wpisać “brak”.</li>
+<li>Przy generowaniu JPK można określić cel złożenia pliku (złożenie,
+korekta, kolejne korekty).</li>
+<li>Do wysyłki JPK wymagany jest bezpieczny podpis elektroniczny
+weryfikowany kwalifikowanym certyfikatem oraz dostęp do internetu.</li>
+<li>System Madar umożliwia wybór certyfikatu do podpisywania plików
+JPK.</li>
+<li>W przypadku błędów w danych, konieczna jest poprawa dokumentu i
+ponowne wygenerowanie pliku JPK.</li>
+<li>Tag ‘JPK’ jest powiązany z etykietami ‘DeklaracjeJPK’ i
+‘księgowość’.</li>
+</ul>
+<h2 id="sources">Sources</h2>
+<ul>
+<li>JPK - lista [?]: [2016-06-01-jpk-lista.md]</li>
+<li>Jednolity Plik Kontrolny JPK •:
+[2016-07-01-jednolity-plik-kontrolny-jpk.md]</li>
+<li>JPK - generowanie plików na podstawie danych z programów Madar ∴:
+[2016-07-01-jpk-generowanie-plików-na-podstawie-danych-z-progr.md]</li>
+<li>JPK - okienko [?]: [2016-07-01-jpk-okienko.md]</li>
+<li>JPK - sprawdzenie poprawności pliku (walidacja) ∴:
+[2016-07-01-jpk-sprawdzenie-poprawności-pliku-walidacja.md]</li>
+<li>JPK - wysyłanie pliku JPK - ogólne zasady ∴:
+[2016-07-01-jpk-wysyłanie-pliku-jpk-ogólne-zasady.md]</li>
+<li>DeklaracjeJPK - jak rozpocząć pracę z programem?:
+[2016-08-01-deklaracjejpk-jak-rozpocząć-pracę-z-programem.md]</li>
+<li>Integrator - lista [?]: [2016-08-01-integrator-lista.md]</li>
+<li>JPK i deklaracje (podpis) - błędy zgłaszane przy podpisywaniu pliku
+∴:
+[2016-08-01-jpk-i-deklaracje-podpis-błędy-zgłaszane-przy-podpi.md]</li>
+<li>JPK (walidacja) - komunikaty zgłaszane podczas walidacji ∴:
+[2016-08-01-jpk-walidacja-komunikaty-zgłaszane-podczas-walidac.md]</li>
+<li>JPK (wysyłka) - odpowiedzi zgłaszane po wysyłce - statusy ∴:
+[2016-08-01-jpk-wysyłka-odpowiedzi-zgłaszane-po-wysyłce-status.md]</li>
+<li>Rejestry VAT - powiązanie z polami w JPK_V7M:
+[2016-08-01-rejestry-vat-powiązanie-z-polami-w-jpk_v7m.md]</li>
+<li>Z JPK do Integratora VAT ∴:
+[2017-02-01-z-jpk-do-integratora-vat.md]</li>
+</ul>
+</body>
+</html>

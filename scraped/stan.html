@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>stan</title>
+  <style>
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+  <link rel="stylesheet" href="tufte.css" />
+</head>
+<body>
+<nav id="TOC" role="doc-toc">
+<ul>
+<li><a href="#stan" id="toc-stan">stan</a>
+<ul>
+<li><a href="#definition" id="toc-definition">Definition</a></li>
+<li><a href="#sources" id="toc-sources">Sources</a></li>
+</ul></li>
+</ul>
+</nav>
+<h1 id="stan">stan</h1>
+<h2 id="definition">Definition</h2>
+<p>Oto definicja tagu “stan” w kontekście systemu Madar ERP, bazująca na
+dostarczonych artykułach:</p>
+<p><strong>1. Definicja:</strong></p>
+<p>Tag “stan” w systemie Madar ERP odnosi się do informacji o aktualnym
+stanie zasobów, przede wszystkim magazynowych, ale potencjalnie także
+innych, takich jak stan konta. Umożliwia on monitorowanie i raportowanie
+ilości dostępnych towarów, materiałów lub środków finansowych w różnych
+lokalizacjach i kontekstach.</p>
+<p><strong>2. Główne przypadki użycia:</strong></p>
+<ul>
+<li><strong>Stany magazynowe:</strong> Najczęstsze użycie tagu dotyczy
+stanów magazynowych, czyli ilości poszczególnych pozycji asortymentowych
+dostępnych w magazynach. Umożliwia generowanie wydruków i raportów stanu
+magazynowego.</li>
+<li><strong>Dostęp do informacji o stanach:</strong> Tag jest używany w
+kontekście nadawania uprawnień użytkownikom do przeglądania stanów
+magazynowych, ograniczając dostęp do wszystkich, wybranych lub jednego
+konkretnego magazynu.</li>
+<li><strong>Agregacja stanów:</strong> Umożliwia wyświetlanie
+zagregowanego stanu danej pozycji asortymentowej we wszystkich
+magazynach, w tym stanu zablokowanego.</li>
+</ul>
+<p><strong>3. Powiązane funkcje i moduły:</strong></p>
+<ul>
+<li><strong>Magazyn:</strong> Moduł zarządzania magazynem jest kluczowy,
+ponieważ tag “stan” najczęściej odnosi się do stanów magazynowych.</li>
+<li><strong>Administracja:</strong> Moduł administracji jest używany do
+nadawania uprawnień użytkownikom w zakresie dostępu do informacji o
+stanach magazynowych.</li>
+<li><strong>Raportowanie:</strong> Tag jest powiązany z funkcjami
+raportowania, umożliwiając generowanie raportów o stanach
+magazynowych.</li>
+<li><strong>Handel:</strong> W kontekście handlu, tag “stan” może
+odnosić się do dostępności towarów dla sprzedaży.</li>
+<li><strong>Księgowość:</strong> Chociaż nie wynika to bezpośrednio z
+dostarczonych artykułów, tag “stan” potencjalnie może być powiązany ze
+stanem konta w module księgowym.</li>
+</ul>
+<p><strong>4. Dodatkowe informacje:</strong></p>
+<ul>
+<li><strong>Uprawnienia:</strong> Dostęp do informacji o stanach jest
+kontrolowany przez system uprawnień. Administrator może definiować,
+którzy użytkownicy mają dostęp do stanów wszystkich magazynów, wybranych
+magazynów lub tylko jednego, konkretnego magazynu.</li>
+<li><strong>Konfiguracja raportów:</strong> Możliwe jest tworzenie
+spersonalizowanych raportów stanu magazynowego, w których użytkownik
+może wybrać magazyn, dla którego chce zobaczyć stan.</li>
+<li><strong>Autostart:</strong> Ustawienie “autostartu” dla użytkownika
+w module administracji pozwala na szybki dostęp do funkcji związanych ze
+stanami magazynowymi po zalogowaniu.</li>
+<li><strong>Stan zablokowany:</strong> System rozróżnia stan dostępny i
+stan zablokowany, co jest istotne przy planowaniu i zarządzaniu
+zasobami.</li>
+<li><strong>Podmagazyn:</strong> Tag “stan” może być również powiązany z
+podmagazynami, umożliwiając monitorowanie stanów w bardziej szczegółowy
+sposób.</li>
+</ul>
+<h2 id="sources">Sources</h2>
+<ul>
+<li>Nadawanie użytkownikom uprawnień do wyselekcjonowanych danych •:
+[2014-04-01-nadawanie-użytkownikom-uprawnień-do-wyselekcjonowa.md]</li>
+<li>Stan magazynu zagregowany do pozycji asortymentowych [?]:
+[2015-10-01-stan-magazynu-zagregowany-do-pozycji-asortymentowy.md]</li>
+</ul>
+</body>
+</html>

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>integrator</title>
+  <style>
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+  <link rel="stylesheet" href="tufte.css" />
+</head>
+<body>
+<nav id="TOC" role="doc-toc">
+<ul>
+<li><a href="#integrator" id="toc-integrator">integrator</a>
+<ul>
+<li><a href="#definition" id="toc-definition">Definition</a></li>
+<li><a href="#sources" id="toc-sources">Sources</a></li>
+</ul></li>
+</ul>
+</nav>
+<h1 id="integrator">integrator</h1>
+<h2 id="definition">Definition</h2>
+<p>Oto definicja tagu ‘integrator’ w kontekście systemu Madar ERP dla
+polskich małych i średnich przedsiębiorstw, bazująca na dostarczonych
+artykułach:</p>
+<p><strong>1. Definicja:</strong></p>
+<p>Tag ‘integrator’ w systemie Madar ERP odnosi się do funkcjonalności
+umożliwiającej import, korektę i eksport danych w formacie JPK_VAT.xml,
+a także w innych popularnych formatach, w celu przygotowania i
+weryfikacji deklaracji VAT.</p>
+<p><strong>2. Główne zastosowania i konteksty:</strong></p>
+<ul>
+<li><strong>Import danych z różnych źródeł:</strong> Wczytywanie danych
+z plików w formatach FPP, CSV, Comarch, Rachmistrz, Symfonia oraz
+JPK-VAT.xml. Umożliwia to agregację danych z różnych systemów lub plików
+zewnętrznych.</li>
+<li><strong>Korekta i modyfikacja danych:</strong> Edycja wczytanych
+pozycji, dodawanie nowych pozycji, usuwanie błędnych wpisów.</li>
+<li><strong>Generowanie pliku JPK_VAT.xml:</strong> Eksport danych do
+pliku JPK_VAT.xml, wymaganego do raportowania VAT.</li>
+<li><strong>Podgląd zawartości pliku JPK:</strong> Wyświetlanie
+zawartości pliku JPK w celu weryfikacji poprawności danych.</li>
+<li><strong>Weryfikacja i walidacja danych:</strong> Sprawdzanie
+kompletności danych, weryfikacja kontrahentów (czy są czynnymi
+płatnikami VAT), rekapitulacja danych wg typów dokumentów
+(sprzedaż/zakupy/Faktura RR), zestawienie danych z podziałem na pola
+deklaracji VAT-7.</li>
+<li><strong>Przenoszenie danych z modułu Księgowość:</strong>
+Przenoszenie wygenerowanego pliku JPK z modułu Księgowość do Integratora
+VAT w celu podglądu i dalszej obróbki.</li>
+</ul>
+<p><strong>3. Powiązane funkcje i moduły:</strong></p>
+<ul>
+<li><strong>Deklaracje JPK:</strong> Integrator jest ściśle powiązany z
+procesem generowania i weryfikacji deklaracji JPK.</li>
+<li><strong>JPK:</strong> Integrator przetwarza dane w formacie
+JPK-VAT.xml.</li>
+<li><strong>VAT:</strong> Integrator służy do przygotowania danych do
+rozliczeń VAT.</li>
+<li><strong>Księgowość:</strong> Moduł Księgowość, z którego można
+eksportować pliki JPK do Integratora.</li>
+<li><strong>Konfiguracja:</strong> Umożliwia ustawienie ścieżki do
+importu plików.</li>
+<li><strong>Narzędzia:</strong> Zawiera funkcje rekapitulacji,
+deklaracji, walidacji i weryfikacji kontrahentów.</li>
+</ul>
+<p><strong>4. Dodatkowe informacje:</strong></p>
+<ul>
+<li>Integrator posiada opcje importu, eksportu, modyfikacji, weryfikacji
+i zapisu danych.</li>
+<li>Użytkownik musi uzupełnić dane firmy w konfiguracji oraz określić
+okres, za który generowany jest plik JPK.</li>
+<li>Integrator ułatwia uzgodnienie danych z deklaracją VAT-7.</li>
+<li>Weryfikacja kontrahentów może trwać dłuższy czas.</li>
+<li>Dostęp do funkcji Integratora VAT jest możliwy z modułu
+Księgowość.</li>
+<li>Tag ‘integrator’ jest często używany w połączeniu z tagami
+‘DeklaracjeJPK’, ‘JPK’ i ‘VAT’.</li>
+</ul>
+<h2 id="sources">Sources</h2>
+<ul>
+<li>Integrator - lista [?]: [2016-08-01-integrator-lista.md]</li>
+<li>Z JPK do Integratora VAT ∴:
+[2017-02-01-z-jpk-do-integratora-vat.md]</li>
+</ul>
+</body>
+</html>
