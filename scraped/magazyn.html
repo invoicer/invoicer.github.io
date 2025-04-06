@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>magazyn</title>
+  <style>
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+  <link rel="stylesheet" href="tufte.css" />
+</head>
+<body>
+<nav id="TOC" role="doc-toc">
+<ul>
+<li><a href="#magazyn" id="toc-magazyn">magazyn</a>
+<ul>
+<li><a href="#definition" id="toc-definition">Definition</a></li>
+<li><a href="#sources" id="toc-sources">Sources</a></li>
+</ul></li>
+</ul>
+</nav>
+<h1 id="magazyn">magazyn</h1>
+<h2 id="definition">Definition</h2>
+<p>Oto definicja tagu ‘magazyn’ w kontekście systemu Madar ERP, bazująca
+na dostarczonych artykułach:</p>
+<p><strong>1. Definicja:</strong></p>
+<p>Tag ‘magazyn’ w systemie Madar ERP odnosi się do funkcjonalności i
+procesów związanych z zarządzaniem stanami magazynowymi, przyjmowaniem i
+wydawaniem towarów, inwentaryzacją (remanentem) oraz korektami stanów
+magazynowych. Obejmuje operacje wpływające na ilość i wartość towarów
+przechowywanych w magazynie.</p>
+<p><strong>2. Główne przypadki użycia i konteksty:</strong></p>
+<ul>
+<li><strong>Przyjmowanie towaru na stan (Przyjęcie PZ):</strong>
+Rejestrowanie dostaw towarów do magazynu, wprowadzanie faktur zakupu i
+aktualizacja stanów magazynowych.</li>
+<li><strong>Sprzedaż z magazynu (Faktura VAT):</strong> Wystawianie
+faktur sprzedaży z uwzględnieniem stanów magazynowych, automatyczne
+zmniejszanie stanów magazynowych po sprzedaży.</li>
+<li><strong>Korekty faktur VAT:</strong> Obsługa zwrotów towarów, zmian
+cen, zmian stawek VAT i innych korekt wpływających na stany
+magazynowe.</li>
+<li><strong>Remanent (Inwentaryzacja):</strong> Przeprowadzanie
+inwentaryzacji, porównywanie stanów rzeczywistych ze stanami w systemie,
+generowanie raportów różnic remanentowych i korygowanie stanów
+magazynowych na podstawie remanentu.</li>
+<li><strong>Korekta stanu magazynowego:</strong> Wprowadzanie korekt
+stanów magazynowych na podstawie remanentu (nadwyżki i niedobory) lub
+innych przyczyn (np. uszkodzenia towarów).</li>
+</ul>
+<p><strong>3. Powiązane funkcje i moduły w oprogramowaniu:</strong></p>
+<ul>
+<li><strong>Handel:</strong> Moduł odpowiedzialny za sprzedaż, zakupy,
+faktury VAT, korekty faktur, powiązany z modułem magazynowym w celu
+aktualizacji stanów.</li>
+<li><strong>Towary:</strong> Katalog towarów, w którym przechowywane są
+informacje o towarach, cenach, stawkach VAT, niezbędne do zarządzania
+magazynem.</li>
+<li><strong>Księgowość:</strong> Ewidencja dokumentów magazynowych (PZ,
+WZ, RW, PW) i ich wpływ na stany magazynowe i wartość zapasów.</li>
+<li><strong>Faktury VAT:</strong> Wystawianie faktur VAT z
+uwzględnieniem stanów magazynowych.</li>
+<li><strong>Remanent:</strong> Funkcjonalność do przeprowadzania
+inwentaryzacji i korekty stanów magazynowych.</li>
+</ul>
+<p><strong>4. Dodatkowe informacje:</strong></p>
+<ul>
+<li>Tag ‘magazyn’ jest ściśle powiązany z modułem “Handel” w systemie
+Madar ERP.</li>
+<li>System umożliwia prowadzenie ewidencji magazynowej zarówno
+ilościowej, jak i wartościowej.</li>
+<li>Przy korektach faktur VAT, system uwzględnia różne powody korekt
+(zwrot towaru, zmiana ceny, zmiana stawki VAT).</li>
+<li>System umożliwia porównanie stanu magazynu ze stanem w komputerze w
+celu wykrycia różnic remanentowych.</li>
+<li>System umożliwia automatyczne przyjęcie różnic remanentowych na stan
+magazynu.</li>
+<li>System umożliwia przyjęcie całego remanentu na stan magazynu.</li>
+<li>Dokumenty magazynowe (PZ, WZ, RW, PW) są generowane w systemie i
+powiązane z odpowiednimi operacjami magazynowymi.</li>
+</ul>
+<h2 id="sources">Sources</h2>
+<ul>
+<li>Przyjęcie towaru na stan [?]:
+[2012-12-01-przyjęcie-towaru-na-stan.md]</li>
+<li>Faktura VAT korekta - korygowanie sprzedaży z różnych tytułów:
+[2013-04-01-faktura-vat-korekta-korygowanie-sprzedaży-z-różnyc.md]</li>
+<li>Remanent - korekta stanu magazynowego ∴:
+[2013-10-01-remanent-korekta-stanu-magazynowego.md]</li>
+<li>Remanent - wydruk różnic SORT ∴:
+[2013-10-01-remanent-wydruk-różnic-sort.md]</li>
+<li>Remanent [?]: [2013-10-01-remanent.md]</li>
+<li>Sporządzanie spisu z natury - remanent •:
+[2013-10-01-sporządzanie-spisu-z-natury-remanent.md]</li>
+<li>Sprzedaż z magazynu - odwrotne obciążenie ∴:
+[2013-10-01-sprzedaż-z-magazynu-odwrotne-obciążenie.md]</li>
+<li>Zakupy na magazyn - dla faktur “odwrotne obciążenie” ∴:
+[2013-10-01-zakupy-na-magazyn-dla-faktur-odwrotne-obciążenie.md]</li>
+<li>Faktury elektroniczne - lista [?]:
+[2014-04-01-faktury-elektroniczne-lista.md]</li>
+<li>Nadawanie użytkownikom uprawnień do wyselekcjonowanych danych •:
+[2014-04-01-nadawanie-użytkownikom-uprawnień-do-wyselekcjonowa.md]</li>
+<li>Numeracja dokumentów ∴: [2014-04-01-numeracja-dokumentów.md]</li>
+<li>Analiza sprzedaży [?]: [2014-05-01-analiza-sprzedaży.md]</li>
+<li>Blokada dokumentów - MM, PZ, zlecenie materiałowe ∴:
+[2015-07-01-blokada-dokumentów-mm-pz-zlecenie-materiałowe.md]</li>
+<li>SAD - Import - WNT - okienko [?]:
+[2015-07-01-sad-import-wnt-okienko.md]</li>
+<li>SAD - Import - WNT [?]: [2015-07-01-sad-import-wnt.md]</li>
+<li>Stan magazynu zagregowany do pozycji asortymentowych [?]:
+[2015-10-01-stan-magazynu-zagregowany-do-pozycji-asortymentowy.md]</li>
+<li>Stan pozycji asortymentowej - lokalizacja i historia obrotu
+magazynowego [?]:
+[2015-10-01-stan-pozycji-asortymentowej-lokalizacja-i-historia.md]</li>
+<li>Remanent - czyli temat na czasie końca roku ••:
+[2015-12-01-remanent-czyli-temat-na-czasie-końca-roku.md]</li>
+<li>Magazyn - jak rozpocząć •:
+[2016-03-01-magazyn-jak-rozpocząć.md]</li>
+<li>Zapas [?]: [2016-04-01-zapas.md]</li>
+<li>Dekretacja sprzedaży [?]: [2016-05-01-dekretacja-sprzedaży.md]</li>
+<li>Jak wstawić odbiorcę do faktury:
+[2017-01-01-jak-wstawić-odbiorcę-do-faktury.md]</li>
+<li>Spedycja [?]: [2017-01-01-spedycja.md]</li>
+<li>Wystawianie dokumentu MM:
+[2017-01-01-wystawianie-dokumentu-mm.md]</li>
+</ul>
+</body>
+</html>

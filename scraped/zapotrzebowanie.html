@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>zapotrzebowanie</title>
+  <style>
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+  <link rel="stylesheet" href="tufte.css" />
+</head>
+<body>
+<nav id="TOC" role="doc-toc">
+<ul>
+<li><a href="#zapotrzebowanie"
+id="toc-zapotrzebowanie">zapotrzebowanie</a>
+<ul>
+<li><a href="#definition" id="toc-definition">Definition</a></li>
+<li><a href="#sources" id="toc-sources">Sources</a></li>
+</ul></li>
+</ul>
+</nav>
+<h1 id="zapotrzebowanie">zapotrzebowanie</h1>
+<h2 id="definition">Definition</h2>
+<p>Oto definicja tagu ‘zapotrzebowanie’ w kontekście systemu Madar ERP,
+uwzględniająca dostarczone materiały:</p>
+<p><strong>1. Definicja:</strong></p>
+<p>Tag ‘zapotrzebowanie’ w systemie Madar ERP odnosi się do
+funkcjonalności związanych z określeniem i analizą
+<em>zapotrzebowania</em> na surowce, towary i półprodukty, niezbędnych
+do realizacji produkcji, sprzedaży lub innych procesów biznesowych.
+Reprezentuje on kalkulację ilościową potrzebnych zasobów, uwzględniającą
+bieżący stan magazynowy, zamówienia klientów i dostawców, prognozy
+sprzedaży oraz receptury produkcyjne.</p>
+<p><strong>2. Główne zastosowania i konteksty:</strong></p>
+<ul>
+<li><strong>Planowanie produkcji:</strong> Określanie zapotrzebowania na
+surowce i półprodukty potrzebne do realizacji zleceń produkcyjnych, na
+podstawie receptur i planowanych ilości wyrobów gotowych.</li>
+<li><strong>Gospodarka magazynowa:</strong> Identyfikacja braków w
+magazynie i generowanie zapotrzebowania na uzupełnienie zapasów,
+uwzględniając minimalne i maksymalne stany magazynowe.</li>
+<li><strong>Analiza sprzedaży i zamówień:</strong> Prognozowanie
+zapotrzebowania na towary na podstawie analizy historycznej sprzedaży,
+bieżących zamówień klientów i prognoz rynkowych.</li>
+<li><strong>Optymalizacja zakupów:</strong> Generowanie zapotrzebowania
+na surowce i towary do zakupu, uwzględniając zamówienia dostawców i
+terminy realizacji.</li>
+</ul>
+<p><strong>3. Powiązane funkcje i moduły:</strong></p>
+<ul>
+<li><strong>Produkcja:</strong> Moduł produkcyjny wykorzystuje
+‘zapotrzebowanie’ do planowania produkcji, generowania zleceń
+produkcyjnych i rezerwacji surowców.</li>
+<li><strong>Handel:</strong> Moduł handlowy wykorzystuje
+‘zapotrzebowanie’ do analizy sprzedaży, prognozowania popytu i
+planowania zakupów.</li>
+<li><strong>Magazyn:</strong> Moduł magazynowy dostarcza dane o bieżącym
+stanie zapasów, które są wykorzystywane do obliczania
+‘zapotrzebowania’.</li>
+<li><strong>Receptury:</strong> Receptury definiują skład wyrobów
+gotowych i są kluczowe do obliczania zapotrzebowania na surowce w module
+produkcyjnym.</li>
+<li><strong>Zamówienia (klientów i dostawców):</strong> Informacje o
+zamówieniach są uwzględniane w kalkulacjach zapotrzebowania, aby
+zapewnić dostępność towarów i surowców na czas.</li>
+<li><strong>Wydruki:</strong> System oferuje różne wydruki
+‘zapotrzebowania’, prezentujące szczegółowe informacje o potrzebnych
+zasobach, prognozach i stanach magazynowych.</li>
+</ul>
+<p><strong>4. Dodatkowe informacje:</strong></p>
+<ul>
+<li><strong>Kryteria generowania zapotrzebowania:</strong>
+Zapotrzebowanie może być generowane na podstawie różnych kryteriów,
+takich jak zamówienia, sprzedaż, utargi, dostawy, zlecenia
+produkcyjne.</li>
+<li><strong>Parametry wydruku zapotrzebowania:</strong> Użytkownik może
+konfigurować parametry wydruku zapotrzebowania, takie jak uwzględnianie
+bieżącego stanu magazynowego, stanów minimalnych/maksymalnych, zamówień
+klientów i dostawców.</li>
+<li><strong>Dokument RW:</strong> System umożliwia generowanie dokumentu
+RW (Rozchód Wewnętrzny) na podstawie prognozy zapotrzebowania, co jest
+przydatne, gdy surowce są pobierane z magazynu na podstawie rozchodu
+wewnętrznego, a nie bezpośrednio ze zlecenia produkcyjnego.</li>
+<li><strong>Prognoza:</strong> System oblicza prognozę zapotrzebowania,
+uwzględniając różnicę między zamówieniami odbiorców, zamówieniami
+dostawców i bieżącym stanem magazynowym.</li>
+<li><strong>Zamienniki:</strong> System uwzględnia zamienniki surowców
+zdefiniowane w recepturach, jeśli brakuje podstawowego surowca.</li>
+</ul>
+<p>Podsumowując, tag ‘zapotrzebowanie’ w Madar ERP jest kluczowy dla
+efektywnego planowania i zarządzania zasobami w firmie, umożliwiając
+optymalizację produkcji, sprzedaży i gospodarki magazynowej.</p>
+<h2 id="sources">Sources</h2>
+<ul>
+<li>Ustalanie wielkości zapotrzebowania na bazie zapasu ∴:
+[2016-03-01-ustalanie-wielkości-zapotrzebowania-na-bazie-zapas.md]</li>
+<li>Wydruk zapotrzebowania - interpretacja prezentowanych informacji ∴:
+[2016-03-01-wydruk-zapotrzebowania-interpretacja-prezentowanyc.md]</li>
+<li>Zapotrzebowanie na surowce do produkcji wg zamówień, sprzedaży,
+utargów, dostaw ∴:
+[2016-03-01-zapotrzebowanie-na-surowce-do-produkcji-wg-zamówie.md]</li>
+</ul>
+</body>
+</html>

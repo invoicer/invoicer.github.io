@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>fk</title>
+  <style>
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+  <link rel="stylesheet" href="tufte.css" />
+</head>
+<body>
+<nav id="TOC" role="doc-toc">
+<ul>
+<li><a href="#fk" id="toc-fk">FK</a>
+<ul>
+<li><a href="#definition" id="toc-definition">Definition</a></li>
+<li><a href="#sources" id="toc-sources">Sources</a></li>
+</ul></li>
+</ul>
+</nav>
+<h1 id="fk">FK</h1>
+<h2 id="definition">Definition</h2>
+<p>Oto kompleksowa definicja tagu ‘FK’ w kontekście systemu Madar ERP,
+bazująca na dostarczonych artykułach:</p>
+<p><strong>1. Definicja:</strong></p>
+<p>Tag ‘FK’ w systemie Madar ERP odnosi się do modułu <strong>Finanse i
+Księgowość (FK)</strong>, który obejmuje funkcjonalności związane z
+prowadzeniem ksiąg rachunkowych, planem kont, dekretacją dokumentów,
+rozrachunkami, VAT oraz generowaniem sprawozdań finansowych. Jest to
+centralny moduł systemu, integrujący dane z innych obszarów działalności
+firmy (magazyn, produkcja, sprzedaż) w celu stworzenia pełnego obrazu
+finansowego przedsiębiorstwa.</p>
+<p><strong>2. Główne zastosowania i konteksty:</strong></p>
+<p>Tag ‘FK’ jest używany w kontekście:</p>
+<ul>
+<li><strong>Konfiguracji automatycznych schematów księgowań:</strong>
+Umożliwia przypisywanie kont księgowych do różnych typów dokumentów (np.
+faktur, dokumentów magazynowych), minimalizując ręczną dekretację.</li>
+<li><strong>Rozrachunków:</strong> Definiowanie sposobu księgowania
+należności i zobowiązań, w tym rozrachunków z tytułu VAT, operacji
+magazynowych i transakcji zagranicznych.</li>
+<li><strong>Importu danych:</strong> Określanie kont księgowych dla
+różnic kursowych, cła i akcyzy.</li>
+<li><strong>Księgowania operacji magazynowych:</strong> Przypisywanie
+kont kosztu własnego, magazynu, sprzedaży i odchyleń dla poszczególnych
+magazynów.</li>
+<li><strong>Księgowania operacji produkcyjnych:</strong> Definiowanie
+kont magazynu produkcji, sprzedaży wyrobów, kosztu technicznego i
+odchyleń.</li>
+<li><strong>Planu kont:</strong> Zakładanie i wprowadzanie planu kont, w
+tym bilansu otwarcia (BO) dla kont syntetycznych i analitycznych.</li>
+<li><strong>Generowania sprawozdań finansowych:</strong> Definiowanie
+kont, których salda uczestniczą w rachunku wyników i bilansie.</li>
+<li><strong>Eksportu danych:</strong> Określanie kont dla operacji WDT i
+eksportu.</li>
+<li><strong>Księgowania operacji kasowych i bankowych:</strong>
+Przypisywanie raportów i numeracji do poszczególnych kas i banków.</li>
+</ul>
+<p><strong>3. Powiązane funkcje i moduły:</strong></p>
+<p>Moduł ‘FK’ jest ściśle powiązany z następującymi funkcjami i modułami
+w systemie Madar ERP:</p>
+<ul>
+<li><strong>Księgowość:</strong> Centralny moduł odpowiedzialny za
+prowadzenie ksiąg rachunkowych.</li>
+<li><strong>Plan kont:</strong> Umożliwia definiowanie i zarządzanie
+planem kont.</li>
+<li><strong>Magazyny:</strong> Integracja z modułem magazynowym w celu
+księgowania operacji magazynowych.</li>
+<li><strong>Produkcja:</strong> Integracja z modułem produkcyjnym w celu
+księgowania kosztów produkcji i sprzedaży wyrobów.</li>
+<li><strong>VAT:</strong> Obsługa rozliczeń podatku VAT.</li>
+<li><strong>Kasa i bank:</strong> Obsługa operacji kasowych i
+bankowych.</li>
+<li><strong>Deklaracje:</strong> Generowanie sprawozdań finansowych
+(bilans, rachunek wyników).</li>
+<li><strong>Rejestry VAT:</strong> Wprowadzanie bilansu otwarcia dla
+należności i zobowiązań dla poszczególnych kontrahentów.</li>
+</ul>
+<p><strong>4. Dodatkowe informacje:</strong></p>
+<ul>
+<li>‘FK’ jest skrótem od “Finanse i Księgowość”.</li>
+<li>System Madar ERP umożliwia import wzorcowego planu kont, co ułatwia
+rozpoczęcie pracy z programem.</li>
+<li>W planie kont rozróżniane są konta syntetyczne i analityczne.</li>
+<li>System oferuje funkcje sprawdzania poprawności wprowadzonego bilansu
+otwarcia.</li>
+<li>Istnieje możliwość kopiowania planu kont pomiędzy firmami.</li>
+<li>System umożliwia oznaczanie kont, które mają być uwzględnione w
+rachunku wyników.</li>
+<li>System umożliwia przenoszenie sald z BZ na BO następnego roku.</li>
+<li>W planie kont można oznaczyć, do której pozycji bilansu czy rachunku
+wyników dane konto należy.</li>
+</ul>
+<h2 id="sources">Sources</h2>
+<ul>
+<li>Dane dla FK: [2012-12-01-dane-dla-fk.md]</li>
+<li>Plan kont - zakładanie i wprowadzanie BO ∴:
+[2012-12-01-plan-kont-zakładanie-i-wprowadzanie-bo.md]</li>
+<li>Rachunek wyników - jak uzyskać:
+[2013-03-01-rachunek-wyników-jak-uzyskać.md]</li>
+<li>Przenoszenie BZ poprzedniego okresu na BO (plan kont):
+[2013-05-01-przenoszenie-bz-poprzedniego-okresu-na-bo-plan-kon.md]</li>
+<li>FK - Błędy na zestawieniu obrotów i sald:
+[2013-07-01-fk-błędy-na-zestawieniu-obrotów-i-sald.md]</li>
+<li>FK - niezgodność księgi głównej i pomocniczej:
+[2013-07-01-fk-niezgodność-księgi-głównej-i-pomocniczej.md]</li>
+<li>Kompensata: [2013-09-01-kompensata.md]</li>
+<li>Wzorce rejestrów [?]: [2015-02-01-wzorce-rejestrów.md]</li>
+<li>Wzorzec rejestru - okienko [?]:
+[2015-02-01-wzorzec-rejestru-okienko.md]</li>
+<li>Plan kont - lista [?]: [2015-04-01-plan-kont-lista.md]</li>
+<li>Typowe błędy “pierwszego księgowania”:
+[2015-06-01-typowe-błędy-pierwszego-księgowania.md]</li>
+<li>Księgowość FK na co dzień:
+[2015-11-01-księgowość-fk-na-co-dzień.md]</li>
+<li>Koniec miesiąca i roku w księgowości:
+[2015-12-01-koniec-miesiąca-i-roku-w-księgowości.md]</li>
+<li>Rejestry VAT - automatyczna dekretacja przy imporcie danych •:
+[2015-12-01-rejestry-vat-automatyczna-dekretacja-przy-imporcie.md]</li>
+<li>KG - księgowanie do księgi głównej [?]:
+[2017-03-01-kg-księgowanie-do-księgi-głównej.md]</li>
+</ul>
+</body>
+</html>

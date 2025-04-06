@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>pz</title>
+  <style>
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+  <link rel="stylesheet" href="tufte.css" />
+</head>
+<body>
+<nav id="TOC" role="doc-toc">
+<ul>
+<li><a href="#pz" id="toc-pz">PZ</a>
+<ul>
+<li><a href="#definition" id="toc-definition">Definition</a></li>
+<li><a href="#definicja-tagu-pz-w-systemie-madar-erp"
+id="toc-definicja-tagu-pz-w-systemie-madar-erp">Definicja tagu ‘PZ’ w
+systemie Madar ERP</a></li>
+<li><a href="#sources" id="toc-sources">Sources</a></li>
+</ul></li>
+</ul>
+</nav>
+<h1 id="pz">PZ</h1>
+<h2 id="definition">Definition</h2>
+<h2 id="definicja-tagu-pz-w-systemie-madar-erp">Definicja tagu ‘PZ’ w
+systemie Madar ERP</h2>
+<ol type="1">
+<li><p><strong>Krótka definicja:</strong> Tag ‘PZ’ w systemie Madar ERP
+odnosi się do dokumentu “Przyjęcie Zewnętrzne” (PZ), który rejestruje
+przyjęcie towarów lub materiałów do magazynu od zewnętrznego dostawcy.
+Jest to kluczowy element w module magazynowym i handlowym
+systemu.</p></li>
+<li><p><strong>Główne zastosowania i konteksty:</strong></p>
+<ul>
+<li>Rejestracja dostaw towarów od dostawców zewnętrznych.</li>
+<li>Aktualizacja stanów magazynowych po przyjęciu dostawy.</li>
+<li>Powiązanie z procesem księgowania faktur zakupu (rozliczanie zakupu
+na magazyn).</li>
+<li>Możliwość blokowania dokumentu PZ do czasu jego akceptacji przez
+uprawnionego użytkownika, co zapewnia kontrolę nad stanami magazynowymi
+i procesem przyjęcia towarów.</li>
+</ul></li>
+<li><p><strong>Powiązane funkcje i moduły:</strong></p>
+<ul>
+<li><strong>Magazyn:</strong> Bezpośrednio związany z zarządzaniem
+stanami magazynowymi, przyjęciami i rozchodami towarów.</li>
+<li><strong>Handel:</strong> Umożliwia powiązanie PZ z zamówieniami od
+dostawców i fakturami zakupu.</li>
+<li><strong>Księgowość (FK):</strong> Umożliwia automatyczne księgowanie
+dokumentów PZ, w tym rozliczanie faktur zakupu związanych z przyjęciem
+towarów. Konfiguracja kont księgowych dla PZ odbywa się w “dane dla
+FK”.</li>
+<li><strong>Administracja:</strong> Umożliwia konfigurację blokady
+dokumentów PZ, co wymaga akceptacji przed aktualizacją stanów
+magazynowych.</li>
+</ul></li>
+<li><p><strong>Dodatkowe informacje:</strong></p>
+<ul>
+<li>‘PZ’ to skrót od polskiego wyrażenia “Przyjęcie Zewnętrzne”.</li>
+<li>System Madar umożliwia blokowanie dokumentów PZ po ich wprowadzeniu,
+co wymaga odblokowania przez uprawnionego użytkownika. Funkcja ta jest
+konfigurowana poprzez ustawienie <code>blokadaPZ=1</code> w opcji
+“Administracja - operacje - dane systemu”. Odblokowanie dokumentu odbywa
+się poprzez zmianę jego statusu w opcji “Handel - MM - status -
+zwykłe”.</li>
+<li>Dokument PZ może być powiązany z fakturą zakupu i rozliczany w
+rejestrach VAT.</li>
+<li>Konfiguracja księgowania PZ (konto rozrachunków) odbywa się w “dane
+dla FK” w polu “przyjęcie PZ”.</li>
+<li>Tag ‘PZ’ jest używany do kategoryzowania wpisów na blogu “Poznaj
+Madar”, które dotyczą konfiguracji i funkcjonalności związanych z
+dokumentem Przyjęcia Zewnętrznego.</li>
+</ul></li>
+</ol>
+<h2 id="sources">Sources</h2>
+<ul>
+<li>Blokada dokumentów - MM, PZ, zlecenie materiałowe ∴:
+[2015-07-01-blokada-dokumentów-mm-pz-zlecenie-materiałowe.md]</li>
+<li>Konfiguracja rozliczenia zakupu na magazyn ∴:
+[2018-03-01-konfiguracja-rozliczenia-zakupu-na-magazyn.md]</li>
+</ul>
+</body>
+</html>

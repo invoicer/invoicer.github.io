@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>faktura</title>
+  <style>
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+  <link rel="stylesheet" href="tufte.css" />
+</head>
+<body>
+<nav id="TOC" role="doc-toc">
+<ul>
+<li><a href="#faktura" id="toc-faktura">faktura</a>
+<ul>
+<li><a href="#definition" id="toc-definition">Definition</a></li>
+<li><a href="#sources" id="toc-sources">Sources</a></li>
+</ul></li>
+</ul>
+</nav>
+<h1 id="faktura">faktura</h1>
+<h2 id="definition">Definition</h2>
+<p>Oto definicja tagu ‘faktura’ w kontekście systemu Madar ERP dla
+małych i średnich polskich firm:</p>
+<p><strong>1. Definicja:</strong> Tag ‘faktura’ w systemie Madar odnosi
+się do wszelkich funkcjonalności i informacji związanych z wystawianiem,
+obsługą i księgowaniem faktur VAT oraz faktur korygujących, będących
+kluczowym elementem procesu sprzedaży i rozliczeń. Obejmuje on zarówno
+faktury zaliczkowe, jak i te generowane na podstawie dokumentów
+magazynowych (WZ).</p>
+<p><strong>2. Główne zastosowania/konteksty:</strong></p>
+<ul>
+<li><strong>Wystawianie faktur VAT:</strong> Tworzenie standardowych
+faktur VAT za sprzedaż towarów i usług.</li>
+<li><strong>Wystawianie faktur korygujących:</strong> Korygowanie błędów
+na fakturach (np. zmiana ceny, stawki VAT, zwrot towaru).</li>
+<li><strong>Faktury zaliczkowe:</strong> Obsługa faktur zaliczkowych i
+ich rozliczanie.</li>
+<li><strong>Generowanie faktur na podstawie dokumentów WZ:</strong>
+Automatyczne tworzenie faktur na podstawie dokumentów wydania z magazynu
+(WZ).</li>
+<li><strong>Anulowanie i usuwanie faktur:</strong> Zarządzanie
+fakturami, które wymagają anulowania lub usunięcia z systemu.</li>
+<li><strong>Obsługa mechanizmu podzielonej płatności (Split
+Payment):</strong> Oznaczanie faktur, które podlegają mechanizmowi
+podzielonej płatności.</li>
+<li><strong>Dodawanie odbiorcy do faktury:</strong> Wprowadzanie danych
+odbiorcy na fakturze.</li>
+</ul>
+<p><strong>3. Powiązane funkcje/moduły:</strong></p>
+<ul>
+<li><strong>Handel:</strong> Moduł odpowiedzialny za sprzedaż, w tym
+wystawianie faktur.</li>
+<li><strong>Magazyn:</strong> Moduł magazynowy, z którego dane (np.
+dokumenty WZ) mogą być wykorzystywane do generowania faktur.</li>
+<li><strong>Księgowość:</strong> Moduł, w którym faktury są księgowane i
+wykorzystywane do celów rozliczeniowych.</li>
+<li><strong>Katalog towarów:</strong> Baza danych towarów, z której
+pobierane są informacje o cenach i stawkach VAT podczas wystawiania
+faktur.</li>
+<li><strong>Kontrahenci:</strong> Baza danych klientów i dostawców,
+wykorzystywana do wprowadzania danych na fakturach.</li>
+</ul>
+<p><strong>4. Dodatkowe informacje:</strong></p>
+<ul>
+<li>Tag ‘faktura’ jest powiązany z procesem sprzedaży i rozliczeń VAT w
+systemie Madar.</li>
+<li>System umożliwia wystawianie różnych rodzajów faktur korygujących, w
+zależności od powodu korekty (np. zmiana ceny, stawki VAT, zwrot
+towaru).</li>
+<li>Istnieje możliwość wystawienia korekty do faktury, która nie została
+wystawiona w systemie Madar (tzw. “dotyczy nieznanej faktury”).</li>
+<li>System umożliwia anulowanie i usuwanie faktur, z różnymi
+konsekwencjami dla stanu magazynowego i widoczności dokumentu w
+systemie.</li>
+<li>Tag ‘faktura’ często występuje w połączeniu z innymi tagami, takimi
+jak ‘fakturowanie’, ‘handel’, ‘korekta’, ‘magazyn’.</li>
+</ul>
+<h2 id="sources">Sources</h2>
+<ul>
+<li>Handel - sprzedaż FA VAT [?]:
+[2012-12-01-handel-sprzedaż-fa-vat.md]</li>
+<li>Faktura VAT korekta - korygowanie sprzedaży z różnych tytułów:
+[2013-04-01-faktura-vat-korekta-korygowanie-sprzedaży-z-różnyc.md]</li>
+<li>Sprzedaż z magazynu - generowanie faktury wg dowodu WZ ∴:
+[2013-08-01-sprzedaż-z-magazynu-generowanie-faktury-wg-dowodu-.md]</li>
+<li>Sprzedaż z magazynu - odwrotne obciążenie ∴:
+[2013-10-01-sprzedaż-z-magazynu-odwrotne-obciążenie.md]</li>
+<li>Zakupy pozostałe z odwrotnym obciążeniem:
+[2013-11-01-zakupy-pozostałe-z-odwrotnym-obciążeniem.md]</li>
+<li>Pobieranie faktur elektronicznych:
+[2014-02-01-pobieranie-faktur-elektronicznych.md]</li>
+<li>Faktury elektroniczne - lista [?]:
+[2014-04-01-faktury-elektroniczne-lista.md]</li>
+<li>Numeracja dokumentów ∴: [2014-04-01-numeracja-dokumentów.md]</li>
+<li>Jak wstawić odbiorcę do faktury:
+[2017-01-01-jak-wstawić-odbiorcę-do-faktury.md]</li>
+<li>Zamówienia od odbiorcy - generowanie z innych modułów ∴:
+[2017-01-01-zamówienia-od-odbiorcy-generowanie-z-innych-modułó.md]</li>
+<li>Wystawianie faktury [?]: [2017-02-01-wystawianie-faktury.md]</li>
+<li>Faktura marża - ewidencja na potrzeby VAT i KPR:
+[2017-05-01-faktura-marża-ewidencja-na-potrzeby-vat-i-kpr.md]</li>
+<li>Konfiguracja - dodawanie logo na fakturze:
+[2017-06-01-konfiguracja-dodawanie-logo-na-fakturze.md]</li>
+<li>Korekta faktury VAT [?]: [2018-02-01-korekta-faktury-vat.md]</li>
+<li>Ustawienie maksymalnej wartości faktury - “Zakaz przekroczenia
+limitu sprzedaży”:
+[2018-02-01-ustawienie-maksymalnej-wartości-faktury-zakaz-prze.md]</li>
+<li>Kontrahent - wybór rodzaju dokumentu sprzedażowego:
+[2018-03-01-kontrahent-wybór-rodzaju-dokumentu-sprzedażowego.md]</li>
+<li>Kasowanie i anulacja dokumentów:
+[2018-07-01-kasowanie-i-anulacja-dokumentów.md]</li>
+</ul>
+</body>
+</html>

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>pk</title>
+  <style>
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+  <link rel="stylesheet" href="tufte.css" />
+</head>
+<body>
+<nav id="TOC" role="doc-toc">
+<ul>
+<li><a href="#pk" id="toc-pk">PK</a>
+<ul>
+<li><a href="#definition" id="toc-definition">Definition</a></li>
+<li><a href="#sources" id="toc-sources">Sources</a></li>
+</ul></li>
+</ul>
+</nav>
+<h1 id="pk">PK</h1>
+<h2 id="definition">Definition</h2>
+<p>Oto definicja tagu ‘PK’ w kontekście systemu Madar ERP, bazująca na
+dostarczonych artykułach:</p>
+<p><strong>1. Definicja:</strong></p>
+<p>Tag ‘PK’ w systemie Madar oznacza <em>Polecenie Księgowania</em> i
+służy do oznaczania sposobu ujmowania dokumentów w księgach pomocniczych
+i księdze głównej. Wskazuje, czy dany zapis księgowy jest generowany
+automatycznie przez system (np. z rejestrów VAT, raportów kasowych) czy
+wprowadzany ręcznie (np. listy płac, amortyzacja).</p>
+<p><strong>2. Główne przypadki użycia:</strong></p>
+<ul>
+<li><strong>Oznaczanie sposobu księgowania:</strong> Rozróżnienie między
+zapisami generowanymi automatycznie (PK automatyczne) a wprowadzanymi
+ręcznie (PK ręczne).</li>
+<li><strong>Filtrowanie i wyświetlanie zapisów:</strong> Umożliwia
+selekcję i wyświetlanie zapisów PK na listach, np. w oknie “wczytaj
+PK”.</li>
+<li><strong>Korekty księgowe:</strong> Zmiana ustawienia znacznika PK
+jest stosowana głównie w przypadku korekt zapisów księgowych.</li>
+<li><strong>Księgowanie rejestrów:</strong> Tag ‘PK’ jest powiązany z
+księgowaniem rejestrów VAT oraz dokumentów handlowych (sprzedaż, zakup
+PZ).</li>
+</ul>
+<p><strong>3. Powiązane funkcje i moduły:</strong></p>
+<ul>
+<li><strong>Księgowość:</strong> Tag ‘PK’ jest ściśle związany z modułem
+księgowym, w szczególności z księgami pomocniczymi i księgą główną.</li>
+<li><strong>Rejestry VAT:</strong> Zapisy z rejestrów VAT mogą być
+oznaczane jako PK automatyczne.</li>
+<li><strong>Raporty kasowe i bankowe:</strong> Podobnie jak rejestry
+VAT, zapisy z raportów kasowych i bankowych mogą być oznaczane jako PK
+automatyczne.</li>
+<li><strong>Listy płac, umowy zlecenia, amortyzacja:</strong> Zapisy
+związane z tymi elementami są zazwyczaj oznaczane jako PK ręczne.</li>
+<li><strong>Handel (sprzedaż, zakup PZ):</strong> Dokumenty handlowe
+mogą być księgowane z użyciem wzorców rejestrów i powiązane z PK.</li>
+<li><strong>Wzorce rejestrów:</strong> Umożliwiają konfigurację sposobu
+przenoszenia danych do PK.</li>
+</ul>
+<p><strong>4. Dodatkowe informacje:</strong></p>
+<ul>
+<li><strong>PK automatyczne:</strong> Zapisy powiązane z księgami
+pomocniczymi, niewidoczne na zestawieniach ksiąg pomocniczych, ale
+widoczne w księdze głównej.</li>
+<li><strong>PK ręczne:</strong> Zapisy widoczne zarówno w księgach
+pomocniczych, jak i w księdze głównej.</li>
+<li><strong>Interfejs:</strong> Użytkownik może zmieniać rodzaj PK
+(automatyczne/ręczne) za pomocą klawisza “zamarkować”.</li>
+<li><strong>Ikona:</strong> Zapisy PK automatyczne są oznaczane
+specjalną ikoną na liście.</li>
+<li><strong>Zasobnik:</strong> Tag ‘PK’ jest powiązany z koncepcją
+“zasobnika”, który prawdopodobnie służy do przechowywania i zarządzania
+zapisami PK. Można przełączać się między listą pozycji PK a listą
+pozycji w zasobniku.</li>
+<li><strong>Dziennik:</strong> Po zaksięgowaniu, zapis PK otrzymuje
+numer dziennika.</li>
+</ul>
+<h2 id="sources">Sources</h2>
+<ul>
+<li>PK - lista zasobnik / PK ∴:
+[2015-02-01-pk-lista-zasobnik-pk.md]</li>
+<li>Wzorce rejestrów [?]: [2015-02-01-wzorce-rejestrów.md]</li>
+<li>Wzorzec rejestru - okienko [?]:
+[2015-02-01-wzorzec-rejestru-okienko.md]</li>
+<li>PKR - polecenie księgowania ręczne [?]:
+[2015-03-01-pkr-polecenie-księgowania-ręczne.md]</li>
+<li>PK - księgowanie kompensaty ∴:
+[2015-11-01-pk-księgowanie-kompensaty.md]</li>
+<li>KG - księgowanie do księgi głównej [?]:
+[2017-03-01-kg-księgowanie-do-księgi-głównej.md]</li>
+<li>PK - przeksięgowanie kont zespołu 4 (koszty wg rodzajów) na konta
+zespołu 5 (koszty wg miejsc powstawania):
+[2019-03-01-pk-przeksięgowanie-kont-zespołu-4-koszty-wg-rodzaj.md]</li>
+</ul>
+</body>
+</html>

@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>vat</title>
+  <style>
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+  <link rel="stylesheet" href="tufte.css" />
+</head>
+<body>
+<nav id="TOC" role="doc-toc">
+<ul>
+<li><a href="#vat" id="toc-vat">VAT</a>
+<ul>
+<li><a href="#definition" id="toc-definition">Definition</a></li>
+<li><a href="#definicja-tagu-vat-w-systemie-madar-erp"
+id="toc-definicja-tagu-vat-w-systemie-madar-erp">Definicja tagu ‘VAT’ w
+systemie Madar ERP:</a></li>
+<li><a href="#sources" id="toc-sources">Sources</a></li>
+</ul></li>
+</ul>
+</nav>
+<h1 id="vat">VAT</h1>
+<h2 id="definition">Definition</h2>
+<h2 id="definicja-tagu-vat-w-systemie-madar-erp">Definicja tagu ‘VAT’ w
+systemie Madar ERP:</h2>
+<ol type="1">
+<li><p><strong>Krótka definicja:</strong> Tag ‘VAT’ w systemie Madar ERP
+odnosi się do funkcjonalności związanych z ewidencją, rozliczaniem i
+raportowaniem podatku od towarów i usług (VAT). Umożliwia on prowadzenie
+rejestrów VAT, generowanie deklaracji VAT oraz integrację z Jednolitym
+Plikiem Kontrolnym (JPK).</p></li>
+<li><p><strong>Główne zastosowania/konteksty:</strong></p>
+<ul>
+<li><strong>Księgowość:</strong> Automatyczne schematy księgowań dla
+dokumentów związanych z VAT, rozrachunki z tytułu VAT.</li>
+<li><strong>Rejestry VAT:</strong> Prowadzenie rejestrów VAT sprzedaży i
+zakupu, grupowanie dokumentów w rejestry, numeracja dokumentów w ramach
+rejestrów.</li>
+<li><strong>Deklaracje VAT:</strong> Generowanie deklaracji VAT-7,
+VAT-27, VAT-UE.</li>
+<li><strong>JPK:</strong> Generowanie Jednolitego Pliku Kontrolnego
+(JPK) z uwzględnieniem danych VAT.</li>
+<li><strong>Faktury:</strong> Obsługa faktur VAT, w tym faktur marża,
+faktur korygujących, faktur z odwrotnym obciążeniem.</li>
+<li><strong>Transakcje zagraniczne:</strong> Ewidencja importu usług
+(invoice NP) zgodnie z art. 28b.</li>
+<li><strong>Mechanizm Podzielonej Płatności (MPP):</strong> Wprowadzanie
+dokumentów zakupu z MPP.</li>
+<li><strong>Kasa fiskalna:</strong> Wprowadzanie miesięcznych raportów z
+kasy fiskalnej do Rejestru VAT.</li>
+<li><strong>Korekta kosztów:</strong> Obsługa korekty kosztów związanych
+z VAT.</li>
+</ul></li>
+<li><p><strong>Powiązane funkcje/moduły:</strong></p>
+<ul>
+<li><strong>FK (Finanse i Księgowość):</strong> Automatyczne schematy
+księgowań, konta księgowe dla VAT.</li>
+<li><strong>Rejestry VAT:</strong> Ewidencja dokumentów VAT, powiązanie
+z deklaracjami VAT i JPK.</li>
+<li><strong>Księga Przychodów i Rozchodów (PKPiR):</strong> Ujmowanie
+dokumentów w PKPiR z uwzględnieniem VAT.</li>
+<li><strong>Invoicer:</strong> Wystawianie faktur VAT.</li>
+<li><strong>Magazyny:</strong> Rozrachunki z tytułu operacji
+magazynowych związanych z VAT.</li>
+<li><strong>Produkcja:</strong> Konta magazynu produkcji, sprzedaży
+wyrobów związane z VAT.</li>
+<li><strong>Kasy i banki:</strong> Przypisywanie raportów i numeracji do
+operacji kasowych i bankowych związanych z VAT.</li>
+</ul></li>
+<li><p><strong>Dodatkowe informacje:</strong></p>
+<ul>
+<li>Tag ‘VAT’ jest ściśle powiązany z polskimi przepisami podatkowymi
+dotyczącymi VAT.</li>
+<li>System Madar ERP umożliwia konfigurację szablonów księgowań w
+rejestrach VAT.</li>
+<li>Daty (księgowania, FA, VAT, płatności) mają wpływ na dzień
+zaliczenia dokumentu w księgach, do deklaracji VAT-7 i JPK oraz terminu
+płatności.</li>
+<li>System uwzględnia specyficzne przypadki dokumentów, takie jak import
+usług, korekty, faktury marża, zakupy z odwrotnym obciążeniem, zakupy
+środków trwałych z WNT.</li>
+<li>Uzupełnienie pola “wpłynęło” umożliwia zamieszczenie informacji na
+temat daty wpłynięcia zapłaty przy generowaniu pliku JPK.</li>
+<li>System umożliwia definiowanie kont kosztów 4/5.</li>
+<li>System umożliwia definiowanie kont dla operacji WDT i eksportu dla
+poszczególnych magazynów.</li>
+</ul></li>
+</ol>
+<h2 id="sources">Sources</h2>
+<ul>
+<li>Dane dla FK: [2012-12-01-dane-dla-fk.md]</li>
+<li>Rejestry VAT - okienko [?]:
+[2012-12-01-rejestry-vat-okienko.md]</li>
+<li>Invoicer: VAT i korekta kosztów w 2013 roku:
+[2013-01-01-invoicer-vat-i-korekta-kosztów-w-2013-roku.md]</li>
+<li>Korekta odliczonego VAT - dla niezapłaconych po 90 dniach:
+[2013-01-01-korekta-odliczonego-vat-dla-niezapłaconych-po-90-d.md]</li>
+<li>Odliczanie VAT według współczynnika:
+[2013-01-01-odliczanie-vat-według-współczynnika.md]</li>
+<li>Rejestr VAT - dopisujemy zakup usług:
+[2013-07-01-rejestr-vat-dopisujemy-zakup-usług.md]</li>
+<li>Korekta VAT należnego i naliczonego w programach Madar:
+[2014-04-01-korekta-vat-należnego-i-naliczonego-w-programach-m.md]</li>
+<li>Faktury zaliczkowe - wystawianie, rozliczanie, księgowanie:
+[2014-07-01-faktury-zaliczkowe-wystawianie-rozliczanie-księgow.md]</li>
+<li>Podłączanie drukarki fiskalnej ∴:
+[2015-04-01-podłączanie-drukarki-fiskalnej.md]</li>
+<li>VAT - ewidencja i rozliczanie ♦:
+[2016-05-01-vat-ewidencja-i-rozliczanie.md]</li>
+<li>Integrator - lista [?]: [2016-08-01-integrator-lista.md]</li>
+<li>Rejestry VAT - powiązanie z polami w JPK_V7M:
+[2016-08-01-rejestry-vat-powiązanie-z-polami-w-jpk_v7m.md]</li>
+<li>Deklaracje - zestawienie do VAT-27 i VAT-UE ∴:
+[2016-10-01-deklaracje-zestawienie-do-vat-27-i-vat-ue.md]</li>
+<li>Syntetyka VAT [?]: [2016-10-01-syntetyka-vat.md]</li>
+<li>Jak wstawić odbiorcę do faktury:
+[2017-01-01-jak-wstawić-odbiorcę-do-faktury.md]</li>
+<li>Konfiguracja - dodawanie logo na fakturze:
+[2017-06-01-konfiguracja-dodawanie-logo-na-fakturze.md]</li>
+<li>Kontrahent - wybór rodzaju dokumentu sprzedażowego:
+[2018-03-01-kontrahent-wybór-rodzaju-dokumentu-sprzedażowego.md]</li>
+</ul>
+</body>
+</html>

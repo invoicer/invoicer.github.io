@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>fakturowanie</title>
+  <style>
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+  <link rel="stylesheet" href="tufte.css" />
+</head>
+<body>
+<nav id="TOC" role="doc-toc">
+<ul>
+<li><a href="#fakturowanie" id="toc-fakturowanie">fakturowanie</a>
+<ul>
+<li><a href="#definition" id="toc-definition">Definition</a></li>
+<li><a href="#sources" id="toc-sources">Sources</a></li>
+</ul></li>
+</ul>
+</nav>
+<h1 id="fakturowanie">fakturowanie</h1>
+<h2 id="definition">Definition</h2>
+<p>Oto definicja tagu ‘fakturowanie’ w kontekście systemu Madar ERP,
+bazująca na dostarczonych artykułach:</p>
+<p><strong>1. Definicja:</strong></p>
+<p>Tag ‘fakturowanie’ w systemie Madar odnosi się do wszystkich
+funkcjonalności i procesów związanych z wystawianiem, obsługą i
+zarządzaniem fakturami, zarówno tradycyjnymi (papierowymi), jak i
+elektronicznymi (e-fakturami). Obejmuje to pełen cykl życia faktury, od
+jej utworzenia, poprzez wysyłkę, aż po księgowanie i ewentualne korekty
+lub anulowanie.</p>
+<p><strong>2. Główne zastosowania/konteksty:</strong></p>
+<ul>
+<li><strong>Wystawianie faktur VAT:</strong> Tworzenie faktur sprzedaży
+dla towarów i usług.</li>
+<li><strong>Obsługa faktur zaliczkowych:</strong> Wystawianie i
+rozliczanie faktur zaliczkowych.</li>
+<li><strong>Korekty faktur:</strong> Wystawianie faktur korygujących
+(zwrotów).</li>
+<li><strong>Anulowanie faktur:</strong> Proces anulowania wystawionych
+faktur.</li>
+<li><strong>Faktury elektroniczne (e-faktury):</strong> Generowanie,
+wysyłka i pobieranie faktur w formie elektronicznej.</li>
+<li><strong>Split Payment (Podzielona Płatność):</strong> Obsługa
+mechanizmu podzielonej płatności na fakturach.</li>
+<li><strong>Poprawa faktur:</strong> Edycja i modyfikacja wcześniej
+wystawionych faktur.</li>
+<li><strong>Sumowanie asortymentu:</strong> Automatyczne sumowanie
+ilości sprzedawanego asortymentu podczas wprowadzania faktury.</li>
+</ul>
+<p><strong>3. Powiązane funkcje/moduły w oprogramowaniu:</strong></p>
+<ul>
+<li><strong>Handel:</strong> Moduł sprzedaży, w którym generowane są
+faktury VAT.</li>
+<li><strong>Magazyn:</strong> Moduł zarządzania magazynem, powiązany z
+fakturami sprzedaży (aktualizacja stanów magazynowych po wystawieniu
+faktury).</li>
+<li><strong>Księgowość:</strong> Moduł księgowy, do którego trafiają
+dane z faktur.</li>
+<li><strong>Administracja:</strong> Moduł konfiguracji, w którym
+ustawiane są parametry dotyczące fakturowania, w tym e-faktur.</li>
+<li><strong>Faktury elektroniczne (moduł):</strong> Specjalny moduł do
+zarządzania e-fakturami, ich wysyłką i udostępnianiem klientom.</li>
+<li><strong>Kontrahenci:</strong> Baza danych kontrahentów (odbiorców
+faktur).</li>
+</ul>
+<p><strong>4. Dodatkowe informacje:</strong></p>
+<ul>
+<li>Tag ‘fakturowanie’ jest powiązany z tagiem ‘faktura’, ale jest
+szerszy, obejmując cały proces, a nie tylko sam dokument.</li>
+<li>System Madar umożliwia zarówno wystawianie tradycyjnych faktur, jak
+i generowanie e-faktur, z możliwością ich automatycznej wysyłki i
+udostępniania klientom.</li>
+<li>W systemie istnieje możliwość konfiguracji różnych aspektów
+fakturowania, w tym ustawień dotyczących e-faktur.</li>
+<li>System umożliwia anulowanie i usuwanie faktur, z uwzględnieniem
+wpływu na stany magazynowe.</li>
+<li>System wspiera mechanizm podzielonej płatności (Split Payment) na
+fakturach.</li>
+<li>System umożliwia wystawianie różnych typów dokumentów sprzedaży,
+takich jak paragony, RWS (rachunek uproszczony), dowody dostawy, w
+zależności od ustawień kontrahenta.</li>
+</ul>
+<h2 id="sources">Sources</h2>
+<ul>
+<li>Handel - sprzedaż FA VAT [?]:
+[2012-12-01-handel-sprzedaż-fa-vat.md]</li>
+<li>Pobieranie faktur elektronicznych:
+[2014-02-01-pobieranie-faktur-elektronicznych.md]</li>
+<li>Faktury elektroniczne - lista [?]:
+[2014-04-01-faktury-elektroniczne-lista.md]</li>
+<li>Numeracja dokumentów ∴: [2014-04-01-numeracja-dokumentów.md]</li>
+<li>Wystawianie faktury [?]: [2017-02-01-wystawianie-faktury.md]</li>
+<li>Korekta faktury VAT [?]: [2018-02-01-korekta-faktury-vat.md]</li>
+<li>Ustawienie maksymalnej wartości faktury - “Zakaz przekroczenia
+limitu sprzedaży”:
+[2018-02-01-ustawienie-maksymalnej-wartości-faktury-zakaz-prze.md]</li>
+</ul>
+</body>
+</html>

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>zaliczka</title>
+  <style>
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+  <link rel="stylesheet" href="tufte.css" />
+</head>
+<body>
+<nav id="TOC" role="doc-toc">
+<ul>
+<li><a href="#zaliczka" id="toc-zaliczka">zaliczka</a>
+<ul>
+<li><a href="#definition" id="toc-definition">Definition</a></li>
+<li><a href="#sources" id="toc-sources">Sources</a></li>
+</ul></li>
+</ul>
+</nav>
+<h1 id="zaliczka">zaliczka</h1>
+<h2 id="definition">Definition</h2>
+<p>Oto definicja tagu ‘zaliczka’ w kontekście systemu Madar ERP,
+uwzględniająca dostarczone materiały:</p>
+<p><strong>1. Definicja:</strong></p>
+<p>Tag ‘zaliczka’ w systemie Madar ERP odnosi się do funkcjonalności
+związanych z obsługą i rozliczaniem faktur zaliczkowych, czyli
+dokumentów wystawianych w momencie otrzymania wpłaty na poczet przyszłej
+dostawy towarów lub usług. Obejmuje proces od rejestracji wpłaty,
+poprzez wystawienie faktury zaliczkowej, jej księgowanie, aż po
+rozliczenie zaliczki na fakturze końcowej.</p>
+<p><strong>2. Główne zastosowania/konteksty:</strong></p>
+<ul>
+<li><strong>Rejestracja wpłat zaliczek:</strong> Ewidencjonowanie wpłat
+gotówkowych i przelewów od klientów jako zaliczek na przyszłe
+transakcje.</li>
+<li><strong>Wystawianie faktur zaliczkowych:</strong> Generowanie faktur
+potwierdzających otrzymanie zaliczki od klienta. Dotyczy zarówno faktur
+krajowych, jak i eksportowych (w tym w walutach obcych).</li>
+<li><strong>Księgowanie faktur zaliczkowych:</strong> Automatyczne
+księgowanie VAT od zaliczek w rejestrach VAT (rejestr “zaliczki od
+odbiorcy”). Kwota netto i brutto są księgowane dopiero przy wystawieniu
+faktury końcowej.</li>
+<li><strong>Rozliczanie zaliczek na fakturze końcowej:</strong>
+Powiązanie wystawionych faktur zaliczkowych z fakturą końcową,
+pomniejszając kwotę do zapłaty o wcześniej wpłacone zaliczki.</li>
+<li><strong>Obsługa zaliczek w handlu zagranicznym:</strong> Wystawianie
+faktur zaliczkowych eksportowych z uwzględnieniem odpowiednich stawek
+VAT (WNT, EXP) i obsługą walut obcych.</li>
+</ul>
+<p><strong>3. Powiązane funkcje/moduły w systemie:</strong></p>
+<ul>
+<li><strong>Księgowość:</strong> Moduł kluczowy, obejmujący rejestry
+VAT, księgowanie wpłat i faktur zaliczkowych, ustawienia kont VAT dla
+zaliczek (Dane dla FK).</li>
+<li><strong>Kasjer:</strong> Rejestracja wpłat gotówkowych
+zaliczek.</li>
+<li><strong>Bank:</strong> Rejestracja wpłat zaliczek przelewem.</li>
+<li><strong>Faktura VAT:</strong> Wystawianie faktur zaliczkowych i
+końcowych.</li>
+<li><strong>Handel:</strong> Moduł sprzedaży (SPRZEDAŻ FVAT)
+wykorzystywany do wystawiania faktur końcowych z rozliczeniem
+zaliczek.</li>
+</ul>
+<p><strong>4. Dodatkowe informacje:</strong></p>
+<ul>
+<li>Tag ‘zaliczka’ jest powiązany z procesem wystawiania i rozliczania
+faktur zaliczkowych, co jest wymagane prawnie w Polsce przy otrzymywaniu
+wpłat na poczet przyszłych dostaw.</li>
+<li>System Madar ERP automatyzuje wiele czynności związanych z obsługą
+zaliczek, takich jak księgowanie VAT i powiązanie zaliczek z fakturami
+końcowymi.</li>
+<li>W przypadku faktur zaliczkowych eksportowych, system umożliwia
+obsługę różnych stawek VAT (WNT, EXP) oraz walut obcych.</li>
+<li>Użytkownicy mogą znaleźć dodatkowe informacje i instrukcje dotyczące
+księgowania zaliczek w dedykowanych postach na blogu (linki w
+źródłach).</li>
+</ul>
+<h2 id="sources">Sources</h2>
+<ul>
+<li>Rozliczenie faktury zaliczkowej:
+[2013-04-01-rozliczenie-faktury-zaliczkowej.md]</li>
+<li>Faktury zaliczkowe - wystawianie, rozliczanie, księgowanie:
+[2014-07-01-faktury-zaliczkowe-wystawianie-rozliczanie-księgow.md]</li>
+</ul>
+</body>
+</html>

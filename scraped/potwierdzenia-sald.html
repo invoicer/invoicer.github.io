@@ -50,51 +50,49 @@ drukowanie dokumentów potwierdzających stan rozrachunków (saldo) z
 kontrahentami na określony dzień. Dokument ten służy do weryfikacji i
 uzgadniania wzajemnych zobowiązań i należności pomiędzy firmą a jej
 dostawcami lub odbiorcami.</p></li>
-<li><p><strong>Główne zastosowania:</strong></p>
+<li><p><strong>Użycie:</strong> Tag ‘potwierdzenia sald’ jest używany w
+kontekście:</p>
 <ul>
-<li>Generowanie potwierdzeń sald dla kontrahentów (dostawców i
-odbiorców).</li>
-<li>Weryfikacja i uzgadnianie sald z kontrahentami w celu zapewnienia
-zgodności danych księgowych.</li>
-<li>Ułatwienie procesu audytu i kontroli finansowej.</li>
-<li>Monitorowanie i zarządzanie należnościami i zobowiązaniami.</li>
+<li>Generowania dokumentów potwierdzających saldo dla kontrahentów
+(zarówno dostawców, jak i odbiorców).</li>
+<li>Weryfikacji i uzgadniania stanu rozrachunków z kontrahentami.</li>
+<li>Procesu księgowego związanego z kontrolą należności i
+zobowiązań.</li>
+<li>Wyszukiwania informacji i instrukcji dotyczących generowania tych
+dokumentów w systemie Madar.</li>
 </ul></li>
 <li><p><strong>Powiązane funkcje i moduły:</strong></p>
 <ul>
-<li><strong>Moduł Księgowości (Księgowość FK):</strong> Podstawowy
-moduł, z którego pobierane są dane o saldach kontrahentów.</li>
-<li><strong>Moduł Kasjera:</strong> Miejsce, w którym znajduje się opcja
-generowania potwierdzeń sald (“kasjer - potwierdzenia sald”).</li>
-<li><strong>Rejestry VAT:</strong> Źródło dokumentów z rejestrów VAT,
-które mogą wpływać na saldo.</li>
-<li><strong>Należności (sprzedaż z magazynu):</strong> Źródło dokumentów
-związanych ze sprzedażą, wpływających na należności od
-kontrahentów.</li>
-<li><strong>Zobowiązania (zakup na magazyn):</strong> Źródło dokumentów
-związanych z zakupami, wpływających na zobowiązania wobec
-kontrahentów.</li>
-<li><strong>Zagranica (zakup importowy):</strong> Źródło dokumentów
-związanych z importem, wpływających na saldo.</li>
-<li><strong>Kasa (raporty kasowe i bankowe):</strong> Źródło dokumentów
-z operacji kasowych i bankowych, wpływających na saldo.</li>
-<li><strong>Moduł Kontrahentów:</strong> Umożliwia wybór kontrahenta,
-dla którego generowane jest potwierdzenie salda.</li>
+<li><strong>Moduł Księgowości (Księgowość FK):</strong> Generowanie
+potwierdzeń sald jest integralną częścią procesu księgowego.</li>
+<li><strong>Moduł Kasjera:</strong> Funkcjonalność generowania
+potwierdzeń sald jest dostępna z poziomu modułu kasjera (opcja “kasjer -
+potwierdzenia sald”).</li>
+<li><strong>Bazy danych dokumentów:</strong> System Madar przechowuje
+dokumenty w różnych bazach danych w zależności od operacji (rejestry
+VAT, należności, zobowiązania, zagranica, kasa). Użytkownik musi wybrać
+odpowiednią bazę, aby załadować dokumenty do potwierdzenia salda.</li>
+<li><strong>Lista kontrahentów:</strong> Wybór kontrahenta, dla którego
+generowane jest potwierdzenie salda, odbywa się z listy kontrahentów w
+systemie.</li>
+<li><strong>Raporty:</strong> Potwierdzenia sald mogą być traktowane
+jako forma raportu o stanie rozrachunków.</li>
 </ul></li>
 <li><p><strong>Dodatkowe informacje:</strong></p>
 <ul>
-<li>Proces generowania potwierdzenia salda wymaga określenia daty, na
-którą ma być wygenerowane saldo, oraz wyboru kontrahenta.</li>
-<li>System umożliwia wybór dokumentów z różnych baz danych (rejestry
-VAT, należności, zobowiązania, zagranica, kasa), które mają być
-uwzględnione w potwierdzeniu salda.</li>
-<li>Użytkownik ma możliwość dodania dodatkowych uwag do wydruku
-potwierdzenia salda.</li>
-<li>Tag ‘potwierdzenia sald’ jest powiązany z procesem uzgadniania sald,
-co pomaga w identyfikacji i rozwiązywaniu niezgodności (np. poprzez
-“Test niezapłaconych”).</li>
-<li>Funkcjonalność ta jest szczególnie przydatna w małych i średnich
-przedsiębiorstwach (MŚP) korzystających z systemu Madar ERP do
-zarządzania finansami i rozrachunkami.</li>
+<li>Generowanie potwierdzenia salda wymaga podania daty, na którą ma być
+wygenerowane saldo.</li>
+<li>System umożliwia wprowadzenie dodatkowych uwag, które zostaną
+wydrukowane na potwierdzeniu salda.</li>
+<li>Dokumenty do potwierdzenia salda są ładowane z różnych baz danych w
+zależności od rodzaju operacji (np. rejestry VAT, sprzedaż z magazynu,
+zakup na magazyn).</li>
+<li>Tag ‘potwierdzenia sald’ jest powiązany z tagami ‘księgowość’,
+‘kasjer’ i ‘niezapłacone’, co wskazuje na jego związek z procesami
+finansowymi i kontrolą płatności.</li>
+<li>Warto zweryfikować, czy obroty zgadzają się z pozycjami
+niezapłaconymi, co może być powiązane z funkcją “Test
+niezapłaconych”.</li>
 </ul></li>
 </ol>
 <h2 id="sources">Sources</h2>

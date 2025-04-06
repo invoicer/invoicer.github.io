@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>mm</title>
+  <style>
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+  <link rel="stylesheet" href="tufte.css" />
+</head>
+<body>
+<nav id="TOC" role="doc-toc">
+<ul>
+<li><a href="#mm" id="toc-mm">MM</a>
+<ul>
+<li><a href="#definition" id="toc-definition">Definition</a></li>
+<li><a href="#sources" id="toc-sources">Sources</a></li>
+</ul></li>
+</ul>
+</nav>
+<h1 id="mm">MM</h1>
+<h2 id="definition">Definition</h2>
+<p>Oto definicja tagu ‘MM’ w kontekście systemu Madar ERP, bazująca na
+dostarczonych artykułach:</p>
+<p><strong>1. Definicja:</strong></p>
+<p>Tag ‘MM’ w systemie Madar odnosi się do dokumentu <em>Przesunięcia
+Międzymagazynowego</em>, czyli operacji transferu towarów pomiędzy
+różnymi magazynami w firmie. Dokument MM rejestruje ruch towarów
+pomiędzy magazynami i wymaga odpowiedniego zaksięgowania w systemie
+finansowo-księgowym.</p>
+<p><strong>2. Główne zastosowania/konteksty:</strong></p>
+<ul>
+<li><strong>Przesunięcia towarów między magazynami:</strong> Rejestracja
+fizycznego przemieszczenia towarów z jednego magazynu do drugiego.</li>
+<li><strong>Blokada dokumentów:</strong> Możliwość zablokowania
+dokumentu MM po jego wprowadzeniu, wymagająca akceptacji uprawnionego
+użytkownika przed faktycznym zdjęciem towaru z magazynu źródłowego i
+dodaniem go do magazynu docelowego. Jest to mechanizm kontroli i
+weryfikacji.</li>
+<li><strong>Księgowanie:</strong> Dokument MM generuje zapisy księgowe,
+które muszą być prawidłowo powiązane z kontami magazynowymi. Błędy w
+konfiguracji kont księgowych dla magazynów uniemożliwiają zapis
+dokumentu MM.</li>
+</ul>
+<p><strong>3. Powiązane funkcje/moduły:</strong></p>
+<ul>
+<li><strong>Handel:</strong> Moduł, w którym znajduje się opcja zmiany
+statusu dokumentu MM (np. odblokowanie).</li>
+<li><strong>Magazyn:</strong> Dokument MM bezpośrednio wpływa na stany
+magazynowe.</li>
+<li><strong>Księgowość:</strong> Moduł odpowiedzialny za konfigurację
+kont księgowych dla magazynów ( <em>Księgowość - dane dla FK -
+magazyny</em> ) i księgowanie operacji MM.</li>
+<li><strong>Administracja:</strong> Moduł, w którym konfiguruje się
+blokadę dokumentów MM ( <em>Administracja - operacje - dane systemu</em>
+).</li>
+<li><strong>Produkcja:</strong> (pośrednio) Dokument MM może być
+powiązany z produkcją, np. przesunięcie materiałów do produkcji.</li>
+</ul>
+<p><strong>4. Dodatkowe informacje:</strong></p>
+<ul>
+<li>‘MM’ to skrót od polskiego wyrażenia “Przesunięcie
+Międzymagazynowe”.</li>
+<li>Blokada dokumentów MM jest opcjonalna i konfigurowana w systemie.
+Umożliwia wprowadzenie dwuetapowego procesu, gdzie jeden pracownik
+tworzy dokument, a inny go zatwierdza.</li>
+<li>Prawidłowe księgowanie dokumentu MM wymaga zdefiniowania kont
+księgowych dla każdego magazynu.</li>
+<li>Oprócz MM, system Madar posiada podobne mechanizmy blokowania dla
+dokumentów PZ (Przyjęcie Zewnętrzne) i Zleceń Materiałowych
+(produkcyjnych).</li>
+</ul>
+<h2 id="sources">Sources</h2>
+<ul>
+<li>Komunikat: niedozwolone księgowanie z konta … na …:
+[2015-04-01-komunikat-niedozwolone-księgowanie-z-konta-na.md]</li>
+<li>Blokada dokumentów - MM, PZ, zlecenie materiałowe ∴:
+[2015-07-01-blokada-dokumentów-mm-pz-zlecenie-materiałowe.md]</li>
+</ul>
+</body>
+</html>

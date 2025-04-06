@@ -36,7 +36,61 @@
 </nav>
 <h1 id="niezapłacone">niezapłacone</h1>
 <h2 id="definition">Definition</h2>
-<p>Definition generation failed: Event loop is closed</p>
+<p>Oto definicja tagu ‘niezapłacone’ w kontekście systemu Madar ERP,
+bazująca na dostarczonych artykułach:</p>
+<p><strong>Definicja:</strong> Tag ‘niezapłacone’ w systemie Madar
+oznacza dokumenty (zarówno sprzedażowe, jak i zakupowe), które nie
+zostały jeszcze w pełni uregulowane finansowo. Oznacza to, że dla danego
+dokumentu nie odnotowano w systemie odpowiadającej mu wpłaty lub
+wypłaty, która by go zbilansowała.</p>
+<p><strong>Główne zastosowania i konteksty:</strong></p>
+<ul>
+<li><strong>Preliminarz płatności:</strong> Tag ten jest używany w
+preliminarzu płatności, który prezentuje listę wszystkich niezapłaconych
+dokumentów w systemie. Umożliwia to przegląd należności (dokumenty
+sprzedażowe) i zobowiązań (dokumenty zakupowe).</li>
+<li><strong>Potwierdzenia sald:</strong> Tag jest powiązany z funkcją
+generowania potwierdzeń sald dla kontrahentów. Pozwala na identyfikację
+niezapłaconych faktur i innych dokumentów, które powinny być
+uwzględnione w potwierdzeniu salda.</li>
+<li><strong>Odbilansowanie dokumentów:</strong> Tag jest używany w
+kontekście “odbilansowania” zapłaconego dokumentu. Odbilansowanie
+przywraca status dokumentu do “niezapłaconego”, co jest przydatne w
+sytuacjach, gdy płatność została błędnie zaksięgowana lub cofnięta.</li>
+</ul>
+<p><strong>Powiązane funkcje i moduły:</strong></p>
+<ul>
+<li><strong>Księgowość:</strong> Tag ‘niezapłacone’ jest silnie
+powiązany z modułem księgowości, ponieważ dotyczy rozrachunków
+finansowych.</li>
+<li><strong>Kasjer:</strong> Funkcja potwierdzenia sald, powiązana z
+tagiem, znajduje się w opcji “kasjer”.</li>
+<li><strong>Rejestry VAT:</strong> Odbilansowanie dokumentów może być
+wykonywane w rejestrach VAT, co wpływa na status dokumentu jako
+“niezapłaconego”.</li>
+<li><strong>Administracja:</strong> Opcja odbilansowania jest również
+dostępna w administracji systemu.</li>
+<li><strong>Należności i Zobowiązania:</strong> Tag bezpośrednio odnosi
+się do modułów zarządzania należnościami i zobowiązaniami, ponieważ
+identyfikuje dokumenty, które wymagają uregulowania.</li>
+</ul>
+<p><strong>Dodatkowe informacje:</strong></p>
+<ul>
+<li><strong>Bilansowanie:</strong> System Madar automatycznie zmienia
+status dokumentu na “zapłacony” po zbilansowaniu go z odpowiednią wpłatą
+lub wypłatą.</li>
+<li><strong>Odbilansowanie:</strong> Funkcja odbilansowania pozwala na
+ręczne przywrócenie statusu “niezapłaconego” dokumentu.</li>
+<li><strong>Bazy danych:</strong> Dokumenty niezapłacone mogą być
+przechowywane w różnych bazach danych w systemie Madar, w zależności od
+rodzaju operacji (np. rejestry VAT, sprzedaż z magazynu, zakup na
+magazyn, kasa). Przy generowaniu potwierdzeń sald, należy wybrać
+odpowiednią bazę danych, aby wyświetlić wszystkie niezapłacone dokumenty
+dla danego kontrahenta.</li>
+<li><strong>Test niezapłaconych:</strong> System posiada funkcję “Test
+niezapłaconych”, która służy do weryfikacji zgodności obrotów z
+pozycjami niezapłaconymi.</li>
+</ul>
 <h2 id="sources">Sources</h2>
 <ul>
 <li>Preliminarz płatności: [2015-03-01-preliminarz-płatności.md]</li>

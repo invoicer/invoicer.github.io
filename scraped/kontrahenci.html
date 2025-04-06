@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>kontrahenci</title>
+  <style>
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+  <link rel="stylesheet" href="tufte.css" />
+</head>
+<body>
+<nav id="TOC" role="doc-toc">
+<ul>
+<li><a href="#kontrahenci" id="toc-kontrahenci">kontrahenci</a>
+<ul>
+<li><a href="#definition" id="toc-definition">Definition</a></li>
+<li><a href="#sources" id="toc-sources">Sources</a></li>
+</ul></li>
+</ul>
+</nav>
+<h1 id="kontrahenci">kontrahenci</h1>
+<h2 id="definition">Definition</h2>
+<p>Oto definicja tagu ‘kontrahenci’ w kontekście systemu Madar ERP,
+bazująca na dostarczonych artykułach:</p>
+<p><strong>1. Definicja:</strong></p>
+<p>Tag ‘kontrahenci’ w systemie Madar ERP odnosi się do danych i
+funkcjonalności związanych z zarządzaniem informacjami o partnerach
+biznesowych firmy, takich jak klienci i dostawcy. Umożliwia
+przechowywanie, wyszukiwanie, edycję i import danych kontrahentów, a
+także ich wykorzystanie w różnych modułach systemu.</p>
+<p><strong>2. Główne zastosowania i konteksty:</strong></p>
+<ul>
+<li><strong>Dodawanie nowych kontrahentów:</strong> Umożliwia
+wprowadzanie danych kontrahentów (nazwa, adres, NIP, dane bankowe) do
+systemu. System oferuje możliwość automatycznego pobierania danych z
+bazy REGON na podstawie numeru NIP.</li>
+<li><strong>Wybór kontrahenta w dokumentach:</strong> Używany przy
+wystawianiu faktur VAT, paragonów, RWS (rozliczenie wpłat sprzedaży) i
+dowodów dostawy.</li>
+<li><strong>Przypisywanie kontrahentów do wpisów:</strong>
+Wykorzystywany przy rejestrowaniu poczty przychodzącej, gdzie przypisuje
+się daną korespondencję do konkretnego kontrahenta.</li>
+<li><strong>Przeglądanie i wyszukiwanie kontrahentów:</strong> Umożliwia
+przeglądanie listy kontrahentów i wyszukiwanie ich po różnych
+kryteriach.</li>
+<li><strong>Import kontrahentów:</strong> Pozwala na import danych
+kontrahentów z zewnętrznych źródeł.</li>
+</ul>
+<p><strong>3. Powiązane funkcje i moduły:</strong></p>
+<ul>
+<li><strong>Handel:</strong> Bezpośrednio powiązany z modułem handlowym,
+gdzie dane kontrahentów są wykorzystywane przy wystawianiu dokumentów
+sprzedażowych.</li>
+<li><strong>Księgowość:</strong> Wykorzystywany w module księgowym, np.
+przy rejestrowaniu dokumentów VAT i powiązywaniu ich z odpowiednimi
+kontrahentami.</li>
+<li><strong>Poczta/Sprawy:</strong> Umożliwia przypisywanie
+korespondencji i spraw do konkretnych kontrahentów.</li>
+<li><strong>Rejestry VAT:</strong> Kontrahenci są powiązani z
+dokumentami w rejestrach VAT.</li>
+<li><strong>Kasjer:</strong> Pośrednio powiązany, ponieważ dokumenty
+kasowe mogą być powiązane z kontrahentami.</li>
+</ul>
+<p><strong>4. Dodatkowe informacje:</strong></p>
+<ul>
+<li>‘Kontrahenci’ to polskie słowo oznaczające partnerów biznesowych,
+klientów i dostawców.</li>
+<li>Lista kontrahentów jest centralnym repozytorium danych, z którego
+korzystają różne moduły systemu Madar ERP.</li>
+<li>System umożliwia weryfikację statusu VAT kontrahentów (Integrator -
+weryfikacja czynnych podatników VAT).</li>
+<li>W przypadku anulowania dokumentów VAT powiązanych z kontrahentami,
+należy zachować ostrożność, szczególnie jeśli dokument został
+zarejestrowany w kasie/banku.</li>
+</ul>
+<h2 id="sources">Sources</h2>
+<ul>
+<li>Dodawanie kontrahenta [?]:
+[2012-12-01-dodawanie-kontrahenta.md]</li>
+<li>Kontrahenci - lista [?]: [2013-02-01-kontrahenci-lista.md]</li>
+<li>Anulacja dokumentu z Rejestru VAT ∴:
+[2013-07-01-anulacja-dokumentu-z-rejestru-vat.md]</li>
+<li>Poprawa dokumenu w rejestrach VAT:
+[2013-07-01-poprawa-dokumenu-w-rejestrach-vat.md]</li>
+<li>Rejestr VAT - dopisujemy zakup usług:
+[2013-07-01-rejestr-vat-dopisujemy-zakup-usług.md]</li>
+<li>Rejestr VAT - lista [?]: [2013-07-01-rejestr-vat-lista.md]</li>
+<li>Bilansowanie w momencie dopisywania kosztu ∴:
+[2013-10-01-bilansowanie-w-momencie-dopisywania-kosztu.md]</li>
+<li>Konfigurowanie kontaktów ∴:
+[2015-07-01-konfigurowanie-kontaktów.md]</li>
+<li>Lista kontaktów [?]: [2015-07-01-lista-kontaktów.md]</li>
+<li>Kontrahent - wybór rodzaju dokumentu sprzedażowego:
+[2018-03-01-kontrahent-wybór-rodzaju-dokumentu-sprzedażowego.md]</li>
+</ul>
+</body>
+</html>

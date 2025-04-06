@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>numeracja</title>
+  <style>
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+  <link rel="stylesheet" href="tufte.css" />
+</head>
+<body>
+<nav id="TOC" role="doc-toc">
+<ul>
+<li><a href="#numeracja" id="toc-numeracja">numeracja</a>
+<ul>
+<li><a href="#definition" id="toc-definition">Definition</a></li>
+<li><a href="#sources" id="toc-sources">Sources</a></li>
+</ul></li>
+</ul>
+</nav>
+<h1 id="numeracja">numeracja</h1>
+<h2 id="definition">Definition</h2>
+<p>Oto definicja tagu ‘numeracja’ w kontekście systemu Madar ERP,
+bazująca na dostarczonym artykule:</p>
+<p><strong>1. Definicja:</strong></p>
+<p>Tag ‘numeracja’ w systemie Madar ERP odnosi się do mechanizmów i
+konfiguracji związanych z automatycznym lub ręcznym nadawaniem numerów
+dokumentom w różnych modułach systemu, takich jak faktury, dokumenty
+magazynowe i księgowe. Obejmuje on ustawienia formatu numeracji,
+możliwość zmiany numerów dokumentów oraz konfigurację parametrów
+wpływających na sposób numerowania.</p>
+<p><strong>2. Główne zastosowania/konteksty:</strong></p>
+<ul>
+<li><strong>Fakturowanie:</strong> Ustawienia formatu numeracji faktur
+sprzedażowych, w tym dodawanie przedrostków, łamanie numeru przez
+miesiąc lub rok, oraz łączenie numeracji faktur i rachunków.</li>
+<li><strong>Magazyn:</strong> Konfiguracja numeracji dokumentów
+magazynowych, w tym faktur sprzedażowych generowanych z magazynu. Wymaga
+wpisów konfiguracyjnych w “danych systemu”.</li>
+<li><strong>Księgowość:</strong> Ustawienia numeracji dokumentów
+księgowych, w tym możliwość zmiany numeru i ustawienia nowej numeracji,
+z uwzględnieniem szablonów numeracji (np. numer/MM/RRRR).</li>
+<li><strong>Kompletacje:</strong> Obsługa numeracji kompletacji, z uwagą
+na brak kontroli podwojenia numeracji i konieczność ręcznego ustawiania
+numeru w przypadku problemów z kontynuacją numeracji.</li>
+<li><strong>Zmiana roku obrotowego:</strong> Ustawienie nowej numeracji
+na początku nowego roku.</li>
+</ul>
+<p><strong>3. Powiązane funkcje/moduły:</strong></p>
+<ul>
+<li><strong>Fakturowanie (faktura, fakturowanie):</strong> Bezpośrednio
+związane z numeracją faktur.</li>
+<li><strong>Magazyn (magazyn):</strong> Numeracja dokumentów
+magazynowych, w tym faktur sprzedażowych generowanych z magazynu.</li>
+<li><strong>Księgowość:</strong> Numeracja dokumentów księgowych.</li>
+<li><strong>Administracja:</strong> Moduł “Administracja - Operacje -
+dane systemu”, gdzie konfiguruje się parametry numeracji dokumentów
+magazynowych.</li>
+<li><strong>Sprzedaż (sprzedaż):</strong> Pośrednio związane, ponieważ
+faktury sprzedażowe podlegają numeracji.</li>
+</ul>
+<p><strong>4. Dodatkowe informacje:</strong></p>
+<ul>
+<li><strong>Format numeracji:</strong> System Madar ERP oferuje
+elastyczne możliwości konfiguracji formatu numeracji, w tym dodawanie
+przedrostków, łamanie numeru przez miesiąc lub rok.</li>
+<li><strong>Zmiana numeru:</strong> Program umożliwia zmianę numeru
+dokumentu, ale zaleca się ostrożność i stosowanie tej funkcji tylko w
+uzasadnionych przypadkach.</li>
+<li><strong>Konfiguracja parametrów:</strong> Dla dokumentów
+magazynowych zmiana formatu numeracji wymaga dodania odpowiednich
+parametrów w “danych systemu”.</li>
+<li><strong>Restart numeracji:</strong> System domyślnie nie zmienia
+numeracji automatycznie w nowym roku, dlatego konieczne jest ręczne
+ustawienie nowej numeracji.</li>
+<li><strong>Szablony numeracji:</strong> Program rozpoznaje szablony
+numeracji, co wpływa na inkrementację numerów.</li>
+<li><strong>Wymagane ponowne logowanie:</strong> Po zmianie parametrów
+numeracji w “danych systemu” konieczne jest wylogowanie i ponowne
+zalogowanie, aby zmiany zostały uwzględnione.</li>
+</ul>
+<h2 id="sources">Sources</h2>
+<ul>
+<li>Numeracja dokumentów ∴: [2014-04-01-numeracja-dokumentów.md]</li>
+</ul>
+</body>
+</html>

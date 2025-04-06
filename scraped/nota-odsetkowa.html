@@ -30,13 +30,69 @@
 <li><a href="#nota-odsetkowa" id="toc-nota-odsetkowa">nota odsetkowa</a>
 <ul>
 <li><a href="#definition" id="toc-definition">Definition</a></li>
+<li><a href="#definicja-tagu-nota-odsetkowa-w-systemie-madar-erp"
+id="toc-definicja-tagu-nota-odsetkowa-w-systemie-madar-erp">Definicja
+tagu ‘nota odsetkowa’ w systemie Madar ERP</a></li>
 <li><a href="#sources" id="toc-sources">Sources</a></li>
 </ul></li>
 </ul>
 </nav>
 <h1 id="nota-odsetkowa">nota odsetkowa</h1>
 <h2 id="definition">Definition</h2>
-<p>Definition generation failed: Event loop is closed</p>
+<h2 id="definicja-tagu-nota-odsetkowa-w-systemie-madar-erp">Definicja
+tagu ‘nota odsetkowa’ w systemie Madar ERP</h2>
+<ol type="1">
+<li><p><strong>Krótka definicja:</strong> Tag ‘nota odsetkowa’ w
+systemie Madar ERP odnosi się do funkcjonalności związanej z
+generowaniem i obsługą dokumentu księgowego, jakim jest nota odsetkowa,
+wystawiana w celu obciążenia dłużnika odsetkami za opóźnienie w
+płatności faktur. Umożliwia naliczanie odsetek od przeterminowanych
+faktur i automatyczne tworzenie noty odsetkowej.</p></li>
+<li><p><strong>Główne zastosowania/konteksty:</strong></p>
+<ul>
+<li><strong>Naliczanie odsetek:</strong> Tag jest używany w kontekście
+naliczania odsetek od faktur, które zostały zapłacone po terminie
+płatności.</li>
+<li><strong>Wystawianie not odsetkowych:</strong> Oznacza funkcjonalność
+generowania dokumentu noty odsetkowej na podstawie naliczonych
+odsetek.</li>
+<li><strong>Analiza przeterminowanych płatności:</strong> Tag jest
+powiązany z analizą faktur w celu identyfikacji tych, które zostały
+zapłacone po terminie i kwalifikują się do naliczenia odsetek.</li>
+<li><strong>Windykacja należności:</strong> Nota odsetkowa jest
+elementem procesu windykacji należności, informującym dłużnika o
+dodatkowych kosztach związanych z opóźnieniem w płatności.</li>
+</ul></li>
+<li><p><strong>Powiązane funkcje/moduły w systemie:</strong></p>
+<ul>
+<li><strong>Handel:</strong> Moduł handlowy, a konkretnie analiza faktur
+(opcja “Handel - Analizy - faktury”), jest miejscem, gdzie rozpoczyna
+się proces naliczania odsetek.</li>
+<li><strong>Księgowość:</strong> Nota odsetkowa jest dokumentem
+księgowym, więc tag jest powiązany z modułem księgowym.</li>
+<li><strong>Płatności:</strong> Informacje o terminach płatności i
+dniach opóźnienia są kluczowe dla naliczania odsetek, co łączy tag z
+funkcjonalnościami związanymi z obsługą płatności.</li>
+<li><strong>Raportowanie/Analizy:</strong> Funkcjonalność analizy faktur
+pozwala na identyfikację faktur przeterminowanych, co jest niezbędne do
+wystawienia noty odsetkowej.</li>
+</ul></li>
+<li><p><strong>Dodatkowe informacje:</strong></p>
+<ul>
+<li>Proces wystawiania noty odsetkowej w Madar ERP obejmuje analizę
+faktur, wybór kontrahenta, naliczenie odsetek dla poszczególnych faktur,
+a następnie wygenerowanie i wydrukowanie noty odsetkowej.</li>
+<li>System umożliwia dodawanie wielu faktur do jednej noty
+odsetkowej.</li>
+<li>Użytkownik ma możliwość konfiguracji szablonu analizy faktur, aby
+wyświetlać kolumny informujące o liczbie dni po terminie zapłaty.</li>
+<li>Tag ‘nota odsetkowa’ jest powiązany z tagiem ‘odsetki’, co wskazuje
+na szerszy zakres funkcjonalności związanych z obsługą odsetek w
+systemie.</li>
+<li>Proces wystawiania noty odsetkowej jest dostępny dla użytkowników z
+uprawnieniami kasjera i księgowego.</li>
+</ul></li>
+</ol>
 <h2 id="sources">Sources</h2>
 <ul>
 <li>Naliczanie odsetek i wystawianie noty odsetkowej:

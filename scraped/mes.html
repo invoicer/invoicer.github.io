@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>mes</title>
+  <style>
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+  <link rel="stylesheet" href="tufte.css" />
+</head>
+<body>
+<nav id="TOC" role="doc-toc">
+<ul>
+<li><a href="#mes" id="toc-mes">MES</a>
+<ul>
+<li><a href="#definition" id="toc-definition">Definition</a></li>
+<li><a href="#sources" id="toc-sources">Sources</a></li>
+</ul></li>
+</ul>
+</nav>
+<h1 id="mes">MES</h1>
+<h2 id="definition">Definition</h2>
+<p>Oto definicja tagu ‘MES’ w kontekście systemu Madar ERP, bazująca na
+dostarczonych fragmentach:</p>
+<p><strong>1. Definicja:</strong></p>
+<p>Tag ‘MES’ w systemie Madar ERP odnosi się do modułu lub
+funkcjonalności związanej z <strong>Systemem Realizacji Produkcji
+(Manufacturing Execution System)</strong>, który służy do monitorowania,
+zarządzania i optymalizacji procesów produkcyjnych w czasie
+rzeczywistym. Umożliwia on śledzenie czynności produkcyjnych, zbieranie
+danych o pomiarach i parametrach procesu, a także integrację z planem
+produkcji.</p>
+<p><strong>2. Główne zastosowania/konteksty:</strong></p>
+<ul>
+<li><strong>Planowanie produkcji:</strong> ‘MES’ jest wykorzystywany w
+planie produkcji do opisu wykonywanych prac na konkretnych stanowiskach
+(gniazdach).</li>
+<li><strong>Monitorowanie czynności produkcyjnych:</strong> Umożliwia
+śledzenie postępu prac, rejestrowanie operacji i odpadów powstających w
+trakcie produkcji.</li>
+<li><strong>Zarządzanie pomiarami:</strong> ‘MES’ jest powiązany z
+pomiarami parametrów produkcyjnych, które są definiowane w pliku
+<code>produkcja.xml</code>. Umożliwia definiowanie szablonów pomiarów i
+podgląd zdefiniowanych okien pomiarowych.</li>
+<li><strong>Informowanie o stanie produkcji:</strong> Służy do
+informowania o aktualnym stanie produkcji.</li>
+</ul>
+<p><strong>3. Powiązane funkcje/moduły:</strong></p>
+<ul>
+<li><strong>Produkcja:</strong> ‘MES’ jest integralną częścią modułu
+Produkcja w systemie Madar ERP.</li>
+<li><strong>Plan produkcji:</strong> ‘MES’ ściśle współpracuje z planem
+produkcji, wykorzystując informacje o czynnościach i stanowiskach
+pracy.</li>
+<li><strong>Baza czynności:</strong> Dostęp do bazy czynności, które są
+kluczowe dla działania ‘MES’, znajduje się w module Produkcja.</li>
+</ul>
+<p><strong>4. Dodatkowe informacje:</strong></p>
+<ul>
+<li><strong>Konfiguracja pomiarów:</strong> Szablony i definicje
+pomiarów wykorzystywanych w ‘MES’ są przechowywane w pliku
+<code>produkcja.xml</code>.</li>
+<li><strong>Gniazda (stanowiska pracy):</strong> Czynności w ‘MES’ są
+zawsze przypisane do konkretnego gniazda (stanowiska pracy).</li>
+<li><strong>Powiązanie z wyrobami:</strong> Czynności w ‘MES’ mogą być
+powiązane z konkretnymi wyrobami.</li>
+<li><strong>Dostępność:</strong> Dostęp do funkcji związanych z ‘MES’
+jest możliwy poprzez moduł Produkcja w systemie Madar ERP.</li>
+<li><strong>Dokumentacja:</strong> Dalsze informacje na temat
+konfiguracji i działania ‘MES’ można znaleźć w dokumentacji systemu, w
+tym na platformie GitHub (szablon pomiarów w MES).</li>
+</ul>
+<p>Podsumowując, tag ‘MES’ w Madar ERP oznacza funkcjonalność
+wspierającą zarządzanie i monitorowanie procesów produkcyjnych, w
+szczególności poprzez śledzenie czynności, pomiar parametrów i
+integrację z planem produkcji. Jest to kluczowy element modułu
+Produkcja, umożliwiający optymalizację i kontrolę nad procesem
+wytwarzania.</p>
+<h2 id="sources">Sources</h2>
+<ul>
+<li>Czynności - okienko [?]: [2014-10-01-czynności-okienko.md]</li>
+<li>Czynności - lista [?]: [2016-05-01-czynności-lista.md]</li>
+</ul>
+</body>
+</html>

@@ -36,7 +36,66 @@
 </nav>
 <h1 id="plan-kont">plan kont</h1>
 <h2 id="definition">Definition</h2>
-<p>Definition generation failed: Event loop is closed</p>
+<p>Oto definicja tagu ‘plan kont’ w kontekście systemu Madar ERP,
+uwzględniająca dostarczone materiały:</p>
+<p><strong>1. Definicja:</strong></p>
+<p>‘Plan kont’ w systemie Madar to hierarchiczna lista kont księgowych,
+używana do ewidencji operacji gospodarczych firmy. Stanowi on fundament
+modułu księgowości (FK) i definiuje strukturę, w której gromadzone są
+dane finansowe.</p>
+<p><strong>2. Główne zastosowania i konteksty:</strong></p>
+<ul>
+<li><strong>Zakładanie i konfiguracja:</strong> Tworzenie i edycja listy
+kont syntetycznych i analitycznych.</li>
+<li><strong>Wprowadzanie bilansu otwarcia (BO):</strong> Wprowadzanie
+początkowych sald na konta na początku okresu obrotowego.</li>
+<li><strong>Przenoszenie bilansu zamknięcia (BZ) na BO:</strong>
+Automatyczne przenoszenie sald z poprzedniego okresu.</li>
+<li><strong>Oznaczanie pozycji bilansu i rachunku wyników:</strong>
+Przypisywanie kont do odpowiednich pozycji w sprawozdaniach
+finansowych.</li>
+<li><strong>Import/Eksport planu kont:</strong> Kopiowanie planu kont
+między firmami lub z pliku.</li>
+<li><strong>Wykrywanie błędów:</strong> Sprawdzanie poprawności planu
+kont i bilansu otwarcia (np. zgodność kont syntetycznych i
+analitycznych).</li>
+<li><strong>Ustawianie rodzaju konta:</strong> Określanie specjalnych
+typów kont, takich jak rozliczeniowe, pozabilansowe lub maski.</li>
+</ul>
+<p><strong>3. Powiązane funkcje i moduły:</strong></p>
+<ul>
+<li><strong>Moduł Księgowości (FK):</strong> Podstawowy moduł, w którym
+‘plan kont’ jest wykorzystywany do księgowania operacji.</li>
+<li><strong>Rejestry VAT:</strong> Wprowadzanie bilansu otwarcia dla
+należności i zobowiązań dla kontrahentów.</li>
+<li><strong>Zestawienie obrotów i sald:</strong> Generowanie raportów
+finansowych na podstawie danych z ‘planu kont’.</li>
+<li><strong>Bilans i Rachunek Wyników:</strong> Generowanie sprawozdań
+finansowych, w których konta są przypisywane do odpowiednich
+pozycji.</li>
+<li><strong>Administracja - Testy:</strong> Funkcje sprawdzające
+poprawność dekretacji i planu kont.</li>
+<li><strong>Import/Eksport:</strong> Funkcje importu i eksportu planu
+kont z/do plików TXT lub CSV.</li>
+</ul>
+<p><strong>4. Dodatkowe informacje:</strong></p>
+<ul>
+<li><strong>Konta syntetyczne i analityczne:</strong> System rozróżnia
+konta syntetyczne (ogólne) i analityczne (szczegółowe). Konta
+analityczne muszą być powiązane z kontem syntetycznym.</li>
+<li><strong>Wzorcowy plan kont:</strong> Możliwość zaimportowania
+predefiniowanego planu kont.</li>
+<li><strong>Rodzaje kont:</strong> Oprócz standardowych kont, system
+obsługuje konta rozliczeniowe (R), pozabilansowe (P) i maski (M).</li>
+<li><strong>Znaczniki Rachunku Wyników:</strong> Możliwość oznaczania
+kont, które mają być uwzględnione w rachunku wyników.</li>
+<li><strong>Błędy i testy:</strong> System oferuje narzędzia do
+wykrywania błędów w planie kont i bilansie otwarcia, takie jak
+niezgodności między kontami syntetycznymi i analitycznymi.</li>
+<li><strong>Przenoszenie BZ na BO:</strong> Funkcja automatycznego
+przenoszenia sald z bilansu zamknięcia poprzedniego roku na bilans
+otwarcia nowego roku.</li>
+</ul>
 <h2 id="sources">Sources</h2>
 <ul>
 <li>Plan kont - zakładanie i wprowadzanie BO ∴:

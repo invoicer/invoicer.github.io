@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>zapas</title>
+  <style>
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+  <link rel="stylesheet" href="tufte.css" />
+</head>
+<body>
+<nav id="TOC" role="doc-toc">
+<ul>
+<li><a href="#zapas" id="toc-zapas">zapas</a>
+<ul>
+<li><a href="#definition" id="toc-definition">Definition</a></li>
+<li><a href="#sources" id="toc-sources">Sources</a></li>
+</ul></li>
+</ul>
+</nav>
+<h1 id="zapas">zapas</h1>
+<h2 id="definition">Definition</h2>
+<p>Oto kompleksowa definicja tagu “zapas” w kontekście systemu Madar
+ERP, uwzględniająca dostarczone materiały:</p>
+<p><strong>1. Definicja:</strong></p>
+<p>Tag “zapas” w systemie Madar odnosi się do <strong>stanu
+magazynowego</strong> danego asortymentu (towarów, surowców) na
+konkretny dzień. Reprezentuje on ilość dostępnych zasobów i jest
+podstawą do generowania zapotrzebowania na surowce i towary.</p>
+<p><strong>2. Główne zastosowania i konteksty:</strong></p>
+<ul>
+<li><strong>Inwentaryzacja i kontrola stanów magazynowych:</strong>
+“Zapas” służy do generowania raportów o aktualnym stanie magazynu na
+wybraną datę.</li>
+<li><strong>Planowanie produkcji i zaopatrzenia:</strong> Informacje o
+“zapasie” są wykorzystywane do określania zapotrzebowania na surowce i
+towary, co wspiera proces planowania produkcji i zaopatrzenia.</li>
+<li><strong>Generowanie zamówień:</strong> Na podstawie analizy “zapasu”
+i uwzględnienia zamówień od odbiorców i do dostawców, system może
+generować prognozy zapotrzebowania i sugerować zamówienia.</li>
+<li><strong>Analiza braków i nadwyżek:</strong> Raporty “zapasu” mogą
+być filtrowane, aby wyświetlać tylko te artykuły, których stan jest
+poniżej minimalnego lub powyżej maksymalnego poziomu, co pomaga w
+identyfikacji potencjalnych problemów.</li>
+</ul>
+<p><strong>3. Powiązane funkcje i moduły:</strong></p>
+<ul>
+<li><strong>Moduł Handel:</strong> Generowanie wydruku “zapasu” jest
+dostępne w module Handel ( <em>Handel - wydruki - zapas</em>).</li>
+<li><strong>Moduł Magazyn:</strong> “Zapas” bezpośrednio odnosi się do
+stanów magazynowych i jest powiązany z operacjami magazynowymi
+(przyjęcia, wydania).</li>
+<li><strong>Moduł Produkcja:</strong> Informacje o “zapasie” surowców są
+kluczowe dla planowania produkcji i generowania zapotrzebowania na
+surowce.</li>
+<li><strong>Generowanie Zapotrzebowania:</strong> Na podstawie wydruku
+“zapasu” można wygenerować zapotrzebowanie na surowce i towary.</li>
+<li><strong>Katalog Towarów:</strong> W katalogu towarów definiowane są
+stany minimalne i maksymalne, które są uwzględniane w raportach
+“zapasu”.</li>
+<li><strong>Zamówienia:</strong> Informacje o zamówieniach od odbiorców
+i do dostawców są uwzględniane w analizie “zapasu” i prognozowaniu
+zapotrzebowania.</li>
+<li><strong>Remanent:</strong> “Zapas” jest powiązany z procesem
+remanentu (inwentaryzacji).</li>
+</ul>
+<p><strong>4. Dodatkowe informacje:</strong></p>
+<ul>
+<li><strong>Parametry wydruku:</strong> Wydruk “zapasu” można
+konfigurować za pomocą różnych parametrów, takich jak data (“na dzień”),
+grupa towarów, dostawca, magazyn (lub wszystkie magazyny łącznie),
+uwzględnianie pozycji zerowych, dyspozycji, wydań zewnętrznych (WZ),
+agregacja po dostawcach, wyświetlanie stanów minimalnych i maksymalnych,
+uwzględnianie zamówień, rozdzielanie cen, wyświetlanie tylko pozycji
+poniżej stanu minimalnego, wyświetlanie opakowań, numeracja LP.</li>
+<li><strong>Prognoza zapotrzebowania:</strong> Wydruk “zapasu” może
+zawierać kolumnę z prognozą zapotrzebowania, obliczaną na podstawie
+różnicy między zamówieniami od odbiorców, zamówieniami do dostawców i
+aktualnym stanem magazynowym.</li>
+<li><strong>Format Excel:</strong> Wydruk “zapasu” może być generowany w
+formacie Excel, co ułatwia dalszą analizę danych.</li>
+<li><strong>Powiązane terminy:</strong> “Zapas” jest ściśle powiązany z
+terminami “zapotrzebowanie”, “magazyn”, “remanent”, “zamówienia”,
+“produkcja”.</li>
+</ul>
+<h2 id="sources">Sources</h2>
+<ul>
+<li>Ustalanie wielkości zapotrzebowania na bazie zapasu ∴:
+[2016-03-01-ustalanie-wielkości-zapotrzebowania-na-bazie-zapas.md]</li>
+<li>Zapas [?]: [2016-04-01-zapas.md]</li>
+</ul>
+</body>
+</html>
